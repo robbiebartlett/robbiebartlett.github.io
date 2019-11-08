@@ -1,22 +1,24 @@
 /* ==========================================================================
    Base styles
    ========================================================================== */
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-  }
-  body{
-    background-color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.0em;
-    color: #222222;
-    line-height:1.5;
-    margin:0;
-    padding:0;
-    -webkit-font-smoothing: antialiased;
-  }
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust:100%;
+}
+body{
+  background-color: #f8f8f8;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.0em;
+  margin:0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding:0;
+}
   
   /*
     * Remove text-shadow in selection highlight:
@@ -73,6 +75,22 @@
     margin: 0;
     padding: 0;
   }
+
+/*
+ * global Border to accomodate margins & padding
+ */
+*, .border-box{    
+   box-sizing: border-box;
+}
+
+/*
+ * Text rendering
+ */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
     
   /*
    * Allow only vertical resizing of textareas.
@@ -84,7 +102,7 @@
 
   h1, h2, h3, h4, h5 {
     font-weight: 400;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #222222;
 }
 h2{
@@ -401,10 +419,6 @@ _:-ms-fullscreen, :root .col-span-12 {
   padding: 0;
   position: fixed;
   top:0;
-  -ms-transition:     all 0.25s ease-in-out;
-  -moz-transition:    all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition:         all 0.25s ease-in-out;    
   width:100%;
   z-index: 99;
 }
@@ -413,25 +427,28 @@ header > .row{
 }
 header .logo {
   display: flex;
-  height: 50px;
-  margin: 0;
-  max-width: 250px;
+  margin: -0.5rem 0 0;
   padding: 0;
-  position: relative;
+  text-decoration: none;
   -ms-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  width:100%;
-  z-index: 99;
 }
-header .logo img{
-  max-width: 100%;
+header .logo h1{
+  color: #ffffff;
+  font-family: 'Over the Rainbow', cursive;
+  font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height:2;
+  margin:0;
+  padding:0;
 }
 header.sticky {
   background: #f8f8f8;
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
-  line-height: 2;
+}
+header.sticky .logo h1{
+  color:#222222;
 }
 header .wrapper nav{
   height: 70px;
@@ -441,7 +458,7 @@ header .wrapper nav{
  * Back to top
  */
 .back-to-top {
-  bottom:80px;
+  bottom:50px;
   margin: auto;
   position: relative;
   width:100px;
@@ -451,21 +468,21 @@ header .wrapper nav{
   background:#f8f8f8;
   border-radius: 50%;
   display: flex;
-  height: 60px;
+  height: 100px;
   padding: 20px;
-  width: 60px;
+  width: 100px;
 }
 .back-to-top a span {
   background:#4b9277;
   border-radius: 50%;
-  height: 45px;
-  left: 8px;
+  height: 90px;
+  left: 5px;
   padding: 20px;
   position: absolute;
   text-indent: -99999px;
-  top: 8px;
+  top: 4px;
   transition: all 0.25s ease-in-out;
-  width: 45px;
+  width: 90px;
 }
 .back-to-top a span:hover, .back-to-top a span:focus {
   background:#3c6b59;
@@ -479,7 +496,7 @@ header .wrapper nav{
   border-right-width: 3px;
   content: '';
   height: 25px;
-  left: 29px;
+  left: 31px;
   position: absolute;
   top: 35px;
   transform: rotate(-135deg);
@@ -558,13 +575,11 @@ header .wrapper nav{
 .introduction .inner p {
   color: #fff;
   font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   line-height: 2;
   margin: 15px 0 30px;
   padding: 0;
 }
-
-
 
 
 
@@ -587,7 +602,7 @@ nav .row.nested a{
   border-bottom: 2px solid;
   border-bottom-color:transparent;
   color: #f8f8f8;
-  font-size:calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size:calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   margin-left: 0;
   padding: 3px 0;
   text-decoration: none;
@@ -596,6 +611,7 @@ nav .row.nested a{
   -webkit-transition: border-bottom-color 0.25s ease-in-out;
   transition:         border-bottom-color 0.25s ease-in-out;
 }
+
 nav .row.nested a:hover, nav .row.nested a:focus{
   border-bottom-color: #f8f8f8;
 }
@@ -1285,7 +1301,6 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   background: -ms-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
   background: radial-gradient(ellipse at 20% 80%, #84c8ae 0%, #538271 73%, #3c6b59 100%);
   filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#84c8ae', endColorstr='#3c6b59', GradientType=1 );
-  height: 100%;
   margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -1538,8 +1553,18 @@ footer .message .col-span-8{
   transition: all 0.25s ease-in-out;
 }
 
+header .logo{
+  margin-top:0;
+}
+
 .sticky nav .row.nested a{
   color:#ffffff;
+}
+/*
+ * Display home in mobile menu
+ */
+.mobile-only{
+  display:block;
 }
 .mobile-menu {
   background: #3c6b59;
@@ -1600,11 +1625,10 @@ footer .message .col-span-8{
   display: flex;
   justify-content: center;
 }
-.mobile-links a {
-  padding: 10px 0px;
-  margin: 5px 0px;
+nav .row.nested a{
+  padding:0px;
+  margin:0.35em 0;
   letter-spacing: 3px;
-  font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
   display: block;
@@ -1631,7 +1655,7 @@ footer .message .col-span-8{
   -moz-transition: top 0.25s ease-in-out;
   -webkit-transition: top 0.25s ease-in-out;
   transition: top 0.25s ease-in-out;
-  width:36px;
+  width:48px;
   z-index: 9;
 }
 .changecolor .hamburger{
@@ -1729,8 +1753,6 @@ footer .message .col-span-8{
   width:auto;
 }
 
-
-
 .banner .hero{
   bottom: 0;
   left: -15%;
@@ -1776,30 +1798,29 @@ footer h3{
   margin-right: 0;
 }
 .back-to-top{
-  bottom: 40px;
-  height:70px;
-  width:70px;
+  bottom: 5px;
+  height:90px;
+  width:90px;
   z-index: 5;
 }
 .back-to-top a{
-  height:35px;
+  height:70px;
   padding:20px;
-  width:35px;
+  width:70px;
 }
 .back-to-top a span{
-  height:20px;
+  height:60px;
   left:5px;
   padding:23px;
   top:5px;
-  width:20px;
+  width:60px;
 }
 .back-to-top a span::after{
   height:15px;
-  left:25px;
-  top:30px;
+  left:22px;
+  top:26px;
   width:15px;
 }
-
 
 .contact_me input[type="text"], .contact_me input[type="email"], .contact_me textarea {
   width: 97%;
@@ -1826,8 +1847,8 @@ a.phone{display:block;}
 .row.nested.links{
     display:flex;
   }
-.mobile-button{
-    display:none;
+.mobile-button, .mobile-only{
+  display:none;
 }
 nav .col{
   padding:0.25em 5px;
