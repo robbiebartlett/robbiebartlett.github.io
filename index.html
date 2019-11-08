@@ -44,7 +44,7 @@
         <!-- Google Fonts
         ================================================== -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,500,700&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"> 
       
 
         <!-- CSS
@@ -57,7 +57,7 @@
 </head>
 
 <body>
-  <!--[if lte IE9]>
+  <!--[if lte IE11]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
@@ -66,7 +66,7 @@
 <!-- Header -->
 <div class="home-wrapper" id="back-to-top">
 
-   <header> 
+   <header class="main-header"> 
 
         <div class="mobile-container">
             <a class="mobile-button">
@@ -85,12 +85,12 @@
       <div id="home" class="wrapper row">
       <div class="col col-span-5">
         <a href="#back-to-top" class="logo anchor-link">
-        <h1>Robbie Bartlett</h1>
+        <h1>Rob Bartlett</h1>
         </a>
       </div>
 
       <!-- Navigation -->
-        <nav class="col col-span-7 menu">
+        <nav class="col col-span-7 menu" aria-label="navigation">
           <div class="row nested mobile-links">
             <div class="col col-span-3 mobile-only"><a href="#back-to-top" class="anchor-link">Home</a></div>
             <div class="col col-span-3"><a href="#about" class="anchor-link">About</a></div>
@@ -132,7 +132,7 @@
     </div>
 
 <!-- Main content -->
-<div class="wrapper">
+<main class="wrapper">
 
 <!-- About-->
 <section id="about" class="row">
@@ -167,7 +167,7 @@
         Vue, React and Angular. Whilst on the other side developers are focussed on HTML, CSS, 
         design patterns and User Accessibility.</p> 
         
-        <p> As a Unicorn I haven’t quite started sprouting hooves or a horn just yet, but particularly shine in environments where the visual experience is more complex in serving the clients needs. As important is combining wider teams and drawing on all strengths from User Experience, User Interface Design and Front-end Development.</p>
+        <p> As a Unicorn I haven’t quite started sprouting hooves or a horn just yet, but particularly shine in environments where the visual experience is more complex in serving the clients needs. As important is combining wider teams and drawing on all strengths from User Experience, Visual Design and Front-end Development.</p>
      </div>
   </div>
 </section>
@@ -254,7 +254,7 @@
                 <div class="portfolio-image" data-background-image-url="img/work-and-income.jpg"></div>
               <div class="portfolio-content">
                   <div class="portfolio-title">UI | Front-End</div>
-                  <p class="portfolio-text">Work and Income<span class="arrow"></span></p>
+                  <p class="portfolio-text">NZ Work and Income<span class="arrow"></span></p>
               </div>
             </a>
           </li>
@@ -566,15 +566,15 @@
 </section>
 
     <hr>
-</div><!-- end: wrapper  -->
+</main><!-- end: wrapper  -->
 
 
 
 <!-- Contact / Footer-->
-<section id="contact">
+<footer id="contact">
   <div class="footer-wrapper">
     
-    <footer class="row">
+    <section class="row">
       <div class="col col-span-12">
 
         <h2>Contact</h2>
@@ -585,10 +585,10 @@
             <div class="row center">
               <div class="col col-span-12">
                 
-                  <div class="back-to-top">
-                    <a href="#back-to-top" title="Take me home" class="anchor-link">
+                  <nav class="back-to-top" aria-label="Back to top">
+                    <a href="#back-to-top" title="Take me home" class="anchor-link" >
                      <span>Back to top</span></a>
-                  </div>
+                    </nav>
                 
               </div>
             </div>
@@ -597,7 +597,7 @@
             <!-- Contact form -->
             <div class="row center message">
               <div class="col col-span-8 ">
-                <h3>Get the answers to design dillemas</h3>
+                <h3>Get the answers to design dilemmas</h3>
         
                   <div class="row center">
 					<form  action="https://formspree.io/mknnngoe" method="POST" class="col col-span-12 contact_me">
@@ -654,13 +654,13 @@
             </div>
 
           </div>
-    </footer>
+        </section>
 
      <!-- Copyright -->
      <div class="copyright">© Rob Bartlett&nbsp;<span id="year"></span></div>
 
   </div>
-</section>
+</footer>
       
 
 
@@ -669,15 +669,13 @@
 
 
   <!-- JS -->
-   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
  
-  <script src="js/timeline.js"></script>
   <script src="js/accessible-modal.min.js"></script>
-  <script src="js/form.js"></script> 
-  <script src="js/script.js"></script>
+  <script src="js/actions.js"></script>
+
 
   
 
