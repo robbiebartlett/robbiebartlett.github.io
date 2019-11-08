@@ -740,7 +740,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   transform: rotate(135deg);
-  -o-transform: rotate(135eg);
+  -o-transform: rotate(135deg);
   width: 20px;
 }
 .portfolio-item a:hover .portfolio-content .arrow, .portfolio-item a:focus .portfolio-content .arrow{
@@ -981,7 +981,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   color: #222;
   font-size: 1.0em;
   height: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   position: absolute;
   text-align: center;
   -webkit-transform: translateZ(0);
@@ -1066,7 +1066,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   transform: rotate(135deg);
-  -o-transform: rotate(135eg);
+  -o-transform: rotate(135deg);
   -ms-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1207,7 +1207,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   display: block;
   font-size: 1.2em;
   line-height: 1.6;
-  margin-bottom: 0 0 15px;
+  margin: 0 0 15px;
 }
 /*
  * css animation
@@ -1919,7 +1919,6 @@ footer .message .col-span-8{
   footer .message .col-span-8{
     flex-basis: 66.6666%;
   }
-
 
 }
  
