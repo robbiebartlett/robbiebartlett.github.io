@@ -439,6 +439,7 @@ header .logo h1{
   color: #ffffff;
   font-family: 'Over the Rainbow', cursive;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
   line-height:2;
   margin:0;
   padding:0;
