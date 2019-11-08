@@ -659,7 +659,7 @@ nav .row.nested a:hover{
 }
 .portfolio-item{
   display: flex;
-  padding: 10px 2%;
+  padding: 10px 1%;
   width: 90%;
   margin: 0 auto;
   transition: all 0.25s ease-in-out;
