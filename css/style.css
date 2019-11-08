@@ -10,7 +10,7 @@ body{
   color: #222222;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.0em;
   margin:0;
@@ -202,6 +202,16 @@ h2{
   .clearfix:after {
     clear: both;
   }
+
+ /*
+  * Focus settings
+  */
+a:focus, button:focus, input:focus, summary:focus, textarea:focus, #btnContactMe:focus{
+  outline:3px solid #355e4e;
+}
+body.using-mouse :focus {
+  outline: none;
+}
 
 /* ==========================================================================
     Layout styles
@@ -397,17 +407,12 @@ _:-ms-fullscreen, :root .col-span-12 {
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.35);
   opacity: 1;
 }
-#btnContactMe:focus {
-  color:#3c6b59;
-  outline: 2px solid #3c6b59;
-}
 .title-divider {
-    width: 70px;
-    height: 3px;
-    background-color: #3c6b59;
-    margin:6px 0 30px 0;
+  width: 70px;
+  height: 3px;
+  background-color: #376252;
+  margin:6px 0 30px 0;
 }
-
 
 /* 
  *  Fixed Header
@@ -427,8 +432,9 @@ header > .row{
 }
 header .logo {
   display: flex;
-  margin: -0.5rem 0 0;
-  padding: 0;
+  margin: -0.3em 0 0;
+  max-width:300px;
+  padding: 0 5px;
   text-decoration: none;
   -ms-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -436,8 +442,8 @@ header .logo {
   transition: all 0.25s ease-in-out;
 }
 header .logo h1{
-  color: #ffffff;
-  font-family: 'Over the Rainbow', cursive;
+  color: #f2f2f2;
+  font-family: 'Special Elite', cursive;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   line-height:2;
@@ -449,7 +455,7 @@ header.sticky {
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
 }
 header.sticky .logo h1{
-  color:#222222;
+  color:#376252
 }
 header .wrapper nav{
   height: 70px;
@@ -459,7 +465,7 @@ header .wrapper nav{
  * Back to top
  */
 .back-to-top {
-  bottom:50px;
+  bottom:20px;
   margin: auto;
   position: relative;
   width:100px;
@@ -481,12 +487,12 @@ header .wrapper nav{
   padding: 20px;
   position: absolute;
   text-indent: -99999px;
-  top: 4px;
+  top: 5px;
   transition: all 0.25s ease-in-out;
   width: 90px;
 }
-.back-to-top a span:hover, .back-to-top a span:focus {
-  background:#3c6b59;
+.back-to-top a span:hover{
+  background:#376252;
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
 }
 .back-to-top a span::after {
@@ -514,7 +520,7 @@ header .wrapper nav{
 }
 .banner .col{
   margin:0;
-  padding:10px 2% 0;
+  padding:10px 0 0;
 }
 .banner.row .col .nested{
   margin:0;
@@ -523,14 +529,14 @@ header .wrapper nav{
  *  Banner 
  */
 .home-wrapper{
-  background-color: #3c6b59;
-  background: -moz-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #84c8ae), color-stop(73%, #538271), color-stop(100%, #3c6b59));
-  background: -webkit-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -o-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: radial-gradient(ellipse at 20% 80%, #90dcbf 0%, #538271 73%, #3c6b59 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84c8ae', endColorstr='#3c6b59', GradientType=1 );
+  background-color: #376252;
+  background: -moz-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #35735b), color-stop(73%, #426c5d), color-stop(100%, #376252));
+  background: -webkit-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
+  background: -o-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
+  background: radial-gradient(ellipse at 20% 80%, #90dcbf 0%, #426c5d 73%, #376252 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35735b', endColorstr='#376252', GradientType=1 );
   margin:-.05em 0 0;
   padding:0; 
 }
@@ -566,7 +572,7 @@ header .wrapper nav{
   transition:         all 0.25s ease-in-out; 
 }
 .introduction .inner h1 {
-  color: #fff;
+  color: #f2f2f2;
   font-weight: bold;
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.5;
@@ -574,7 +580,7 @@ header .wrapper nav{
   padding: 0;
 }
 .introduction .inner p {
-  color: #fff;
+  color: #f2f2f2;
   font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-family: inherit;
   line-height: 2;
@@ -603,7 +609,7 @@ nav .row.nested a{
   border-bottom: 2px solid;
   border-bottom-color:transparent;
   color: #f8f8f8;
-  font-size:calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size:calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
   margin-left: 0;
   padding: 3px 0;
   text-decoration: none;
@@ -613,24 +619,24 @@ nav .row.nested a{
   transition:         border-bottom-color 0.25s ease-in-out;
 }
 
-nav .row.nested a:hover, nav .row.nested a:focus{
+nav .row.nested a:hover{
   border-bottom-color: #f8f8f8;
 }
 /*
 * Fixed header
 */
 .sticky nav .row.nested a {
-  color: #3c6b59;
+  color: #376252;
 }
-.sticky nav .row.nested a:hover, .sticky nav .row.nested a:focus{
-  border-bottom: 2px solid #3c6b59;
+.sticky nav .row.nested a:hover{
+  border-bottom: 2px solid #376252;
 }
 
 /*
  * About
  */
  .overview a {
-  color: #3c6b59;
+  color: #376252;
   font-weight: bold;
 }
 .unicorn img{
@@ -671,11 +677,8 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   text-decoration: none;
   width:100%;
 }
-.portfolio-item a:hover .portfolio-image, .portfolio-item a:focus .portfolio-image{
+.portfolio-item a:hover .portfolio-image{
   transform: scale(1.2,1.2);
-}
-.portfolio-item a:focus .portfolio-image{
-  border:1px solid #222222;
 }
 .portfolio-content{
   display: flex;
@@ -731,20 +734,20 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   color: #222222;
 }
 .portfolio-content .arrow {
-  background: #3c6b59;
-  bottom: 3px;
-  height: 20px;
+  background: #376252;
+  bottom: 0px;
+  height: 17px;
   margin: 10px;
   opacity: 0.75;
   position: absolute;
-  right: 0;
+  right: -4px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   transform: rotate(135deg);
   -o-transform: rotate(135deg);
-  width: 20px;
+  width: 17px;
 }
-.portfolio-item a:hover .portfolio-content .arrow, .portfolio-item a:focus .portfolio-content .arrow{
+.portfolio-item a:hover .portfolio-content .arrow{
   opacity: 1.0;
 } 
 .portfolio-content .arrow:after {
@@ -820,7 +823,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   z-index: 667;
 }
 #modal-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   line-height: 1;
@@ -840,7 +843,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   width: 30px;
 } 
 .simple-animated-modal-close::before, .simple-animated-modal-close:after{
-  background: #3c6b59;
+  background: #376252;
   border-radius: 10px;
   content: '';
   height: 5px;
@@ -934,6 +937,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
 .timeline .events-wrapper {
   height: 100%;
   margin: 0 40px;
+  outline: none;
   overflow-x: hidden;
   position: relative;
 }
@@ -956,7 +960,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
  * active green line
  */
 .timeline .filling-line {
-  background-color: #3c6b59;  
+  background-color: #376252;  
   height: 100%;
   left: 0;
   position: absolute;
@@ -1005,7 +1009,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   backface-visibility: hidden;
   background-color: #f7f7f7;
   border-radius: 50%;
-  border: 2px solid #3c6b59;
+  border: 2px solid #376252;
   bottom: -33px;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,0.25);
   content: '';
@@ -1055,9 +1059,9 @@ nav .row.nested a:hover, nav .row.nested a:focus{
 .timeline-navigation a {
   background-color:#f7f7f7;
   border-radius: 50%;
-  border: 2px solid #3c6b59;
+  border: 2px solid #376252;
   bottom: 22px;
-  color: transparent;
+  color: #222222;
   height: 35px;
   margin: 10px;
   opacity: 0.75;
@@ -1088,8 +1092,8 @@ nav .row.nested a:hover, nav .row.nested a:focus{
 }
 .timeline-navigation a.prev::after, .timeline-navigation a.next::after {
   background: transparent;
-  border-left: 3px solid #3c6b59;
-  border-top: 3px solid #3c6b59;
+  border-left: 3px solid #376252;
+  border-top: 3px solid #376252;
   content: '';
   font-size: 0;
   height: 10px;
@@ -1101,13 +1105,13 @@ nav .row.nested a:hover, nav .row.nested a:focus{
 }
 .timeline-navigation a.prev::after{
   border:none;
-  border-bottom: 3px solid #3c6b59;
-  border-right: 3px solid #3c6b59;
-  left: 10px;
-  top: 10px;
+  border-bottom: 3px solid #376252;
+  border-right: 3px solid #376252;
+  left: 8px;
+  top: 8px;
 }
 .no-touch .timeline-navigation a:hover {
-  border-color: #3c6b59;
+  border-color: #376252;
 }
 .timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -1199,7 +1203,7 @@ nav .row.nested a:hover, nav .row.nested a:focus{
   margin: 0 auto;
 }
 .timeline .events-content h2 {
-  color: #3c6b59;
+  color: #376252;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -1295,13 +1299,14 @@ nav .row.nested a:hover, nav .row.nested a:focus{
  * footer
  */
  #contact {
-  background: -moz-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #84c8ae), color-stop(73%, #538271), color-stop(100%, #3c6b59));
-  background: -webkit-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -o-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  background: radial-gradient(ellipse at 20% 80%, #84c8ae 0%, #538271 73%, #3c6b59 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#84c8ae', endColorstr='#3c6b59', GradientType=1 );
+  background-color: #376252;
+  background: -moz-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7bc2a7), color-stop(73%, #426c5d), color-stop(100%, #376252));
+  background: -webkit-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
+  background: -o-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
+  background: radial-gradient(ellipse at 20% 80%, #90dcbf 0%, #426c5d 73%, #376252 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc2a7', endColorstr='#376252', GradientType=1);
   margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -1314,7 +1319,7 @@ footer {
 }
  .footer-wrapper {
   background: transparent url("../img/footer.svg") no-repeat top left;
-  background-position-x:30%;
+  background-position-x:40%;
   background-position-y: -1px;
   background-size: cover;
   margin: 0;
@@ -1339,7 +1344,9 @@ footer h2 {
 }
 footer h3 {
   color: #ffffff;
-  font-size: 1.8em;
+  font-family: 'Open sans', sans-serif;
+  font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
   line-height: 1.5;
   margin: 10px 10px 40px 10px;
   padding: 0;
@@ -1423,25 +1430,28 @@ footer .message .col-span-8{
   -webkit-transition: all .25s ease 0s;
 }
 .contact_me input[type="text"], .contact_me input[type="email"]{
-  width:90%;
-  height:30px;
+  
 }
 .contact_me textarea{
-  color: #222222;
-  height:145px;
-  width:90%;
+  height:154px;
 }
 .contact_me input[type="text"], .contact_me input[type="email"], textarea {
-  border: 1px solid #4b9277;
+  border:1px solid #355e4e;
   color:#222222;
   font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
   font-weight: 300;
+  height: 40px;
   line-height: 140%;
   margin-bottom: 15px;
   margin-top:5px;
   padding: 5px;
   resize: none;
+  width:90%;
+}
+.contact_me input:focus, textarea:focus{
+
+   box-shadow: 0 0 0 3px #355e4e;
 }
 .contact_me input[type="text"]{
   margin-bottom:40px;
@@ -1454,49 +1464,7 @@ footer .message .col-span-8{
   line-height: 1.5;
   margin-bottom: 5px;
 }
-.contact_me .captcha label {
-  display: inline-flex;
-}
-.contact_me input:focus, #message:focus{
-  color: #3c6b59;
-  outline: 2px solid;
-}
-.contact_me a#captcha_reload {
-  border-bottom: 1px solid transparent;
-  color:#fff;
-  margin-right: 15px;
-  text-decoration: none;
-  transition: all .25s ease 0s;
-  -webkit-transition: all .25s ease 0s;
-}
-.contact_me a#captcha_reload:hover, .contact_me a#captcha_reload:focus{
-  border-bottom: 1px solid#fff;
-}
-.captcha {
-  align-content: baseline;
-  display: inline-flex;
-  justify-content: flex-start;
-  position: relative;
-}
-.captcha #captcha_image {
-  border: 1px solid #4b9277;
-  height: 40px;
-  margin: 0 20px 10px 0;
-}
-.captcha span {
-  display: flex;
-  left: 0;
-  position: absolute;
-  top: 50px;
-  width:255px;
-  z-index: 9;
-}
-.code {
-  margin-top: -29px;
-  padding: 0;
-  position: relative;
-  width: 100px;
-}
+
 
 /* ==========================================================================
      Media Queries for Responsive Design 
@@ -1568,7 +1536,7 @@ header .logo{
   display:block;
 }
 .mobile-menu {
-  background: #3c6b59;
+  background: #376252;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
   height: 0px;
@@ -1627,15 +1595,16 @@ header .logo{
   justify-content: center;
 }
 nav .row.nested a{
-  padding:0px;
-  margin:0.35em 0;
-  letter-spacing: 3px;
   color: #ffffff;
-  text-decoration: none;
   display: block;
+  letter-spacing: 3px;
+  line-height: 2;
+  margin: 0.5em 0;
+  padding: 0px;
+  text-decoration: none;
 }
 .changecolor, .changecolor:before, .changecolor:after {
-  background-color:  #3c6b59;
+  background-color:  #376252;
 }
 .hamburger {
   background-color:#ffffff;
@@ -1679,7 +1648,7 @@ nav .row.nested a{
 .hamburger-inner::after {
   width: 30px;
   height: 4px;
-  background-color: #3c6b59;
+  background-color: #376252;
   border-radius: 3px;
   position: absolute;
 }
@@ -1799,7 +1768,7 @@ footer h3{
   margin-right: 0;
 }
 .back-to-top{
-  bottom: 5px;
+  bottom: 0;
   height:90px;
   width:90px;
   z-index: 5;
@@ -1866,6 +1835,7 @@ nav .col{
   width:auto;
 }
 .banner .introduction{
+  padding-left: 2%;
   position: unset;
   transform:translate(0,0);
 }
