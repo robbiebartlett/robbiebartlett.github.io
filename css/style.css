@@ -448,7 +448,7 @@ header .logo {
 }
 header .logo h1{
   color: #f2f2f2;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', serif;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   height:75px;
@@ -1214,7 +1214,7 @@ nav .row.nested a:hover{
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-  width: 80%;
+  width: 100%;
   z-index: 2;
 }
 .timeline .events-content li.enter-right, .timeline .events-content li.leave-right {
@@ -1238,6 +1238,8 @@ nav .row.nested a:hover{
 }
 .timeline .events-content h2 {
   color: #376252;
+  font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-family: 'Special Elite', serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -1930,9 +1932,6 @@ footer .message .col-span-8{
   
   .timeline .events-content li.selected {
     width: 50%;
-  }
-  .timeline .events-content h2 {
-    font-size: calc(1.8rem + ((1vw - 0.355em) * 1.2315));
   }
   .timeline .events-content p {
     font-size: 1.4em;
