@@ -430,11 +430,16 @@ _:-ms-fullscreen, :root .col-span-12 {
 header > .row{
   margin-top:0;
 }
-header .logo {
+header .col-span-5 {
   display: flex;
-  margin: -0.3em 0 0;
-  max-width:300px;
-  padding: 0 5px;
+  flex-direction: row;
+  padding: 0 10px;
+  margin: 0.15em 0 0 0;
+}
+header .logo {
+  margin: 0;
+  max-height: 65px;
+  padding: 0;
   text-decoration: none;
   -ms-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -446,7 +451,8 @@ header .logo h1{
   font-family: 'Special Elite', cursive;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
-  line-height:2;
+  height:75px;
+  line-height: 75px;
   margin:0;
   padding:0;
 }
@@ -574,7 +580,7 @@ header .wrapper nav{
 .introduction .inner h1 {
   color: #f2f2f2;
   font-weight: bold;
-  font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(23px + (45 - 23) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.5;
   margin:0;
   padding: 0;
@@ -702,24 +708,52 @@ nav .row.nested a:hover{
   transition: all 0.25s ease-in-out;
   transform: scale(1.0,1.0);
 }
+/*
+ * Portfolio images
+ */
+.portfolio-image.lazy-load.one.loaded{
+  background-image:url("../img/export-new-zealand.jpg");
+ }
+ .portfolio-image.lazy-load.two.loaded{
+  background-image:url("../img/nz-customs-service.jpg");
+}
+.portfolio-image.lazy-load.three.loaded{
+  background-image:url("../img/baboon.jpg");
+}
+.portfolio-image.lazy-load.four.loaded{
+  background-image:url("../img/customs-release.jpg");
+}
+.portfolio-image.lazy-load.five.loaded{
+  background-image:url("../img/tbm.jpg");
+}
+.portfolio-image.lazy-load.six.loaded{
+  background-image:url("../img/leapfrog-3d.jpg");
+}
+.portfolio-image.lazy-load.seven.loaded{
+  background-image:url("../img/work-and-income.jpg");
+}
+.portfolio-image.lazy-load.eight.loaded{
+  background-image:url("../img/aranzgeo.jpg");
+}
+.portfolio-image.lazy-load.nine.loaded{
+  background-image:url("../img/iconography.jpg");
+}
+.portfolio-image.lazy-load.ten.loaded{
+  background-image:url("../img/summit.jpg");
+}
+.portfolio-image.lazy-load.eleven.loaded{
+  background-image:url("../img/bec.jpg");
+}
+.portfolio-image.lazy-load.twelve.loaded{
+  background-image:url("../img/implicit-modelling.jpg");
+}
+
 .portfolio-image::before {
   content: "";
   display: block;
   padding-top: 95%;
 }
-.portfolio-image::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute; 
-  top: 0;
-  left: 0;
-  background: rgba(200,200,200,0.5);
-  transition: opacity 0.5s ease;
-}
-.portfolio-image.loaded:after {
-  opacity: 0;
-}
+
 .portfolio-title {
   color: #222222;
   font-size: 1.05em;
@@ -1328,14 +1362,14 @@ footer {
   position: relative;
   width:100%;
 }
+.footer-wrapper section.row{
+  margin-left: 15px;
+  margin-right: 15px;
+}
 footer.row {
   height: 100%;
   margin: 0 auto;
   padding: 0 15px 0;
-}
-footer .row.message {
-  margin: 0;
-  padding: 0;
 }
 footer h2 {
   margin: -0.5em 0 0;
@@ -1429,9 +1463,6 @@ footer .message .col-span-8{
   transition: all .25s ease 0s;
   -webkit-transition: all .25s ease 0s;
 }
-.contact_me input[type="text"], .contact_me input[type="email"]{
-  
-}
 .contact_me textarea{
   height:154px;
 }
@@ -1447,11 +1478,9 @@ footer .message .col-span-8{
   margin-top:5px;
   padding: 5px;
   resize: none;
-  width:90%;
 }
 .contact_me input:focus, textarea:focus{
-
-   box-shadow: 0 0 0 3px #355e4e;
+   box-shadow: 0 0 0 2px #355e4e;
 }
 .contact_me input[type="text"]{
   margin-bottom:40px;
@@ -1521,11 +1550,17 @@ footer .message .col-span-8{
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-
+header .col-span-5 {
+  padding: 0;
+}
 header .logo{
   margin-top:0;
 }
-
+header .logo h1 {
+  height: 65px;
+  line-height: 65px;
+  margin-top:0.05em;
+}
 .sticky nav .row.nested a{
   color:#ffffff;
 }
@@ -1717,7 +1752,8 @@ nav .row.nested a{
 }
 
 .banner-wrapper .col-span-6.hero{
-  width:70%;
+  max-width: 340px;
+  width: 70%;
 }
 .banner-wrapper .col-span-6.introduction{
   width:auto;
@@ -1737,7 +1773,7 @@ nav .row.nested a{
 .banner .introduction{
   bottom:0;
   position: absolute;
-  right:-15px;
+  right:5px;
   transform:translate(0,-60%);
   z-index: 2;
 }
@@ -1759,7 +1795,12 @@ nav .row.nested a{
   margin: -20px auto 10px;
   max-width: 90%;
 }
-
+.simple-animated-modal{
+  left: 24%;
+  right: 24%;
+  top: 10vh;
+  width: 50%;
+}
 .timeline .events{
   left:-50%;
 }
@@ -1768,9 +1809,9 @@ footer h3{
   margin-right: 0;
 }
 .back-to-top{
-  bottom: 0;
-  height:90px;
-  width:90px;
+  bottom:-5px;
+  height:70px;
+  width:70px;
   z-index: 5;
 }
 .back-to-top a{
@@ -1790,10 +1831,6 @@ footer h3{
   left:22px;
   top:26px;
   width:15px;
-}
-
-.contact_me input[type="text"], .contact_me input[type="email"], .contact_me textarea {
-  width: 97%;
 }
 .contact_me  .message{
   margin-top:-20px;
@@ -1844,21 +1881,25 @@ nav .col{
   text-align:left;
   transform: translate(0,-20%);
 }
-
 .unicorn {
   float: right;
   margin:5px 0 5px 10px;
   padding: 0;
   width:40%;
 }
-
 .portfolio-item{
-  width: 44.5%;
+  width: 46%;
+  width: 46%;
 }
 .portfolio-image::before {
   padding-top: 95%;
 }
-
+.simple-animated-modal{
+  left: 24%;
+  right: 24%;
+  top: 10vh;
+  width: 50%;
+}
 footer .message .col-span-8{
   flex-basis: 100%;
 }
@@ -1874,7 +1915,7 @@ footer .message .col-span-8{
 @media all and (min-width: 48.00em) {  
 
   .portfolio-item{
-    width: 29.25%;
+    width: 32%;
   }
   
   .timeline .events-content li.selected {
@@ -1902,8 +1943,11 @@ footer .message .col-span-8{
     display: flex;
     justify-content: flex-end;
   }
+  .banner .introduction{
+    padding-left: 0;
+  }
   .portfolio-item{
-    width: 21%;
+    width: 24%;
   }
 
   .timeline {
