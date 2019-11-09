@@ -861,7 +861,7 @@ nav .row.nested a:hover{
   font-weight: 400;
   font-size: 1.5em;
   line-height: 1;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   padding: 0;
 }
 .simple-animated-modal-close {
@@ -1795,11 +1795,16 @@ nav .row.nested a{
   margin: -20px auto 10px;
   max-width: 90%;
 }
-.simple-animated-modal{
-  left: 24%;
-  right: 24%;
+.simple-animated-modal {
+  left: 5%;
+  right: 5%;
   top: 10vh;
-  width: 50%;
+  width: 90%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#modal-title {
+  text-indent: 4%;
 }
 .timeline .events{
   left:-50%;
@@ -1894,11 +1899,16 @@ nav .col{
 .portfolio-image::before {
   padding-top: 95%;
 }
-.simple-animated-modal{
-  left: 24%;
-  right: 24%;
+.simple-animated-modal {
+  left: 5%;
+  right: 5%;
   top: 10vh;
-  width: 50%;
+  width: 90%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#modal-title {
+  text-indent: 0;
 }
 footer .message .col-span-8{
   flex-basis: 100%;
@@ -1949,7 +1959,15 @@ footer .message .col-span-8{
   .portfolio-item{
     width: 24%;
   }
-
+  .simple-animated-modal {
+    left: 20%;
+    right: 20%;
+    top: 10vh;
+    max-width: 800px;
+    width: 60%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
   .timeline {
     margin:30px auto;
   }
@@ -1959,7 +1977,6 @@ footer .message .col-span-8{
   .timeline::before {
     content: 'desktop';
   }
-
 
 }
 
