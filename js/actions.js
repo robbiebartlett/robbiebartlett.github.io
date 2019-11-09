@@ -1,27 +1,3 @@
-/* ======================================
-   Main JS actions - Author: Rob Bartlett
-   =================================== */
-
-/*jslint browser: true*/
-/*$, jQuery, alert*/
-
-
-
-//Smooth scroll
-function smoothScroll() {
-    "use strict";
-
-    $('.anchor-link').click(function(e){
-        e.preventDefault();
-        var target = $($(this).attr('href'));
-        if(target.length){
-          var scrollTo = target.offset().top-57;
-          $('body, html').animate({scrollTop: scrollTo+'px'}, 400);
-        }
-      });
-}
-
-
 //Fixed header
 function fixedheader() {
     "use strict"
@@ -65,81 +41,22 @@ function mobilemenu() {
 } 
 
 
-//Lazy load
-function lazyload(){
 
-  function BackgroundNode({node, loadedClassName}) {
-    let src = node.getAttribute('data-background-image-url');
-    let show = (onComplete) => {
-      requestAnimationFrame(() => {
-        node.style.backgroundImage = `url(${src})`
-        node.classList.add(loadedClassName);
-        onComplete();
-      })
+//Smooth scroll
+function smoothScroll() {
+    "use strict";
+
+$('.anchor-link').click(function(e){
+    e.preventDefault();
+    var target = $($(this).attr('href'));
+    if(target.length){
+        var scrollTo = target.offset().top-57;
+        $('body, html').animate({scrollTop: scrollTo+'px'}, 400);
     }
-  
-    return {
-      node,
-  
-      // onComplete is called after the image is done loading.
-      load: (onComplete) => {
-        let img = new Image();
-        img.onload = show(onComplete);
-        img.src = src;
-      }
-    }
-  }
-  
-  let defaultOptions = {
-    selector: '[data-background-image-url]',
-    loadedClassName: 'loaded'
-  }
-  
-  function BackgroundLazyLoader({selector, loadedClassName} = defaultOptions) {
-    let nodes = [].slice.apply(document.querySelectorAll(selector))
-      .map(node => new BackgroundNode({node, loadedClassName}));
-  
-    let callback = (entries, observer) => {
-      entries.forEach(({target, isIntersecting}) => {
-        if (!isIntersecting) {
-          return;
-        }
-  
-        let obj = nodes.find(it => it.node.isSameNode(target));
-        
-        if (obj) {
-          obj.load(() => {
-            // Unobserve the node:
-            observer.unobserve(target);
-            // Remove this node from our list:
-            nodes = nodes.filter(n => !n.node.isSameNode(target));
-            
-            // If there are no remaining unloaded nodes,
-            // disconnect the observer since we don't need it anymore.
-            if (!nodes.length) {
-              observer.disconnect();
-            }
-          });
-        }
-      })
-    };
-    
-    let observer = new IntersectionObserver(callback);
-    nodes.forEach(node => observer.observe(node.node));
-  };
-  
-  BackgroundLazyLoader();
+    });
 
 }
 
-
-//Shuffle Portfolio
-function shuffle() {
-	var div = jQuery(".portfolio-item").get().sort(function(){ 
-        return Math.round(Math.random())-0.5; //random slice
-      }).slice();
-jQuery(div).appendTo(div[0].parentNode).show();
-}
 
 
 //History timeline
@@ -423,17 +340,72 @@ function timeline() {
 }
 
 
-//Keyboard only focus
-function KeyboardFocus() {
 
-document.body.addEventListener('mousedown', function() {
-  document.body.classList.add('using-mouse');
-});
-document.body.addEventListener('keydown', function() {
-  document.body.classList.remove('using-mouse');
-});
+//Keyboard only focus
+function keyboardFocus() {
+
+    document.body.addEventListener('mousedown', function() {
+      document.body.classList.add('using-mouse');
+    });
+    document.body.addEventListener('keydown', function() {
+      document.body.classList.remove('using-mouse');
+    });    
+}
+
+
+
+//Shuffle Portfolio
+function shuffle() {
+
+    $.fn.shuffle = function () {
+
+        var allElems = this.get(),
+            getRandom = function (max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function () {
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+            });
+        this.each(function (i) {
+            $(this).replaceWith($(shuffled[i]));
+        });
+        return $(shuffled);
+    };
+    
+    $('.portfolio-item').shuffle();
 
 }
+
+
+
+//Lazyload images
+function lazyload() {
+    var offsets = [];
+    $(".lazy-load").each(function() {
+      var offset = $(this).offset().top;
+      offsets.push(offset);
+    });
+    
+    function lazyLoad() {
+      var windowHeight = $(window).height();
+      var wscroll = $(window).scrollTop();
+      for (i = 0; i < offsets.length; i++) {
+        if (!$(".lazy-load").eq(i).hasClass("loaded") && offsets[i] <= wscroll + windowHeight) {
+          $(".lazy-load").eq(i).addClass("loaded").fadeOut(0).fadeIn(250);
+        }
+      }
+    }
+    
+    lazyLoad();
+    
+    $(window).on("scroll", function() {
+      lazyLoad();
+    });
+}
+
 
 
 //Copyright
@@ -447,15 +419,13 @@ function copyright() {
 
 //Document - load
 $(document).ready(function () {
-        "use strict";
-        fixedheader(),
-        mobilemenu(),
-        smoothScroll(),
-        lazyload(),
-        timeline(),
-        KeyboardFocus(),
-        shuffle(),
+      fixedheader(), 
+       mobilemenu(),
+    keyboardFocus(),
+     smoothScroll(),
+         timeline(),
+          shuffle(),
+         lazyload(),
         copyright() 
 });
-
 
