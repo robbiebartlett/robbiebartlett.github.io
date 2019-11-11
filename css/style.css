@@ -1939,6 +1939,7 @@ footer .message .col-span-8{
 
   footer .message .col-span-8{
     flex-basis: 66.6666%;
+    max-width:1040px;
   }
 
 }
