@@ -1075,7 +1075,9 @@ nav .row.nested a:hover{
   content: '';
   display: flex;
   height: 40px;
+  position: relative;
   width: 40px;
+  z-index:9;
 }
 /* 
  * svg icons 
