@@ -451,7 +451,7 @@ header .logo h1{
   font-family: 'Special Elite', serif;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
-  height:65px;
+  height:60px;
   line-height: 65px;
   margin:0;
   padding:0;
@@ -962,7 +962,7 @@ nav .row.nested a:hover{
   opacity: 1;
 }
 .timeline-wrapper {
-  height: 110px;
+  height: 130px;
   max-width:1200px;
   margin: 0 auto;
   position: relative;
@@ -1069,6 +1069,71 @@ nav .row.nested a:hover{
   top: 15px;
   z-index: 6;
 }
+.timeline-icon:after {
+  background-repeat: no-repeat;
+  background-size: 40px;
+  content: '';
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+/* 
+ * svg icons 
+ */
+.timeline-icon.teaching::after{
+  background-image: url(../img/icons/teaching.svg);
+} 
+.timeline-icon.associate-teaching::after{
+  background-image: url(../img/icons/associate-teaching.svg);
+} 
+.timeline-icon.multimedia::after{
+  background-image: url(../img/icons/multimedia.svg);
+} 
+.timeline-icon.threedee::after{
+  background-image: url(../img/icons/threedee.svg);
+} 
+.timeline-icon.digital-video::after{
+  background-image: url(../img/icons/digital-video.svg);
+} 
+.timeline-icon.web::after{
+  background-image: url(../img/icons/web.svg);
+} 
+.timeline-icon.tertiary::after{
+  background-image: url(../img/icons/tertiary.svg);
+} 
+.timeline-icon.production::after{
+  background-image: url(../img/icons/production.svg);
+} 
+.timeline-icon.vfx::after{
+  background-image: url(../img/icons/vfx.svg);
+} 
+.timeline-icon.html5::after{
+  background-image: url(../img/icons/html5.svg);
+} 
+.timeline-icon.javascript::after{
+  background-image: url(../img/icons/javascript.svg);
+} 
+.timeline-icon.ux::after{
+  background-image: url(../img/icons/ux.svg);
+} 
+.timeline-icon.front-end::after{
+  background-image: url(../img/icons/front-end.svg);
+} 
+.timeline-icon.cms::after{
+  background-image: url(../img/icons/cms.svg);
+} 
+.timeline-icon.email::after{
+  background-image: url(../img/icons/email.svg);
+} 
+.timeline-icon.advisory::after{
+  background-image: url(../img/icons/advisory.svg);
+} 
+.timeline-icon.web-3d::after{
+  background-image: url(../img/icons/web-3d.svg);
+} 
+.timeline-icon.agile::after{
+  background-image: url(../img/icons/agile.svg);
+} 
 .timeline .events a:hover::after {
   background-color: #fff;
   border-color: #ccc;
@@ -1094,7 +1159,7 @@ nav .row.nested a:hover{
   background-color:#f7f7f7;
   border-radius: 50%;
   border: 2px solid #376252;
-  bottom: 22px;
+  bottom: 42px;
   color: #222222;
   height: 35px;
   margin: 10px;
