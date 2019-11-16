@@ -59,6 +59,20 @@ $('.anchor-link').click(function(e){
 
 
 
+
+//Defer Youtube load
+function defer() {
+	var vidDefer = document.getElementsByTagName('iframe');
+	for (var i=0; i<vidDefer.length; i++) {
+	if(vidDefer[i].getAttribute('data-src')) {
+	vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+	} } 
+}
+	
+
+
+
+
 //History timeline
 function timeline() {
     var timelines = $('.timeline'),
@@ -420,7 +434,8 @@ function copyright() {
 //Document - load
 $(document).ready(function () {
       fixedheader(), 
-       mobilemenu(),
+	   mobilemenu(),
+	        defer(),
     keyboardFocus(),
      smoothScroll(),
          timeline(),
