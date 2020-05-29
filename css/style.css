@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust:100%;
 }
 body{
-  background-color: #f8f8f8;
+  background-color: #FFF;
   color: #222222;
   display: flex;
   flex-direction: column;
@@ -457,7 +457,7 @@ header .logo h1{
   padding:0;
 }
 header.sticky {
-  background: #f8f8f8;
+  background: #FFF;
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
 }
 header.sticky .logo h1{
@@ -478,7 +478,7 @@ header .wrapper nav{
   z-index: 9;
 }
 .back-to-top a{
-  background:#f8f8f8;
+  background:#FFF;
   border-radius: 50%;
   display: flex;
   height: 100px;
@@ -502,7 +502,7 @@ header .wrapper nav{
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
 }
 .back-to-top a span::after {
-  border-color:#f8f8f8;
+  border-color:#FFF;
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-right-style: solid;
@@ -607,7 +607,7 @@ nav .row.nested{
 nav .row.nested a{
   border-bottom: 2px solid;
   border-bottom-color:transparent;
-  color: #f8f8f8;
+  color: #FFF;
   font-size:calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
   margin-left: 0;
   padding: 3px 0;
@@ -619,7 +619,7 @@ nav .row.nested a{
 }
 
 nav .row.nested a:hover{
-  border-bottom-color: #f8f8f8;
+  border-bottom-color: #FFF;
 }
 /*
 * Fixed header
@@ -689,7 +689,7 @@ nav .row.nested a:hover{
   background: #ffffff;
 }
 .portfolio-image {
-  background-color: #f8f8f8;
+  background-color: #FFF;
   box-sizing: border-box;
   background-position: center center;
   background-repeat: no-repeat;
