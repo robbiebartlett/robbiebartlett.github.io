@@ -410,7 +410,7 @@ _:-ms-fullscreen, :root .col-span-12 {
 .title-divider {
   width: 70px;
   height: 3px;
-  background-color: #376252;
+  background-color: #378a6a;
   margin:6px 0 30px 0;
 }
 
@@ -461,7 +461,7 @@ header.sticky {
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
 }
 header.sticky .logo h1{
-  color:#376252
+  color:#378a6a
 }
 header .wrapper nav{
   height: 70px;
@@ -486,7 +486,7 @@ header .wrapper nav{
   width: 100px;
 }
 .back-to-top a span {
-  background:#4b9277;
+  background:#026c44;
   border-radius: 50%;
   height: 90px;
   left: 5px;
@@ -498,7 +498,7 @@ header .wrapper nav{
   width: 90px;
 }
 .back-to-top a span:hover{
-  background:#376252;
+  background:#378a6a;
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
 }
 .back-to-top a span::after {
@@ -535,14 +535,7 @@ header .wrapper nav{
  *  Banner 
  */
 .home-wrapper{
-  background-color: #376252;
-  background: -moz-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #35735b), color-stop(73%, #426c5d), color-stop(100%, #376252));
-  background: -webkit-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
-  background: -o-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #35735b 0%, #426c5d 73%, #376252 100%);
-  background: radial-gradient(ellipse at 20% 80%, #90dcbf 0%, #426c5d 73%, #376252 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35735b', endColorstr='#376252', GradientType=1 );
+  background-color: #378a6a;
   margin:-.05em 0 0;
   padding:0; 
 }
@@ -632,17 +625,17 @@ nav .row.nested a:hover{
 * Fixed header
 */
 .sticky nav .row.nested a {
-  color: #376252;
+  color: #378a6a;
 }
 .sticky nav .row.nested a:hover{
-  border-bottom: 2px solid #376252;
+  border-bottom: 2px solid #378a6a;
 }
 
 /*
  * About
  */
  .overview a {
-  color: #376252;
+  color: #378a6a;
   font-weight: bold;
 }
 .unicorn img{
@@ -768,7 +761,7 @@ nav .row.nested a:hover{
   color: #222222;
 }
 .portfolio-content .arrow {
-  background: #376252;
+  background: #378a6a;
   bottom: 0px;
   height: 17px;
   margin: 10px;
@@ -877,7 +870,7 @@ nav .row.nested a:hover{
   width: 30px;
 } 
 .simple-animated-modal-close::before, .simple-animated-modal-close:after{
-  background: #376252;
+  background: #378a6a;
   border-radius: 10px;
   content: '';
   height: 5px;
@@ -994,7 +987,7 @@ nav .row.nested a:hover{
  * active green line
  */
 .timeline .filling-line {
-  background-color: #376252;  
+  background-color: #378a6a;  
   height: 100%;
   left: 0;
   position: absolute;
@@ -1043,7 +1036,7 @@ nav .row.nested a:hover{
   backface-visibility: hidden;
   background-color: #f7f7f7;
   border-radius: 50%;
-  border: 2px solid #376252;
+  border: 2px solid #378a6a;
   bottom: -33px;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,0.25);
   content: '';
@@ -1136,6 +1129,9 @@ nav .row.nested a:hover{
 .timeline-icon.agile::after{
   background-image: url(../img/icons/agile.svg);
 } 
+.timeline-icon.accessibility::after{
+  background-image: url(../img/icons/accessibility.svg);
+} 
 .timeline .events a:hover::after {
   background-color: #fff;
   border-color: #ccc;
@@ -1160,7 +1156,7 @@ nav .row.nested a:hover{
 .timeline-navigation a {
   background-color:#f7f7f7;
   border-radius: 50%;
-  border: 2px solid #376252;
+  border: 2px solid #378a6a;
   bottom: 42px;
   color: #222222;
   height: 35px;
@@ -1193,8 +1189,8 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after, .timeline-navigation a.next::after {
   background: transparent;
-  border-left: 3px solid #376252;
-  border-top: 3px solid #376252;
+  border-left: 3px solid #378a6a;
+  border-top: 3px solid #378a6a;
   content: '';
   font-size: 0;
   height: 10px;
@@ -1206,13 +1202,13 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after{
   border:none;
-  border-bottom: 3px solid #376252;
-  border-right: 3px solid #376252;
+  border-bottom: 3px solid #378a6a;
+  border-right: 3px solid #378a6a;
   left: 8px;
   top: 8px;
 }
 .no-touch .timeline-navigation a:hover {
-  border-color: #376252;
+  border-color: #378a6a;
 }
 .timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -1304,7 +1300,7 @@ nav .row.nested a:hover{
   margin: 0 auto;
 }
 .timeline .events-content h2 {
-  color: #376252;
+  color: #378a6a;
   font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Special Elite', serif;
   font-weight: 700;
@@ -1402,14 +1398,6 @@ nav .row.nested a:hover{
  * footer
  */
  #contact {
-  background-color: #376252;
-  background: -moz-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7bc2a7), color-stop(73%, #426c5d), color-stop(100%, #376252));
-  background: -webkit-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
-  background: -o-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #7bc2a7 0%, #426c5d 73%, #376252 100%);
-  background: radial-gradient(ellipse at 20% 80%, #90dcbf 0%, #426c5d 73%, #376252 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc2a7', endColorstr='#376252', GradientType=1);
   margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -1421,7 +1409,7 @@ footer {
   position: relative;
 }
  .footer-wrapper {
-  background: transparent url("../img/footer.svg") no-repeat top left;
+  background: #378a6a url(../img/footer.svg) no-repeat top left;
   background-position-x:40%;
   background-position-y: -1px;
   background-size: cover;
@@ -1640,7 +1628,7 @@ header .logo h1 {
   display:block;
 }
 .mobile-menu {
-  background: #376252;
+  background: #378a6a;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
   height: 0px;
@@ -1708,7 +1696,7 @@ nav .row.nested a{
   text-decoration: none;
 }
 .changecolor, .changecolor:before, .changecolor:after {
-  background-color:  #376252;
+  background-color:  #378a6a;
 }
 .hamburger {
   background-color:#ffffff;
@@ -1752,7 +1740,7 @@ nav .row.nested a{
 .hamburger-inner::after {
   width: 30px;
   height: 4px;
-  background-color: #376252;
+  background-color: #378a6a;
   border-radius: 3px;
   position: absolute;
 }
@@ -2002,7 +1990,14 @@ footer .message .col-span-8{
   }
   .timeline .events-content p {
     font-size: 1.4em;
+  }  
+  
+  .timeline .events-content a {
+    color: #378a6a;
+    font-weight: 700;
+    text-decoration: underline;
   }
+
 
   footer .message .col-span-8{
     flex-basis: 66.6666%;
