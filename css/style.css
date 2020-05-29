@@ -1686,13 +1686,14 @@ header .logo h1 {
   display: flex;
   justify-content: center;
 }
-nav .row.nested a{
-  color: #ffffff;
+nav .row.nested a {
+  color: #fff;
   display: block;
+  font-weight: bold;
   letter-spacing: 3px;
-  line-height: 2;
-  margin: 0.5em 0;
-  padding: 0px;
+  line-height: 2.25;
+  margin: .5em 0;
+  padding: 0;
   text-decoration: none;
 }
 .changecolor, .changecolor:before, .changecolor:after {
