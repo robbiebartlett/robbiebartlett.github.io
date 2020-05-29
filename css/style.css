@@ -447,7 +447,7 @@ header .logo {
   transition: all 0.25s ease-in-out;
 }
 header .logo h1{
-  color: #f2f2f2;
+  color: #FFF;
   font-family: 'Special Elite', serif;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
@@ -571,7 +571,7 @@ header .wrapper nav{
   transition:         all 0.25s ease-in-out; 
 }
 .introduction .inner h1 {
-  color: #f2f2f2;
+  color: #FFF;
   font-weight: bold;
   font-size: calc(23px + (45 - 23) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.5;
@@ -579,7 +579,7 @@ header .wrapper nav{
   padding: 0;
 }
 .introduction .inner p {
-  color: #f2f2f2;
+  color: #FFF;
   font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-family: inherit;
   line-height: 2;
