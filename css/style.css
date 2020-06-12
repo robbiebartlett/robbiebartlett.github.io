@@ -18,6 +18,7 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
   padding:0;
+  word-spacing: .16em;
 }
   
   /*
@@ -127,6 +128,40 @@ h2{
    ========================================================================== */
     
   /*
+  * Skip link
+  */
+  .skip-link {
+    background-color: #FFF;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    height: 53px;
+    left: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    top: -53px;
+    text-decoration: underline;
+    transition: top .25s ease;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .skip-link:focus {
+    background-color: #FFF;
+    outline: 3px solid #FFF;
+    top: 0;
+    transition-duration: .2s;
+   }
+
+  /*
    * Hide visually and from screen readers
    */
     
@@ -207,7 +242,7 @@ h2{
   * Focus settings
   */
 a:focus, button:focus, input:focus, summary:focus, textarea:focus, #btnContactMe:focus{
-  outline:3px solid #355e4e;
+  outline:4px solid #b97ff4;
 }
 body.using-mouse :focus {
   outline: none;
@@ -410,7 +445,7 @@ _:-ms-fullscreen, :root .col-span-12 {
 .title-divider {
   width: 70px;
   height: 3px;
-  background-color: #378a6a;
+  background-color: #37578a;
   margin:6px 0 30px 0;
 }
 
@@ -418,7 +453,6 @@ _:-ms-fullscreen, :root .col-span-12 {
  *  Fixed Header
  */
  header {
-  height: 70px;
   left:0;
   margin: 0;
   padding: 0;
@@ -434,11 +468,12 @@ header .col-span-5 {
   display: flex;
   flex-direction: row;
   padding: 0 10px;
-  margin: 0.35em 0 0 0;
+  margin: 0;
 }
 header .logo {
+  align-items: center;
+  display: flex;
   margin: 0;
-  max-height: 65px;
   padding: 0;
   text-decoration: none;
   -ms-transition: all 0.25s ease-in-out;
@@ -451,8 +486,7 @@ header .logo h1{
   font-family: 'Special Elite', serif;
   font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
-  height:60px;
-  line-height: 65px;
+  line-height: 1.5;
   margin:0;
   padding:0;
 }
@@ -461,11 +495,7 @@ header.sticky {
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
 }
 header.sticky .logo h1{
-  color:#378a6a
-}
-header .wrapper nav{
-  height: 70px;
-  line-height: 2.9;
+  color:#37578a;
 }
 /*
  * Back to top
@@ -486,7 +516,7 @@ header .wrapper nav{
   width: 100px;
 }
 .back-to-top a span {
-  background:#026c44;
+  background:#37578a;
   border-radius: 50%;
   height: 90px;
   left: 5px;
@@ -498,7 +528,7 @@ header .wrapper nav{
   width: 90px;
 }
 .back-to-top a span:hover{
-  background:#378a6a;
+  background:#4594f4;
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
 }
 .back-to-top a span::after {
@@ -535,7 +565,7 @@ header .wrapper nav{
  *  Banner 
  */
 .home-wrapper{
-  background-color: #378a6a;
+  background-color: #37578a;
   margin:-.05em 0 0;
   padding:0; 
 }
@@ -625,17 +655,17 @@ nav .row.nested a:hover{
 * Fixed header
 */
 .sticky nav .row.nested a {
-  color: #378a6a;
+  color: #37578a;
 }
 .sticky nav .row.nested a:hover{
-  border-bottom: 2px solid #378a6a;
+  border-bottom: 2px solid #37578a;
 }
 
 /*
  * About
  */
  .overview a {
-  color: #378a6a;
+  color: #37578a;
   font-weight: bold;
 }
 .unicorn img{
@@ -761,7 +791,7 @@ nav .row.nested a:hover{
   color: #222222;
 }
 .portfolio-content .arrow {
-  background: #378a6a;
+  background: #37578a;
   bottom: 0px;
   height: 17px;
   margin: 10px;
@@ -870,7 +900,7 @@ nav .row.nested a:hover{
   width: 30px;
 } 
 .simple-animated-modal-close::before, .simple-animated-modal-close:after{
-  background: #378a6a;
+  background: #37578a;
   border-radius: 10px;
   content: '';
   height: 5px;
@@ -987,7 +1017,7 @@ nav .row.nested a:hover{
  * active green line
  */
 .timeline .filling-line {
-  background-color: #378a6a;  
+  background-color: #37578a;  
   height: 100%;
   left: 0;
   position: absolute;
@@ -1036,7 +1066,7 @@ nav .row.nested a:hover{
   backface-visibility: hidden;
   background-color: #f7f7f7;
   border-radius: 50%;
-  border: 2px solid #378a6a;
+  border: 2px solid #37578a;
   bottom: -33px;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,0.25);
   content: '';
@@ -1156,7 +1186,7 @@ nav .row.nested a:hover{
 .timeline-navigation a {
   background-color:#f7f7f7;
   border-radius: 50%;
-  border: 2px solid #378a6a;
+  border: 2px solid #37578a;
   bottom: 42px;
   color: #222222;
   height: 35px;
@@ -1189,8 +1219,8 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after, .timeline-navigation a.next::after {
   background: transparent;
-  border-left: 3px solid #378a6a;
-  border-top: 3px solid #378a6a;
+  border-left: 3px solid #37578a;
+  border-top: 3px solid #37578a;
   content: '';
   font-size: 0;
   height: 10px;
@@ -1202,13 +1232,13 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after{
   border:none;
-  border-bottom: 3px solid #378a6a;
-  border-right: 3px solid #378a6a;
+  border-bottom: 3px solid #37578a;
+  border-right: 3px solid #37578a;
   left: 8px;
   top: 8px;
 }
 .no-touch .timeline-navigation a:hover {
-  border-color: #378a6a;
+  border-color: #37578a;
 }
 .timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -1300,7 +1330,7 @@ nav .row.nested a:hover{
   margin: 0 auto;
 }
 .timeline .events-content h2 {
-  color: #378a6a;
+  color: #37578a;
   font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Special Elite', serif;
   font-weight: 700;
@@ -1409,7 +1439,7 @@ footer {
   position: relative;
 }
  .footer-wrapper {
-  background: #378a6a url(../img/footer.svg) no-repeat top left;
+  background: #37578a url(../img/footer.svg) no-repeat top left;
   background-position-x:40%;
   background-position-y: -1px;
   background-size: cover;
@@ -1628,7 +1658,7 @@ header .logo h1 {
   display:block;
 }
 .mobile-menu {
-  background: #378a6a;
+  background: #37578a;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
   height: 0px;
@@ -1697,7 +1727,7 @@ nav .row.nested a {
   text-decoration: none;
 }
 .changecolor, .changecolor:before, .changecolor:after {
-  background-color:  #378a6a;
+  background-color:  #37578a;
 }
 .hamburger {
   background-color:#ffffff;
@@ -1741,7 +1771,7 @@ nav .row.nested a {
 .hamburger-inner::after {
   width: 30px;
   height: 4px;
-  background-color: #378a6a;
+  background-color: #37578a;
   border-radius: 3px;
   position: absolute;
 }
@@ -1994,7 +2024,7 @@ footer .message .col-span-8{
   }  
   
   .timeline .events-content a {
-    color: #378a6a;
+    color: #37578a;
     font-weight: 700;
     text-decoration: underline;
   }
@@ -2013,8 +2043,10 @@ footer .message .col-span-8{
 */
 @media (min-width: 62.00em) { 
   header .wrapper nav {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
+    padding-top: .75em;
   }
   .banner .introduction{
     padding-left: 0;
