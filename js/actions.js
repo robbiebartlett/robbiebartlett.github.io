@@ -355,18 +355,6 @@ function timeline() {
 
 
 
-//Keyboard only focus
-function keyboardFocus() {
-
-    document.body.addEventListener('mousedown', function() {
-      document.body.classList.add('using-mouse');
-    });
-    document.body.addEventListener('keydown', function() {
-      document.body.classList.remove('using-mouse');
-    });    
-}
-
-
 
 //Shuffle Portfolio
 function shuffle() {
@@ -434,9 +422,8 @@ function copyright() {
 //Document - load
 $(document).ready(function () {
       fixedheader(), 
-	   mobilemenu(),
-	        defer(),
-    keyboardFocus(),
+       mobilemenu(),
+            defer(),
      smoothScroll(),
          timeline(),
           shuffle(),
