@@ -473,7 +473,7 @@ header .col-span-5 {
 header .logo {
   align-items: center;
   display: flex;
-  margin: 0;
+  margin: 4px 0;
   padding: 0;
   text-decoration: none;
   -ms-transition: all 0.25s ease-in-out;
