@@ -1059,6 +1059,10 @@ nav .row.nested a:hover{
   z-index: 2;
 }
 
+.timeline .events a:focus {
+  outline: 2px solid #b97ff4;
+}
+
 /* 
  * create the event spot 
  */
