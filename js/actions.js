@@ -42,23 +42,6 @@ function mobilemenu() {
 
 
 
-//Smooth scroll
-function smoothScroll() {
-    "use strict";
-
-$('.anchor-link').click(function(e){
-    e.preventDefault();
-    var target = $($(this).attr('href'));
-    if(target.length){
-        var scrollTo = target.offset().top-57;
-        $('body, html').animate({scrollTop: scrollTo+'px'}, 400);
-    }
-    });
-
-}
-
-
-
 
 //Defer Youtube load
 function defer() {
@@ -424,7 +407,6 @@ $(document).ready(function () {
       fixedheader(), 
        mobilemenu(),
             defer(),
-     smoothScroll(),
          timeline(),
           shuffle(),
          lazyload(),
