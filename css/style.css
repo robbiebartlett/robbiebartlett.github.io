@@ -445,7 +445,7 @@ _:-ms-fullscreen, :root .col-span-12 {
 .title-divider {
   width: 70px;
   height: 3px;
-  background-color: #37578a;
+  background-color: #497E6C;
   margin:6px 0 30px 0;
 }
 
@@ -495,7 +495,7 @@ header.sticky {
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.35);
 }
 header.sticky .logo h1{
-  color:#37578a;
+  color:#497E6C;
 }
 /*
  * Back to top
@@ -516,7 +516,7 @@ header.sticky .logo h1{
   width: 100px;
 }
 .back-to-top a span {
-  background:#37578a;
+  background:#497E6C;
   border-radius: 50%;
   height: 90px;
   left: 5px;
@@ -528,7 +528,7 @@ header.sticky .logo h1{
   width: 90px;
 }
 .back-to-top a span:hover{
-  background:#4594f4;
+  background:#365b4c;
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
 }
 .back-to-top a span::after {
@@ -565,7 +565,7 @@ header.sticky .logo h1{
  *  Banner 
  */
 .home-wrapper{
-  background-color: #37578a;
+  background-color: #497E6C;
   margin:-.05em 0 0;
   padding:0; 
 }
@@ -639,6 +639,7 @@ nav .row.nested a{
   border-bottom-color:transparent;
   color: #FFF;
   font-size:calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 600;
   margin-left: 0;
   padding: 3px 0;
   text-decoration: none;
@@ -655,17 +656,17 @@ nav .row.nested a:hover{
 * Fixed header
 */
 .sticky nav .row.nested a {
-  color: #37578a;
+  color: #497E6C;
 }
 .sticky nav .row.nested a:hover{
-  border-bottom: 2px solid #37578a;
+  border-bottom: 2px solid #497E6C;
 }
 
 /*
  * About
  */
  .overview a {
-  color: #37578a;
+  color: #497E6C;
   font-weight: bold;
 }
 .unicorn img{
@@ -780,7 +781,7 @@ nav .row.nested a:hover{
 .portfolio-title {
   color: #222222;
   font-size: 1.05em;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .portfolio-text {
@@ -791,7 +792,7 @@ nav .row.nested a:hover{
   color: #222222;
 }
 .portfolio-content .arrow {
-  background: #37578a;
+  background: #497E6C;
   bottom: 0px;
   height: 17px;
   margin: 10px;
@@ -900,7 +901,7 @@ nav .row.nested a:hover{
   width: 30px;
 } 
 .simple-animated-modal-close::before, .simple-animated-modal-close:after{
-  background: #37578a;
+  background: #497E6C;
   border-radius: 10px;
   content: '';
   height: 5px;
@@ -1017,7 +1018,7 @@ nav .row.nested a:hover{
  * active green line
  */
 .timeline .filling-line {
-  background-color: #37578a;  
+  background-color: #497E6C;  
   height: 100%;
   left: 0;
   position: absolute;
@@ -1042,6 +1043,7 @@ nav .row.nested a:hover{
   bottom: 0;
   color: #222;
   font-size: 1.0em;
+  font-weight: 600;
   height: 40px;
   padding-bottom: 60px;
   position: absolute;
@@ -1070,7 +1072,7 @@ nav .row.nested a:hover{
   backface-visibility: hidden;
   background-color: #f7f7f7;
   border-radius: 50%;
-  border: 2px solid #37578a;
+  border: 2px solid #497E6C;
   bottom: -33px;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,0.25);
   content: '';
@@ -1190,7 +1192,7 @@ nav .row.nested a:hover{
 .timeline-navigation a {
   background-color:#f7f7f7;
   border-radius: 50%;
-  border: 2px solid #37578a;
+  border: 2px solid #497E6C;
   bottom: 42px;
   color: #222222;
   height: 35px;
@@ -1223,8 +1225,8 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after, .timeline-navigation a.next::after {
   background: transparent;
-  border-left: 3px solid #37578a;
-  border-top: 3px solid #37578a;
+  border-left: 3px solid #497E6C;
+  border-top: 3px solid #497E6C;
   content: '';
   font-size: 0;
   height: 10px;
@@ -1236,13 +1238,13 @@ nav .row.nested a:hover{
 }
 .timeline-navigation a.prev::after{
   border:none;
-  border-bottom: 3px solid #37578a;
-  border-right: 3px solid #37578a;
+  border-bottom: 3px solid #497E6C;
+  border-right: 3px solid #497E6C;
   left: 8px;
   top: 8px;
 }
 .no-touch .timeline-navigation a:hover {
-  border-color: #37578a;
+  border-color: #497E6C;
 }
 .timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -1334,7 +1336,7 @@ nav .row.nested a:hover{
   margin: 0 auto;
 }
 .timeline .events-content h2 {
-  color: #37578a;
+  color: #497E6C;
   font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Special Elite', serif;
   font-weight: 700;
@@ -1443,7 +1445,7 @@ footer {
   position: relative;
 }
  .footer-wrapper {
-  background: #37578a url(../img/footer.svg) no-repeat top left;
+  background: #497E6C url(../img/footer.svg) no-repeat top left;
   background-position-x:40%;
   background-position-y: -1px;
   background-size: cover;
@@ -1662,7 +1664,7 @@ header .logo h1 {
   display:block;
 }
 .mobile-menu {
-  background: #37578a;
+  background: #497E6C;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
   height: 0px;
@@ -1731,7 +1733,7 @@ nav .row.nested a {
   text-decoration: none;
 }
 .changecolor, .changecolor:before, .changecolor:after {
-  background-color:  #37578a;
+  background-color:  #497E6C;
 }
 .hamburger {
   background-color:#ffffff;
@@ -1775,7 +1777,7 @@ nav .row.nested a {
 .hamburger-inner::after {
   width: 30px;
   height: 4px;
-  background-color: #37578a;
+  background-color: #497E6C;
   border-radius: 3px;
   position: absolute;
 }
@@ -2028,7 +2030,7 @@ footer .message .col-span-8{
   }  
   
   .timeline .events-content a {
-    color: #37578a;
+    color: #497E6C;
     font-weight: 700;
     text-decoration: underline;
   }
