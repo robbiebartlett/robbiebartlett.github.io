@@ -1578,7 +1578,7 @@ footer .message .col-span-8{
   resize: none;
 }
 .contact_me input:focus, .contact_me textarea:focus{
-   box-shadow: 0 0 0 2px #565656;
+   outline: 4px solid #565656;
 } 
 
 .contact_me input[type="text"]{
@@ -1653,7 +1653,7 @@ header .logo{
 header .logo h1 {
   height: 65px;
   line-height: 65px;
-  margin-top:0.05em;
+  margin-top:0.25em;
 }
 .sticky nav .row.nested a{
   color:#ffffff;
