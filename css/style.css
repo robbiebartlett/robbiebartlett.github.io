@@ -668,6 +668,15 @@ nav .row.nested a:hover{
 }
 
 /*
+ * Main content
+ */
+
+ main#main-content {
+  background-color: #ffffff;
+  margin-top: -8px;
+}
+
+/*
  * About
  */
  .overview a {
@@ -1439,7 +1448,7 @@ nav .row.nested a:hover{
  * footer
  */
  #contact {
-  margin-top: 0.5rem;
+  margin-top: -16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
