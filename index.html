@@ -50,10 +50,9 @@
         <!-- CSS
         ================================================== -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         
-   
-  <meta name="theme-color" content="#fafafa">
+        <meta name="theme-color" content="#497E6C">
 </head>
 
 <body>
@@ -66,71 +65,71 @@
 <!-- Header -->
 <div class="home-wrapper" id="back-to-top">
 
-   <header class="main-header"> 
+  <header class="main-header"> 
 
-        <div class="mobile-container">
-            <a class="mobile-button">
-                <div class="hamburger hamburger--spin" style="padding-top: 7px;">
-                  <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                  </div>
-                </div>
-              </a>
-      
-           <div class="mobile-menu"></div>
-          </div>
-    
-
-
-      <div id="home" class="wrapper row">
-      <div class="col col-span-5">
-        <a id="top" href="#back-to-top" class="logo anchor-link">
-        <h1>Rob Bartlett</h1>
-        </a>
-      </div>
-
-      <!-- Navigation -->
-        <nav class="col col-span-7 menu" aria-label="navigation">
-          <div class="row nested mobile-links">
-            <div class="col col-span-3 mobile-only"><a href="#back-to-top" class="anchor-link">Home</a></div>
-            <div class="col col-span-3"><a href="#about" class="anchor-link">About</a></div>
-            <div class="col col-span-3"><a href="#portfolio" class="anchor-link">Portfolio</a></div>
-            <div class="col col-span-3"><a href="#history" class="anchor-link">History</a></div>
-            <div class="col col-span-3"><a href="#contact" class="anchor-link">Contact</a></div>
-          </div>
-        </nav>
-    
-
+    <div class="mobile-container">
+        <a class="mobile-button">
+            <div class="hamburger hamburger--spin" style="padding-top: 7px;">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </a>
+  
+       <div class="mobile-menu"></div>
       </div>
 
 
 
-
-      
-    </header>
-
-<!-- Banner -->
- <section class="banner row">
-    <div class="row nested wide-fit banner-wrapper">
-
-      <div class="col col-span-6 hero">
-        <div class="inner">
-          <img class="robbie" src="img/robbie.png" alt="Rob Bartlett">
-        </div>
-      </div>
-
-      <div class="col col-span-6 introduction">
-        <div class="inner">
-          <h1>Empathise, Design, Devise</h1>
-          <p>The life of a UX Unicorn</p>
-          <div class="button">
-            <a href="#portfolio" class="anchor-link">Portfolio</a>
-          </div>
-       </div>
-      </div>
+  <div id="home" class="wrapper row">
+  <div class="col col-span-5">
+    <a id="top" href="#back-to-top" class="logo anchor-link">
+    <h1>Rob Bartlett</h1>
+    </a>
   </div>
 
-</section>
+  <!-- Navigation -->
+    <nav class="col col-span-7 menu" aria-label="navigation">
+      <div class="row nested mobile-links">
+        <div class="col col-span-3 mobile-only"><a href="#back-to-top" class="anchor-link">Home</a></div>
+        <div class="col col-span-3"><a href="#about" class="anchor-link">About</a></div>
+        <div class="col col-span-3"><a href="#portfolio" class="anchor-link">Portfolio</a></div>
+        <div class="col col-span-3"><a href="#history" class="anchor-link">History</a></div>
+        <div class="col col-span-3"><a href="#contact" class="anchor-link">Contact</a></div>
+      </div>
+    </nav>
+
+
+  </div>
+
+
+<!-- Banner -->
+<div class="banner row">
+
+
+    <div class="col col-span-6 hero">
+      <div class="inner">
+        <img class="robbie" src="img/robbie.png" alt="Rob Bartlett">
+      </div>
+    </div>
+
+    <div class="col col-span-6 introduction">
+      <div class="inner">
+        <h1>Empathise, Design, Devise</h1>
+        <p>The life of a UX Unicorn</p>
+        <div class="button">
+          <a href="#portfolio" class="anchor-link">Portfolio</a>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+
+  
+  </header>
+
+
 
 
 
@@ -592,6 +591,8 @@
 
 <!-- Contact / Footer-->
 <footer id="contact">
+
+
   <div class="footer-wrapper">
     <div class="wrapper">
     <div class="row">
@@ -601,17 +602,7 @@
          <div class="title-divider"></div>
          <p class="lead">Say gidday</p>
  
-            <!-- Back to top-->
-            <div class="row center">
-              <div class="col col-span-12">
-                
-                  <nav class="back-to-top" aria-label="Back to top">
-                    <a href="#back-to-top" title="Take me home" class="anchor-link" >
-                     <span>Back to top</span></a>
-                    </nav>
-                
-              </div>
-            </div>
+            
 
 
             <!-- Contact form -->
@@ -640,7 +631,7 @@
 
 						</div>
 
-						<div class="col col-span-6 message">
+						<div class="col col-span-6">
 					  	  <div class="form-group">
 							<label for="message"> Message:
 							  <textarea id="message" name="message" required=""></textarea>
@@ -655,7 +646,7 @@
 				  </div>
 				  
 			  </div> 
-			</div>
+		      	</div>
 
 
             <!-- Footer links-->
@@ -670,13 +661,31 @@
                 </div>
 
               </div>
+
+              <div class="col col-span-12 baseline">
+                <div class="row">
+                  <!-- Copyright -->
+                  <div class="copyright">© Rob Bartlett&nbsp;<span id="year"></span></div>
+
+                    <!-- Back to top-->
+                    <a href="#back-to-top" class="back-to-top" aria-label="Back to top">
+                      <span class="sr-only">Jump back to the top of the page</span>
+                      <span aria-hidden="true">Back to Top</span>
+                    </a>
+                  </div>
+                </div>
+
+
             </div>
 
-          </div>
-        </div>
+         
 
-     <!-- Copyright -->
-     <div class="copyright">© Rob Bartlett&nbsp;<span id="year"></span></div>
+
+
+
+</div>
+</div>
+
    </div>
   </div>
 </footer>
