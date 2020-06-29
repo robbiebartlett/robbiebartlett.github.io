@@ -1,20 +1,3 @@
-//Fixed header
-function fixedheader() {
-    "use strict"
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100){  
-            $('header').addClass("sticky");
-            $(".mobile-button").addClass("changecolor");
-        }
-        else{
-            $('header').removeClass("sticky");
-            $(".mobile-button").removeClass("changecolor");
-        }
-    });
- }
-
-
 //Mobile menu
 function mobilemenu() {
     $(".mobile-button").click(function() {
@@ -404,7 +387,6 @@ function copyright() {
 
 //Document - load
 $(document).ready(function () {
-      fixedheader(), 
        mobilemenu(),
             defer(),
          timeline(),
