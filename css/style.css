@@ -572,7 +572,7 @@ main#main-content {
   background-image: url(../img/customs-release.jpg);
 }
 .portfolio-image.lazy-load.five.loaded {
-  background-image: url(../img/tbm.jpg);
+  background-image: url(../img/design-system.jpg);
 }
 .portfolio-image.lazy-load.six.loaded {
   background-image: url(../img/leapfrog-3d.jpg);
@@ -655,6 +655,9 @@ dialog {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
+}
+.portfolio-media.large {
+  overflow: auto;
 }
 .portfolio-media img {
   max-width: 100%;
