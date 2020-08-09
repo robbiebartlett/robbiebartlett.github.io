@@ -305,6 +305,7 @@ _:-ms-fullscreen,
   background-color: #fff;
   border-radius: 3px;
   border: 0 none;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.35);
   color: #222;
   cursor: pointer;
   font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
@@ -320,7 +321,8 @@ _:-ms-fullscreen,
 }
 #btnContactMe:hover,
 .button a:hover {
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px 1px 2px #222, 1px 1px 2px #222, 
+  1px -1px 0 #222, -1px -1px 0 #222;
   opacity: 1;
 }
 .title-divider {
@@ -449,12 +451,13 @@ header.sticky .logo h1 {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  text-shadow: -1px 1px 2px #222, 1px 1px 2px #222, 1px -1px 0 #222, -1px -1px 0 #222;
 }
 .introduction .inner p {
   color: #fff;
-  font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 1rem;
   font-family: inherit;
-  line-height: 2;
+  line-height: 1.5;
   margin: 15px 0 30px;
   padding: 0;
 }
@@ -475,7 +478,7 @@ nav .row.nested a {
   border-bottom-color: transparent;
   color: #fff;
   font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 600;
+  font-weight: 500;
   margin-left: 0;
   padding: 3px 0;
   text-decoration: none;
@@ -1683,7 +1686,7 @@ max-width: 50%;
   }
   .banner .introduction .inner {
       text-align: right;
-      transform: translate(0, 5%);
+      transform: translate(0, 0);
   }
   .unicorn {
       display: block;
