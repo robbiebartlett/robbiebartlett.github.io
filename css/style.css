@@ -426,11 +426,11 @@ html {
  }
  .hero img {
   border:none;
+  bottom: 0;
   color:#fff;
   outline:0;
   max-width:100%;
-  position:relative;
-  bottom:-10px
+  position: absolute;
  }
  .introduction {
   display:flex;
