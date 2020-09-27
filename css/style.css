@@ -430,6 +430,8 @@ header.sticky .logo h1 {
   color: #fff;
   outline: 0;
   max-width: 100%;
+  position: relative;
+bottom: -10px;
 }
 .introduction {
   display: flex;
