@@ -523,7 +523,7 @@ html {
  }
  .portfolio-item {
   display:flex;
-  padding:10px 1%;
+  padding:20px 3%;
   width:90%;
   margin:0 auto;
   transition:all 0.25s ease-in-out
@@ -997,49 +997,39 @@ html {
  }
  .timeline-navigation li:first-child {
    left: -30px;
+   top: -63px;
  } 
  .timeline-navigation li:last-child {
-   right: 30px;
+   right: -15px;
+   top: -63px;
  }
  .timeline-navigation a {
-  background-color:#f7f7f7;
-  border-radius:50%;
-  border:2px solid #497e6c;
-  bottom:42px;
-  color:#222;
-  height:45px;
-  margin:8px;
-  overflow:hidden;
-  position:absolute;
-  -ms-transition:all 0.25s ease-in-out;
-  -moz-transition:all 0.25s ease-in-out;
-  -webkit-transition:all 0.25s ease-in-out;
-  transition:all 0.25s ease-in-out;
-  white-space:nowrap;
-  width:45px
+  background-image: url(../img/icons/right-arrow.svg);
+  background-repeat: no-repeat;
+  bottom: 42px;
+  font-size: 0;
+  height: 40px;
+  margin: 8px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  white-space: nowrap;
+  width: 40px;
  }
  .timeline-navigation a:hover {
-  background-color:#fff;
-  border:2px solid #ccc;
-  box-shadow:inset 0 0 4px 1px rgba(0, 0, 0, 0.65)
+   right: -.7rem;
  }
-
- .timeline-navigation a.next span,
- .timeline-navigation a.prev span{
-  background:0 0;
-  color:#497e6c;
-  content:"▸";
-  font-size:3rem;
-  height:16px;
+ .timeline-navigation a.prev{
+  background-image: url(../img/icons/left-arrow.svg);
+  left: 10px;
+ }
+ .timeline-navigation a.prev:hover{
   left: 0;
-  position:absolute;
-  top:-15px;
-  width:16px;
-  z-index:10000
- }
- .timeline-navigation a.prev span {
-  content:"◂";
-  left: -5px;
  }
  .no-touch .timeline-navigation a:hover {
   border-color:#497e6c
@@ -1237,7 +1227,7 @@ html {
  .footer-wrapper {
   background:#497e6c url("../img/footer.svg") no-repeat top left;
   background-position-x:40%;
-  background-position-y:-1px;
+  background-position-y:-45px;
   background-size:cover;
   margin:0;
   overflow:hidden;
@@ -1812,7 +1802,7 @@ html {
    padding-left:0
   }
   .portfolio-item {
-   width:24%
+   width:33%
   }
   .simple-animated-modal {
    left:20%;
