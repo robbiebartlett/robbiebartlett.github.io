@@ -1663,7 +1663,8 @@ html {
    width:auto
   }
   .banner .hero img {
-   opacity:0.1
+   opacity:0.1;
+   position: relative;
   }
   .banner .hero .inner {
    justify-content:left
