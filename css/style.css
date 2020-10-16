@@ -7,7 +7,7 @@ html {
   color:#222;
   display:flex;
   flex-direction:column;
-  font-family:Roboto, sans-serif;
+  font-family:Verdana, Geneva, sans-serif;
   font-weight:400;
   font-size:1em;
   margin:0;
@@ -69,7 +69,7 @@ html {
  h4,
  h5 {
   font-weight:400;
-  font-family:Roboto, sans-serif;
+  font-family:Verdana, Geneva, sans-serif;
   color:#222
  }
  h2 {
@@ -610,7 +610,6 @@ html {
   color:#222;
   font-size:1.05em;
   font-weight:500;
-  text-transform:uppercase
  }
  .portfolio-text {
   flex:1 1 auto;
@@ -709,7 +708,7 @@ html {
   z-index:667
  }
  #modal-title {
-  font-family:"Open sans", sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-weight:400;
   font-size:1.5em;
   line-height:1;
@@ -1253,7 +1252,7 @@ html {
  }
  footer h3 {
   color:#fff;
-  font-family:"Open sans", sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size:calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-weight:700;
   line-height:1.5;
@@ -1357,7 +1356,7 @@ html {
  textarea {
   border:1px solid #355e4e;
   color:#222;
-  font-family:Roboto, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size:1em;
   font-weight:300;
   height:40px;
