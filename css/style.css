@@ -338,7 +338,7 @@ html {
  }
  header {
   background-color:#497e6c;
-  margin:0;
+  margin: 0 0 35px;
   padding:0;
   width:100%;
   overflow: hidden;
