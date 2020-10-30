@@ -447,7 +447,7 @@ html {
   -webkit-transition:all 0.25s ease-in-out;
   transition:all 0.25s ease-in-out
  }
- .introduction .inner h1 {
+ .introduction .inner h2 {
   color:#fff;
   font-weight:700;
   font-size:calc(35px + (45 - 35) * ((100vw - 300px) / (1600 - 300)));
@@ -540,9 +540,9 @@ html {
   text-decoration:none;
   width:100%
  }
- .portfolio-item a:hover .portfolio-image {
-  transform:scale(1.2, 1.2)
- }
+ .portfolio-item a:hover {
+  outline: 3px solid #b53cde;
+}
  .portfolio-content {
   display:flex;
   flex:1 1 auto;
@@ -593,7 +593,7 @@ html {
   background-image:url("../img/iconography.jpg")
  }
  .portfolio-image.lazy-load.ten.loaded {
-  background-image:url("../img/summit.jpg")
+  background-image:url("../img/accessibility.jpg")
  }
  .portfolio-image.lazy-load.eleven.loaded {
   background-image:url("../img/bec.jpg")
@@ -662,13 +662,23 @@ html {
   position:relative
  }
  .portfolio-media.large {
-  overflow:auto
- }
+  margin: 0 auto 10px;
+  overflow-y: scroll;
+  padding-bottom: 90%;
+  border: 1px solid #d0d0d0;
+}
+.portfolio-media.large:focus {
+  outline: 3px solid #b53cde;
+}
  .portfolio-media img {
   max-width:100%;
-  margin:-15px 0 0;
+  margin: 10px 0 0;
   padding:0
+ } 
+ .portfolio-media.large img {
+  margin:0;
  }
+
  .simple-animated-modal-overlay {
   position:fixed;
   top:0;
@@ -712,7 +722,7 @@ html {
   font-weight:400;
   font-size:1.5em;
   line-height:1;
-  margin:0 0 40px;
+  margin:0 0 20px;
   padding:0
  }
  .simple-animated-modal-close {
