@@ -6,7 +6,7 @@ function mobilemenu() {
 			$(".rb-navigation").toggleClass("visible");
 		}),
 		
-		$(".anchor-link").click(function(){
+		$(".rb-navigation-link").click(function(){
 			 $(".rb-navigation").removeClass("visible");
 			 $(".mobile-menu").removeClass("open");
 			 $(".mobile-button").removeClass("is-active");
