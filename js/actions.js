@@ -3,11 +3,11 @@ function mobilemenu() {
 		
 		$(".mobile-button").click(function() {
 			$(".mobile-menu").toggleClass("open");
-			$(".rb-navigation__list").toggleClass("visible");
+			$(".rb-navigation").toggleClass("visible");
 		}),
 		
 		$(".anchor-link").click(function(){
-			 $(".rb-navigation__list").removeClass("visible");
+			 $(".rb-navigation").removeClass("visible");
 			 $(".mobile-menu").removeClass("open");
 			 $(".mobile-button").removeClass("is-active");
 		})
