@@ -348,19 +348,27 @@ function shuffle() {
 
 //Back to top
 function backToTop() {
- $(window).scroll(function(a) {
-        var d = $(this).scrollTop();
-        d > b ? $("a.back-to-top").addClass("popup") : $("a.back-to-top").removeClass("popup"),
-        c = d
-    }),
-    $("a.back-to-top").click(function() {
-        return $("html, body").animate({
-            scrollTop: 0
-        }, 500),
-        !1
-    }),
-	
-}
+  "use strict";
+
+
+  //trigger point
+  var triggerPoint = 50,
+      scrTop = 0,
+      featureDetected = false;
+
+  function detectTrigger() {
+
+      scrTop = $(window).scrollTop();
+      featureDetected = false;
+      
+      //Edit height value here
+      if (scrTop >= 100) {
+          $(".back-to-top").addClass("pop-up");
+      } else {
+          $(".back-to-top").removeClass("pop-up");
+      }
+
+  }
 	
 
 
