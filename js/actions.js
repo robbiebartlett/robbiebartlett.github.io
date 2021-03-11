@@ -346,7 +346,7 @@ function shuffle() {
 
 }
 
-//Back to top
+//Back to Top
 function backToTop() {
   "use strict";
 
@@ -363,12 +363,39 @@ function backToTop() {
       
       //Edit height value here
       if (scrTop >= 100) {
-          $(".back-to-top").addClass("pop-up");
+          $(".back-to-top").addClass("active");
       } else {
-          $(".back-to-top").removeClass("pop-up");
+          $(".back-to-top").removeClass("active");
       }
 
   }
+
+  function onRepaint() {
+      if (typeof window.requestAnimationFrame === "undefined") {
+          detectTrigger();
+          return;
+      }
+
+      if (!featureDetected) {
+          window.requestAnimationFrame(detectTrigger);
+      }
+      featureDetected = true;
+  }
+
+
+  $(".back-to-top").click(function () {
+    $('html, body').animate({scrollTop: 0
+      }, 50).parent().focus();
+    return false;
+  });
+
+  detectTrigger(); // run on page load for refresh when already scrolled
+
+  $(window).on("scroll", function () {
+      onRepaint();
+  });
+
+} // backToTop()
 	
 
 
@@ -419,4 +446,3 @@ $(document).ready(function () {
          lazyload(),
         copyright() 
 });
-
