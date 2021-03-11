@@ -346,6 +346,23 @@ function shuffle() {
 
 }
 
+//Back to top
+function backToTop() {
+ $(window).scroll(function(a) {
+        var d = $(this).scrollTop();
+        d > b ? $("a.back-to-top").addClass("popup") : $("a.back-to-top").removeClass("popup"),
+        c = d
+    }),
+    $("a.back-to-top").click(function() {
+        return $("html, body").animate({
+            scrollTop: 0
+        }, 500),
+        !1
+    }),
+	
+}
+	
+
 
 
 //Lazyload images
@@ -390,6 +407,7 @@ $(document).ready(function () {
 	    defer(),
          timeline(),
           shuffle(),
+        backToTop(),
          lazyload(),
         copyright() 
 });
