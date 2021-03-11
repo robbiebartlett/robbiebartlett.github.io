@@ -378,43 +378,36 @@ header.sticky .logo h1 {
 }
 .back-to-top {
  border-radius:30px;
- bottom:50px;
+ bottom:-50px;
  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
- height:0;
+ height:50px;
  position:fixed;
  right:30px;
  text-indent:-9999px;
  transition:all .2s ease-in-out;
- width:0;
+ width:50px;
  z-index:1030
 }
 .back-to-top:after {
  border-bottom:3px solid #fff;
  border-left:3px solid #fff;
- bottom:30px;
+ bottom:6px;
  content:' ';
  display:block;
- height:0;
+ height:18px;
  left:29%;
  opacity:1;
  position:relative;
  transform:rotate(135deg);
- transition:all .2s ease-in-out;
- width:0
+ /*! transition:all .2s ease-in-out; */width:18px;
 }
 .back-to-top.pop-up {
- border:2px solid #ffffff;
+ border:2px solid #fff;
  bottom:25px;
- height:50px;
- right:25px;
- width:50px;
- background-color:#9C6C76;
+ background-color:#9c6c76
 }
 .back-to-top.pop-up:after {
- bottom:4px;
- height:18px;
  opacity:1;
- width:18px;
 }
 .banner.row {
  background-color:#497e6c;
