@@ -409,6 +409,10 @@ header.sticky .logo h1 {
 .back-to-top.pop-up:after {
  opacity:1;
 }
+.back-to-top:focus {
+    outline: none;
+    border: 3px solid #b53cde;
+}
 .banner.row {
  background-color:#497e6c;
  margin:0 auto;
