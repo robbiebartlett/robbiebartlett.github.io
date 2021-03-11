@@ -363,9 +363,9 @@ function backToTop() {
       
       //Edit height value here
       if (scrTop >= 100) {
-          $(".back-to-top").addClass("active");
+          $(".back-to-top").addClass("pop-up");
       } else {
-          $(".back-to-top").removeClass("active");
+          $(".back-to-top").removeClass("pop-up");
       }
 
   }
