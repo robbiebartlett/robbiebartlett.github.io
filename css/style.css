@@ -382,11 +382,14 @@ header.sticky .logo h1 {
  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
  height:50px;
  position:fixed;
- right:30px;
+ right:10px;
  text-indent:-9999px;
  transition:all .2s ease-in-out;
  width:50px;
  z-index:1030
+}
+@media all and (min-width:37em) {
+ right:30px;
 }
 .back-to-top:after {
  border-bottom:3px solid #fff;
