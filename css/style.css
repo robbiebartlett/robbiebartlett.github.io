@@ -567,7 +567,7 @@ nav .row.nested a:hover {
 }
 main#main-content {
  background-color:#fff;
- overflow-x: hidden;
+ overflow-x:hidden
 }
 .overview a {
  color:#497e6c;
@@ -1051,7 +1051,7 @@ dialog {
  content:" ";
  display:block;
  height:18px;
- left:14%;
+ left:4px;
  opacity:1;
  position:relative;
  transform:rotate(225deg);
@@ -1059,7 +1059,7 @@ dialog {
  width:18px
 }
 .timeline .arrow.arrow__prev:after {
- left:28%;
+ left:10px;
  transform:rotate(45deg)
 }
 .timeline .arrows .arrow__prev {
