@@ -389,7 +389,9 @@ header.sticky .logo h1 {
  z-index:1030
 }
 @media all and (min-width:37em) {
- right:30px;
+  .back-to-top {
+     right:30px;
+  }
 }
 .back-to-top:after {
  border-bottom:3px solid #fff;
