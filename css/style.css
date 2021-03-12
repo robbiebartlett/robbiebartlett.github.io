@@ -855,7 +855,8 @@ dialog {
  margin:0 auto;
  display:flex;
  justify-content:center;
- flex-direction:column
+ flex-direction:column;
+ padding-top: 50px;
 }
 .timeline ol {
  font-size:0;
@@ -918,7 +919,7 @@ dialog {
 .timeline ol li:nth-child(odd) div::before {
  top:100%;
  border-width:8px 8px 0 0;
- border-color:#497e6c transparent transparent transparent
+ border-color:#497e6c transparent transparent transparent;
 }
 .timeline ol li:nth-child(even) div {
  top:calc(100% + 16px)
@@ -933,7 +934,8 @@ dialog {
  font-size:1.2rem;
  font-weight:700;
  margin-bottom:8px;
- height: 30px;
+ height:30px;
+ /*! margin-top: 10px; */
 }
 .timeline h2 {
  font-size:1.5rem;
@@ -1120,7 +1122,7 @@ dialog {
  flex-wrap:wrap
 }
 footer {
- margin-top:65px;
+ margin-top:0px;
  padding:0;
  position:relative
 }
