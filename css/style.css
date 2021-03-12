@@ -389,12 +389,12 @@ header.sticky .logo h1 {
  z-index:1030
 }
 .back-to-top svg {
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+ width:50px;
+ height:50px;
+ margin:0;
+ position:absolute;
+ right:0;
+ top:0
 }
 @media all and (min-width:37em) {
  .back-to-top {
@@ -560,7 +560,7 @@ nav .row.nested a:hover {
 }
 main#main-content {
  background-color:#fff;
- overflow-x: hidden;
+ overflow-x:hidden
 }
 .overview a {
  color:#497e6c;
@@ -932,7 +932,8 @@ dialog {
  display:block;
  font-size:1.2rem;
  font-weight:700;
- margin-bottom:8px
+ margin-bottom:8px;
+ height: 30px;
 }
 .timeline h2 {
  font-size:1.5rem;
@@ -1039,13 +1040,13 @@ dialog {
  background-color:#fff;
  border:1px solid #fff
 }
-.timeline  .arrow svg {
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+.timeline .arrow svg {
+ width:50px;
+ height:50px;
+ margin:0;
+ position:absolute;
+ right:0;
+ top:0
 }
 .timeline .arrow.arrow__prev:after {
  left:28%;
