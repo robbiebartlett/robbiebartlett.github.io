@@ -388,6 +388,14 @@ header.sticky .logo h1 {
  width:50px;
  z-index:1030
 }
+.back-to-top svg {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 @media all and (min-width:37em) {
  .back-to-top {
   right:30px
@@ -1030,6 +1038,14 @@ dialog {
  position:relative;
  background-color:#fff;
  border:1px solid #fff
+}
+.timeline  .arrow svg {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .timeline .arrow.arrow__prev:after {
  left:28%;
