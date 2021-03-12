@@ -1066,6 +1066,7 @@ dialog {
 }
 @media screen and (max-width:37em) {
  .timeline {
+  padding-top:20px;
   width:100%
  }
  .timeline ol,
