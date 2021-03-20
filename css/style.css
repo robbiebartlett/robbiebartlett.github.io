@@ -717,8 +717,7 @@ dialog {
  margin-bottom:10px;
  max-width:100%;
  outline:0;
- overflow:hidden;
- padding-bottom:56.25%;
+ /*! overflow:hidden; */padding-bottom:56.25%;
  position:relative
 }
 .portfolio-media.large {
@@ -769,7 +768,7 @@ dialog {
  left:24%;
  max-height:90vh;
  overflow:auto;
- padding:1em 1% .3em;
+ padding:1em 1% 2em;
  position:fixed;
  right:24%;
  top:6vh;
