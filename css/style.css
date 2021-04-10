@@ -330,14 +330,11 @@ _:-ms-fullscreen {
 .title-divider {
  width:70px;
  height:3px;
- background-color:#497e6c;
+ background-color:#225180;
  margin:6px 0 20px
 }
-.lead {
- font-weight:600
-}
 header {
- background-color:#497e6c;
+ background-color:#225180;
  margin:0 0 35px;
  padding:0;
  width:100%;
@@ -374,7 +371,7 @@ header.sticky {
  box-shadow:0 0 2px 1px rgba(0,0,0,.35)
 }
 header.sticky .logo h1 {
- color:#497e6c
+ color:#225180
 }
 .back-to-top {
  border-radius:30px;
@@ -412,14 +409,14 @@ header.sticky .logo h1 {
  outline:3px solid #b53cde
 }
 .banner.row {
- background-color:#497e6c;
+ background-color:#225180;
  margin:0 auto;
  padding:0 15px;
  position:relative
 }
 .banner .col {
  margin:0;
- padding:10px 0 0
+ padding: 25px 0 0
 }
 .banner.row .col .nested {
  margin:0
@@ -464,13 +461,13 @@ header.sticky .logo h1 {
 .introduction .inner h2 {
  color:#fff;
  font-weight:700;
- font-size:calc(35px + (45 - 35) * ((100vw - 300px)/ (1600 - 300)));
+ font-size:calc(35px + (40 - 35) * ((100vw - 300px)/ (1600 - 300)));
  line-height:1.5;
  margin:0;
  padding:0;
  text-shadow:-1px 1px 2px #222,1px 1px 2px #222,1px -1px 0 #222,-1px -1px 0 #222
 }
-.introduction .inner p {
+.introduction .inner .lead {
  color:#fff;
  font-size:calc(18px + (20 - 18) * ((100vw - 300px)/ (1600 - 300)));
  font-family:inherit;
@@ -508,10 +505,10 @@ nav .row.nested a:hover {
  border-bottom-color:#fff
 }
 .sticky nav .row.nested a {
- color:#497e6c
+ color:#225180
 }
 .sticky nav .row.nested a:hover {
- border-bottom:2px solid #497e6c
+ border-bottom:2px solid #225180
 }
 .rb-navigation {
  display:block;
@@ -563,7 +560,7 @@ main#main-content {
  overflow-x:hidden
 }
 .overview a {
- color:#497e6c;
+ color:#225180;
  font-weight:700
 }
 .unicorn img {
@@ -576,20 +573,21 @@ main#main-content {
  box-sizing:border-box;
  display:flex;
  flex-wrap:wrap;
+ justify-content: space-between;
  list-style:none;
  margin:40px 0;
  padding:0
 }
 .portfolio-item {
  display:flex;
- padding:20px 3%;
+ padding:20px 0;
  width:90%;
- margin:0 auto;
+ margin:0
  transition:all .25s ease-in-out
 }
 .portfolio-item a {
  background-color:#fff;
- border:7px solid #fff;
+ border:10px solid #fff;
  border-radius:.25rem;
  box-shadow:0 1px 3px 1px rgba(0,0,0,.25);
  cursor:pointer;
@@ -598,7 +596,7 @@ main#main-content {
  overflow:hidden;
  position:relative;
  text-decoration:none;
- width:100%
+ width:100%;
 }
 .portfolio-item a:hover {
  outline:3px solid #b53cde
@@ -679,7 +677,7 @@ main#main-content {
  color:#222
 }
 .portfolio-content .arrow {
- background:#497e6c;
+ background:#225180;
  bottom:0;
  height:17px;
  margin:10px;
@@ -717,7 +715,8 @@ dialog {
  margin-bottom:10px;
  max-width:100%;
  outline:0;
- /*! overflow:hidden; */padding-bottom:56.25%;
+ overflow:hidden;
+ padding-bottom:56.25%;
  position:relative
 }
 .portfolio-media.large {
@@ -768,7 +767,7 @@ dialog {
  left:24%;
  max-height:90vh;
  overflow:auto;
- padding:1em 1% 2em;
+ padding:1em 1% .3em;
  position:fixed;
  right:24%;
  top:6vh;
@@ -797,7 +796,7 @@ dialog {
 }
 .simple-animated-modal-close::before,
 .simple-animated-modal-close:after {
- background:#497e6c;
+ background:#225180;
  border-radius:10px;
  content:"";
  height:5px;
@@ -900,7 +899,7 @@ dialog {
  font-size:1rem;
  white-space:normal;
  color:#fff;
- background:#497e6c
+ background:#225180
 }
 .timeline ol li div::before {
  content:'';
@@ -918,7 +917,7 @@ dialog {
 .timeline ol li:nth-child(odd) div::before {
  top:100%;
  border-width:8px 8px 0 0;
- border-color:#497e6c transparent transparent transparent
+ border-color:#225180 transparent transparent transparent
 }
 .timeline ol li:nth-child(even) div {
  top:calc(100% + 16px)
@@ -926,7 +925,7 @@ dialog {
 .timeline ol li:nth-child(even) div::before {
  top:-8px;
  border-width:8px 0 0 8px;
- border-color:transparent transparent transparent #497e6c
+ border-color:transparent transparent transparent #225180
 }
 .timeline time {
  display:block;
@@ -1038,15 +1037,15 @@ dialog {
  z-index:1030;
  position:relative;
  background-color:#fff;
- border:1px solid #fff
+ border:1px solid #fff;
 }
 .timeline .arrow svg {
  width:50px;
  height:50px;
  margin:0;
  position:absolute;
- right:0;
- top:0
+ right:-1px;
+ top:-1px;
 }
 .timeline .arrow.arrow__prev:after {
  left:28%;
@@ -1126,7 +1125,7 @@ footer {
  position:relative
 }
 .footer-wrapper {
- background:#497e6c url(../img/footer.svg) no-repeat top left;
+ background:#225180 url(../img/footer.svg) no-repeat top left;
  background-position-x:40%;
  background-position-y:-45px;
  background-size:cover;
@@ -1205,8 +1204,8 @@ footer .links a {
  -webkit-transition:all .25s ease 0s;
  width:45px
 }
-a.twitter {
- background-image:url(../img/twitter.svg)
+a.linkedin {
+ background-image:url(../img/linkedin.svg)
 }
 a.linkedin {
  background-image:url(../img/linkedin.svg)
@@ -1551,6 +1550,9 @@ textarea {
  nav .col {
   padding:.25em 5px
  }
+ .rb-navigation-link:first-of-type {
+    margin-left: 0.75rem;
+}
  .banner-wrapper {
   display:flex;
   height:auto;
@@ -1569,7 +1571,7 @@ textarea {
  .banner .introduction .inner {
   margin:5% 0;
   text-align:left;
-  transform:translate(0,-20%)
+  transform:translate(0,-15%)
  }
  .unicorn {
   margin:70px 0 5px 10px;
@@ -1609,7 +1611,7 @@ textarea {
   font-size:1.4em
  }
  .timeline .events-content a {
-  color:#497e6c;
+  color:#225180;
   font-weight:700;
   text-decoration:underline
  }
@@ -1623,7 +1625,7 @@ textarea {
   padding-left:0
  }
  .portfolio-item {
-  width:33%
+  width:30%
  }
  .simple-animated-modal {
   left:20%;
