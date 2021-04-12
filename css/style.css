@@ -353,32 +353,32 @@ html {
     padding:0 10px;
     margin:0
    }
+   .header-wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
+   }
    header .logo {
     align-items:center;
+    color:#fff;
     display:flex;
+    font-family:"Special Elite",serif;
+    font-size:calc(25px + (35 - 25) * ((100vw - 300px)/ (1600 - 300)));
+    line-height:1.5;
     margin:4px 0;
-    padding:0;
+    padding:0 0 0 25px;
     text-decoration:none;
     -ms-transition:all .25s ease-in-out;
     -moz-transition:all .25s ease-in-out;
     -webkit-transition:all .25s ease-in-out;
     transition:all .25s ease-in-out
    }
-   header .logo {
-    color:#fff;
-    font-family:"Special Elite",serif;
-    font-size:calc(25px + (35 - 25) * ((100vw - 300px)/ (1600 - 300)));
-    line-height:1.5;
-    margin:0;
-    padding:0
+   @media all and (min-width:37em) {
+    header .logo {
+        padding:0 0 0 15px;
+       }
    }
-   header.sticky {
-    background:#fff;
-    box-shadow:0 0 2px 1px rgba(0,0,0,.35)
-   }
-   header.sticky .logo h1 {
-    color:#225180
-   }
+  
    .back-to-top {
     border-radius:30px;
     bottom:-50px;
@@ -449,7 +449,7 @@ html {
     position:absolute;
     transform: scale(1.45,1.45);
     transition: all .25s ease-in-out;
-    left: 15%;
+    left: 18%;
    }
    @media screen and (max-width:48em) {
     .hero img {
@@ -498,9 +498,6 @@ html {
     padding:0;
     font-weight: normal;
    }
-   nav {
-    max-width:500px
-   }
    nav .col {
     margin:0;
     padding:.25em 10px
@@ -535,10 +532,16 @@ html {
    }
    .rb-navigation {
     display:block;
+    max-width:100%;
     padding:0;
     position:static;
     width:100%;
     z-index:8
+   }
+   @media all and (min-width:37em) {
+    .rb-navigation {
+        max-width:500px;
+       }
    }
    .rb-navigation__list {
     margin:0;
@@ -676,7 +679,7 @@ html {
     background-image:url(../img/accessibility.jpg)
    }
    .portfolio-image.lazy-load.eleven.loaded {
-    background-image:url(../img/logos.jpg)
+    background-image:url(../img/weu.jpg)
    }
    .portfolio-image.lazy-load.twelve.loaded {
     background-image:url(../img/insights.jpg)
@@ -1357,7 +1360,7 @@ html {
      width:100%;
      position:relative;
      left:0;
-     margin:0 -1rem;
+     margin: 0;
      padding:0;
      top:.25rem;
      right:0;
@@ -1367,10 +1370,10 @@ html {
      transition:all .25s ease-in-out;
      z-index:99;
      background-color:#0C2640;
-     max-height: 275px;
      visibility:hidden;
      opacity:0;
-     display:none
+     height: 0;
+     overflow: hidden;
     }
     header .col-span-5 {
      padding:0
@@ -1423,7 +1426,7 @@ html {
      z-index:99;
      text-align:center;
      justify-content:center;
-     box-shadow:inset 0 0 5px 1px rgb(33 57 49 / 98%)
+     /* box-shadow:inset 0 0 5px 1px rgb(33 57 49 / 98%) */
     }
     .rb-navigation__list-item {
      padding:1rem 0
@@ -1438,10 +1441,12 @@ html {
     .visible {
      opacity:1;
      -webkit-transition:opacity .25s;
-     transition:opacity .25s;
+     transition: all .25s;
      transition-delay:.25s;
      visibility:visible;
-     display:block
+     display:block;
+     height: 275px;
+     box-shadow: inset 0px 11px 8px -10px #0c1e30, inset 0px -11px 8px -10px #0c1e30;
     }
     .mobile-links ul {
      padding:0;
