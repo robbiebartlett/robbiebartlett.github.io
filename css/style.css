@@ -1366,7 +1366,8 @@ html {
      -webkit-transition:all .25s ease-in-out;
      transition:all .25s ease-in-out;
      z-index:99;
-     background-color:#275042;
+     background-color:#0C2640;
+     max-height: 275px;
      visibility:hidden;
      opacity:0;
      display:none
