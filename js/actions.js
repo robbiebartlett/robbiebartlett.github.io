@@ -240,8 +240,14 @@ $(window).on("scroll", function () {
 
 } // backToTop()
 
+//Parallax
+function parallax() {
+  ypos = window.pageYOffset;
+  image = document.getElementById('robbie');
+  image.style.top = ypos * .5 + '20px';
 
-
+  window.addEventListener('scroll', parallax);
+}
 
 //Lazyload images
 function lazyload() {
@@ -268,8 +274,6 @@ $(window).on("scroll", function() {
 });
 }
 
-
-
 //Copyright
 function copyright() {
 var d = new Date();
@@ -281,7 +285,8 @@ document.getElementById("year").innerHTML = n;
 //Document - load
 $(document).ready(function () {
    mobilemenu(),
-	defer(),
+     parallax(),
+	    defer(),
 	 timeline(),
 	  shuffle(),
 	backToTop(),
