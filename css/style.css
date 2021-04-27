@@ -12,8 +12,6 @@ body {
     font-size: 1em;
     margin: 0;
     min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
     padding: 0;
     word-spacing: 0.16em;
 }
@@ -472,7 +470,7 @@ header .logo {
 }
 @media screen and (min-width: 87.5em) {
     .hero img {
-        bottom: -30;
+        bottom: 40;
         left: 20%;
         transform: scale(1.5, 1.5);
     }
@@ -595,148 +593,253 @@ nav .row.nested a:hover {
 }
 main#main-content {
     background-color: #fff;
-    overflow-x: hidden;
 }
 .overview a {
     color: #225180;
     font-weight: 700;
 }
-.unicorn img {
-    color: #222;
-    display: block;
-    max-width: 100%;
-    outline: 0;
-}
-.portfolio {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 40px 0;
-    padding: 0;
-    justify-content: space-between;
-}
-.portfolio-item {
-    display: flex;
-    padding: 20px 0;
-    width: 100%;
-    margin: 0;
-    transition: all 0.25s ease-in-out;
-}
-.portfolio-item a {
-    background-color: #fff;
-    border: 7px solid #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    width: 100%;
-}
-.portfolio-item a:hover {
-    outline: 3px solid #b53cde;
-}
-.portfolio-content {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 0.6em 0 0;
-    position: relative;
-    z-index: 7;
-    background: #fff;
-}
-.portfolio-image {
-    background-color: #fff;
-    box-sizing: border-box;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid #e0e0e0;
-    border-radius: 0.25em 0.25em 0 0;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.25s ease-in-out;
-    transform: scale(1, 1);
-}
-.portfolio-image.lazy-load.one.loaded {
+.card-image.lazy-load.one.loaded {
     background-image: url("../img/export-new-zealand.jpg");
 }
-.portfolio-image.lazy-load.two.loaded {
+.card-image.lazy-load.two.loaded {
     background-image: url("../img/nz-customs-service.jpg");
 }
-.portfolio-image.lazy-load.four.loaded {
+.card-image.lazy-load.three.loaded {
+    background-image: url("../img/bec.jpg");
+}
+.card-image.lazy-load.four.loaded {
     background-image: url("../img/customs-release.jpg");
 }
-.portfolio-image.lazy-load.five.loaded {
+.card-image.lazy-load.five.loaded {
     background-image: url("../img/animation.jpg");
 }
-.portfolio-image.lazy-load.six.loaded {
+.card-image.lazy-load.six.loaded {
     background-image: url("../img/leapfrog-3d.jpg");
 }
-.portfolio-image.lazy-load.seven.loaded {
+.card-image.lazy-load.seven.loaded {
     background-image: url("../img/work-and-income.jpg");
 }
-.portfolio-image.lazy-load.eight.loaded {
+.card-image.lazy-load.eight.loaded {
     background-image: url("../img/aranzgeo.jpg");
 }
-.portfolio-image.lazy-load.nine.loaded {
+.card-image.lazy-load.nine.loaded {
     background-image: url("../img/iconography.jpg");
 }
-.portfolio-image.lazy-load.ten.loaded {
+.card-image.lazy-load.ten.loaded {
     background-image: url("../img/accessibility.jpg");
 }
-.portfolio-image.lazy-load.eleven.loaded {
+.card-image.lazy-load.eleven.loaded {
     background-image: url("../img/weu.jpg");
 }
-.portfolio-image.lazy-load.twelve.loaded {
+.card-image.lazy-load.twelve.loaded {
     background-image: url("../img/insights.jpg");
 }
-.portfolio-image::before {
-    content: "";
+
+
+.cards {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+@media screen and (min-width: 630px) {
+    .cards {
+        justify-content: space-between;
+    }
+  }
+
+.card {
+    list-style-type: none;
+    margin: 0 auto 2rem;
+    padding: 0;
+}
+@media screen and (min-width: 630px) {
+  .card {
+    margin: 0 1% 3rem 0;
+  } 
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 892px) {
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+    .card {
+      margin: 0 0 3rem;
+    }
+  }
+
+.card-link {
     display: block;
-    padding-top: 95%;
-}
-.portfolio-title {
-    color: #222;
-    font-size: 1.05em;
-    font-weight: 500;
-}
-.portfolio-text {
-    flex: 1 1 auto;
-    font-size: 0.875em;
-    line-height: 1.5;
-    margin: 5px 0;
-    color: #222;
-}
-.portfolio-content .arrow {
-    background: #225180;
-    bottom: 0;
-    height: 17px;
-    margin: 10px;
-    opacity: 0.75;
-    position: absolute;
-    right: -4px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    width: 17px;
-}
-.portfolio-item a:hover .portfolio-content .arrow {
+    list-style-type: none;
+    margin: .75rem 0 1.75rem;
+    -webkit-transform: perspective(800px);
+            transform: perspective(800px);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  @media screen and (min-width: 630px) {
+    .card-link {
+        margin: .75rem .75rem 1.75rem;
+    }
+  }
+  
+  /* Hide focus styles if they're not needed, for example, 
+  when an element receives focus via the mouse. */
+  :focus:not(:focus-visible) {
+    outline: 0;
+  }
+  
+  /* Show focus styles on keyboard focus. */
+  :focus-visible {
+    outline: 4px solid #b53cde;
+  }
+
+  .card-link:hover .card-image,
+  .card-link:focus .card-image {
     opacity: 1;
-}
-.portfolio-content .arrow:after {
-    background: #fff;
-    content: "";
-    height: 20px;
-    left: 2px;
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card-link:hover .card-wrapper {
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1),
+      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-box-shadow:   rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, 
+    rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, 
+    rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    position: relative;
+    -webkit-box-flex: 0;
+    flex: 0 0 270px;
+    height: 350px;
+    width: 270px;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, 
+    inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 3px 6px 0, 
+    inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  .card-wrapper:after {
+        bottom: 0; 
+        content:'';
+        left:0;
+        position: absolute;
+        right:0;
+        top: 0;
+      }
+  
+  
+  .card-image {
+    opacity: 0.5;
     position: absolute;
-    top: 2px;
-    width: 20px;
-}
+    top: -20px;
+    left: -20px;
+    width: 115%;
+    height: 115%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+  }
+  
+  .card-content {
+    background-color: rgba(255, 255, 255, .95);
+    padding: .750rem;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    width: 100%;
+  }
+  
+  .card-content * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-content:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(transparent),
+      to(rgba(0, 0, 0, 0.6))
+    );
+    background-image: -o-linear-gradient(
+      top,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    background-blend-mode: overlay;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .card-title {
+    color: #2a2a2a;
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+    margin: 0 0 .750rem;
+    text-decoration:none;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #2a2a2a;
+    font-size: 1rem;
+    margin: 0 0 .375rem;
+  }
 .portfolio-media {
     position: relative;
     padding-bottom: 56.25%;
@@ -883,7 +986,6 @@ dialog {
 }
 .timeline {
     white-space: nowrap;
-    overflow-x: hidden;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -928,19 +1030,21 @@ dialog {
 }
 .timeline ol li div {
     position: absolute;
-    left: calc(100% + 7px);
+    left: calc(100% + -6px);
     width: 345px;
     padding: 1rem;
     font-size: 1rem;
     white-space: normal;
     color: #fff;
     background: #225180;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 3px 6px 0, inset #1d4d7d 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
 }
 .timeline ol li div::before {
     content: "";
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 13px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -970,11 +1074,13 @@ dialog {
     height: 30px;
 }
 .timeline h2 {
-    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 700;
     margin-bottom: 10px;
     white-space: normal;
     color: #fff;
+    line-height: 1.5;
+    margin-top: 20px;
 }
 .timeline p {
     line-height: 1.5;
