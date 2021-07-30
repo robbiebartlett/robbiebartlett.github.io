@@ -632,10 +632,8 @@ main#main-content {
     background-image: url("../img/weu.jpg");
 }
 .card-image.lazy-load.twelve.loaded {
-    background-image: url("../img/insights.jpg");
+    background-image: url("../img/kb.jpg");
 }
-
-
 .cards {
     padding: 40px 0;
     display: flex;
@@ -648,85 +646,65 @@ main#main-content {
     .cards {
         justify-content: space-between;
     }
-  }
-
+}
 .card {
     list-style-type: none;
     margin: 0 auto 2rem;
     padding: 0;
 }
 @media screen and (min-width: 630px) {
-  .card {
-    margin: 0 1% 3rem 0;
-  } 
-  .card:nth-child(2n) {
-    margin-right: 0;
-  }
+    .card {
+        margin: 0 1% 3rem 0;
+    }
+    .card:nth-child(2n) {
+        margin-right: 0;
+    }
 }
 @media screen and (min-width: 892px) {
-  .card:nth-child(3n) {
-    margin-right: 0;
-  }
+    .card:nth-child(3n) {
+        margin-right: 0;
+    }
 }
-
 @media screen and (min-width: 1180px) {
     .card {
-      margin: 0 0 3rem;
+        margin: 0 0 3rem;
     }
-  }
-
+}
 .card-link {
     display: block;
     list-style-type: none;
-    margin: .75rem 0 1.75rem;
+    margin: 0.75rem 0 1.75rem;
     -webkit-transform: perspective(800px);
-            transform: perspective(800px);
+    transform: perspective(800px);
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  @media screen and (min-width: 630px) {
+    transform-style: preserve-3d;
+}
+@media screen and (min-width: 630px) {
     .card-link {
-        margin: .75rem .75rem 1.75rem;
+        margin: 0.75rem 0.75rem 1.75rem;
     }
-  }
-  
-  /* Hide focus styles if they're not needed, for example, 
-  when an element receives focus via the mouse. */
-  :focus:not(:focus-visible) {
+}
+:focus:not(:focus-visible) {
     outline: 0;
-  }
-  
-  /* Show focus styles on keyboard focus. */
-  :focus-visible {
+}
+:focus-visible {
     outline: 4px solid #b53cde;
-  }
-
-  .card-link:hover .card-image,
-  .card-link:focus .card-image {
+}
+.card-link:focus .card-image,
+.card-link:hover .card-image {
     opacity: 1;
-    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .card-link:hover .card-wrapper {
-    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-      box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1),
-      -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    -webkit-box-shadow:   rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, 
-    rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
-    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, 
-    rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
-  }
-  
-  .card-wrapper {
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-link:hover .card-wrapper {
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1), -webkit-box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 5px 8px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+.card-wrapper {
     display: flex;
     position: relative;
     -webkit-box-flex: 0;
@@ -736,24 +714,20 @@ main#main-content {
     background-color: #333;
     overflow: hidden;
     border-radius: 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, 
-    inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 3px 6px 0, 
-    inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 3px 6px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
     -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  }
-  .card-wrapper:after {
-        bottom: 0; 
-        content:'';
-        left:0;
-        position: absolute;
-        right:0;
-        top: 0;
-      }
-  
-  
-  .card-image {
+}
+.card-wrapper:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card-image {
     opacity: 0.5;
     position: absolute;
     top: -20px;
@@ -764,36 +738,30 @@ main#main-content {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -o-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     pointer-events: none;
-  }
-  
-  .card-content {
-    background-color: rgba(255, 255, 255, .95);
-    padding: .750rem;
+}
+.card-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.75rem;
     position: absolute;
     bottom: 0;
     color: #fff;
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -o-transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: 0.25s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.25s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: 0.25s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.25s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     width: 100%;
-  }
-  
-  .card-content * {
+}
+.card-content * {
     position: relative;
     z-index: 1;
-  }
-  
-  .card-content:after {
+}
+.card-content:after {
     content: "";
     position: absolute;
     top: 0;
@@ -801,45 +769,30 @@ main#main-content {
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-image: -webkit-gradient(
-      linear,
-      left top, left bottom,
-      from(transparent),
-      to(rgba(0, 0, 0, 0.6))
-    );
-    background-image: -o-linear-gradient(
-      top,
-      transparent 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-    background-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.6)));
+    background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
     background-blend-mode: overlay;
     opacity: 0;
     -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
-    -webkit-transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -o-transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    transition: .25s .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  }
-  
-  .card-title {
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 0.25s 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: 0.25s 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 0.25s 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.card-title {
     color: #2a2a2a;
     font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
-    margin: 0 0 .750rem;
-    text-decoration:none;
+    margin: 0 0 0.75rem;
+    text-decoration: none;
     font-weight: bold;
-  }
-  
-  .card-text {
+}
+.card-text {
     color: #2a2a2a;
     font-size: 1rem;
-    margin: 0 0 .375rem;
-  }
+    margin: 0 0 0.375rem;
+}
 .portfolio-media {
     position: relative;
     padding-bottom: 56.25%;
@@ -910,7 +863,7 @@ dialog {
     right: 24%;
     top: 6vh;
     width: 50%;
-    z-index: 10000;
+    z-index: 1000000;
 }
 #modal-title {
     font-family: Verdana, Geneva, sans-serif;
@@ -1655,7 +1608,7 @@ textarea {
         width: 100%;
     }
     .portfolio-media {
-        margin: -20px auto 10px;
+        margin: 10px auto 10px;
         max-width: 90%;
     }
     .simple-animated-modal {
@@ -1895,3 +1848,4 @@ textarea {
         page-break-after: avoid;
     }
 }
+i4yNS0xLjA5NSA2LjIzMiAyLjEyMSA2LjcyNmwyMS4wMjEgMy4yNDYgMTAuMTQ3LTkuNzE4eiIgZmlsbD0iI2ZmODgyOCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTE5MC45NzkgNDcxLjY0OHMtMTUuNTYtMTI5LjQ5NC02MC4zMjMtMjAyLjIyMWMtNi4wNDItOS4xNjItMTUuNTgzLTEzLjgxOC0yNy45NTUtNy4yNmwtLjAxMS4wMDZjLTEzLjI5NSA3LjA1NC02LjAwMyAyMS4xOTMtNi4wMDMgMjEuMTkzbC0uMDAxLjAwMWMyMC41MjcgMjUuNDk4IDY2LjE0NSA4OS44OCA5NC4yOTMgMTg4LjI4MXoiIGZpbGw9IiNlOGMwMTgiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik00MzkuMTU5IDM3OC4yNzJsLjAwMi0uMDAxYzEuNTY3LS45NTQgMy4wOC0xLjg2MSA0LjU0MS0yLjcyMyA1LjU3NC00LjAwNyAxMy4zOTItMTIuMzI0IDUuNjcyLTI0LjI0MS05LjA1Mi0xMy45NzMtMjQuNzQtNC4zNC0yNy4yMTctMi42OTFDMzQwLjg5OSA0MDcuMDI2IDI5NS44OTkgNTEyIDI5NS44OTkgNTEyYzUxLjExOS03MC43ODIgMTA5LjI2OC0xMTMuMDI1IDE0My4yNi0xMzMuNzI4eiIgZmlsbD0iI2YyZDQyMiIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTc1LjE2NyAzODUuMzAxYy0yLjc5Mi0yLjAxNC0xNy4xOTUtMTEuNTE3LTI0Ljc3NC43MDItNC42NzggNy41NDQtMi4xMDYgMTQuMjQ3IDUuNTk5IDE4Ljg3OGwuMDA4LjAwNUM4Mi44MjkgNDIxLjA1MyAxMjkuODk4IDQ1NC44MDkgMTcxLjIwMyA1MTJjMC0uMDAxLTM0LjE3NS03OS43MjMtOTYuMDM2LTEyNi42OTl6IiBmaWxsPSIjZThjMDE4IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNMTQ5LjMwNSAxOTYuMTQ2Yy42MTctMS44NDEuMTQ2LTEuNjk1LTExLjkxMi0xMy42NTggMy4wNTItMTYuODk0IDMuNDc2LTE2Ljg3MyAxLjkyOC0xOC4wMi0xLjU1OS0xLjE1NC0xLjU1OS0uNjY1LTE2LjY3MSA3LjEwOS0xNS4xMTctOC4xMTgtMTQuOTczLTguNTIxLTE2LjU0My03LjQwMi0xLjU3OSAxLjEzMS0xLjExMyAxLjI4MiAxLjYwOSAxOC4wNTFsLTExLjUzOCAxMS4wNWMtMS4zOTkgMS4zMzgtLjY1NCAzLjcxIDEuMjYzIDQuMDA2bDE1Ljc4OSAyLjQzOGM3LjQ1NyAxNS40NTMgNy4wOTggMTUuNjkzIDkuMDMxIDE1LjcxMiAxLjk0Mi4wMTUgMS42NTQtLjM3OSA5LjMwOS0xNS41NWwxNS44MjktMi4xNTdhMi4zNDcgMi4zNDcgMCAwMDEuOTA2LTEuNTc5eiIgZmlsbD0iI2VhNDczYiIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTEyOC45NDggMTk1LjMzOGMtMTYuOTU4LTIuNjE4LTE3LjA4Ny0yLjIwOS0xNy42NjYtNC4wNDgtLjU4Mi0xLjg1Mi0uMTIxLTEuNjkxIDEyLjE1Mi0xMy40NDVsLTEuMDQxLTYuNDA4Yy0xNC44MTItNy45NTQtMTQuNzE2LTguMzgzLTE2LjI4NS03LjI2NC0xLjU3OSAxLjEzMS0xLjExMyAxLjI4MiAxLjYwOSAxOC4wNTEtMTIuMzkyIDExLjg2OC0xMi43MyAxMS42MDYtMTIuMTUyIDEzLjQ0NS41ODMgMS44NTEuODcyIDEuNDU1IDE3LjY2NiA0LjA0OCA3LjIyOSAxNC45ODEgNi45MDIgMTQuNjkzIDcuNjU3IDE1LjI1NGEyLjM0NiAyLjM0NiAwIDAwMy40ODUtLjgyN2w2Ljk3Ny0xMy44MjctMi40MDItNC45Nzl6IiBmaWxsPSIjZDYzMzIyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNMjUzLjcyNyAxNDIuMzAxbC0uMDEyLS4wMDZjLTE4LjA4NS05LjUwNy0yMS42MTUtMTAuMDIxLTQwLjY4NC4wMDNsLS4wMDQuMDAyYy0xNi40MDUgOC42MjQtMTYuMTIxIDIwLjc4OC0xNS43MjEgMjQuMDI4IDkuNDY5IDU4LjU3NiAyNy4zMTkgMTc3LjYyOCAzNi4wNjggMjkyLjIzNSA4LjcyMS0xMTQuMjIzIDI2LjQ4MS0yMzIuODYxIDM1Ljk3NS0yOTEuNjQzIDEuMDcyLTYuNjk2IDIuMjYxLTE1LjIxNy0xNS42MjItMjQuNjE5eiIgZmlsbD0iI2YyZDQyMiIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTIxNy41MDcgMTY2LjMyOGMtLjQwMS0zLjI0LS42ODQtMTUuNDA0IDE1LjcyMS0yNC4wMjhsLjAwNC0uMDAyYzQuMDQzLTIuMTI1IDcuMzgzLTMuNzcyIDEwLjMxNi00Ljk2NC0xMC4yMzEtNC4yNTgtMTUuNjU2LTIuODQ4LTMwLjUxNyA0Ljk2NGwtLjAwNC4wMDJjLTE2LjQwNSA4LjYyNC0xNi4xMjEgMjAuNzg4LTE1LjcyMSAyNC4wMjggOS40NjkgNTguNTc2IDI3LjMxOSAxNzcuNjI4IDM2LjA2O
