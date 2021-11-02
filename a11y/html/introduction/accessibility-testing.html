@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Welcome | Rob Bartlett - a11y</title>
+  <title>Accessibility testing | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -465,6 +466,7 @@
   
   <main role="main" aria-hidden="false" class="main-container">
 
+    
     <div class="rpb-pane__breadcrumb">
       <div class="rpb-container">
         <div class="rpb-grid">
@@ -476,8 +478,13 @@
                   Home
                 </a>
               </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/introduction/index.html" class="rpb-breadcrumb__link">
+                  Introduction
+                </a>
+              </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Introduction
+                Accessibility testing
               </li>
             </ol>
           </nav>
@@ -490,67 +497,127 @@
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Welcome</h1>
+            <h1 class="rpb-h1">Accessibility testing</h1>
 
-            <h2 class="rpb-h3">Introductory guides</h2>
+            <p class="lead">Is your team working with content, design or code? Embed accessibility testing into the workflow early to reduce long term technical debt.</p>
 
-            <p class="lead">This website provides guidance for embedding accessibility and inclusive design in your role. It also gives an understanding of the human need behind accessibility practices.</p>
+              <p>Accessibility testing can range from quick checks to full auditing. The process may also be role-specific, focusing on content editors, designers, or developers.</p>
 
-            
-            <div class="rpb-card--wrapper">
-              <ul class="rpb-card-list">
-              <li class="rpb-card">
+              <h2 class="rpb-h3">Automated scanning</h2>
 
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/introduction/digital-accessibility.html" class="rpb-link rpb-card--link">Digital Accessibility</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Digital Accessibility ensures all digital products are navigable and understood by everyone.
-                      </p>
-                  </div>
-              </li>
+              <p>Automated tools detect less than half of accessibility issues on a page. Using these tools is best viewed as a helpful step in the testing process.</p>
+              <p>They can also generate false positives or raise warnings that need interpretation. Hence, they are insufficient for confirming accessibility. 
+              </p>
+              <p>Use both automated testing and manual testing to help uncover issues with design and content.</p>
 
-              <li class="rpb-card">
-                   <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/introduction/accessibility-principles.html" class="rpb-link rpb-card--link">Accessibility principles</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        To ensure you meet the WCAG standard guidelines, are you following the four design principles?
-                      </p>
-                  </div>
-              </li>
+              <p>A range of testing tools are available, some of the tools available including browser extensions include:</p>
 
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/introduction/accessibility-testing.html" class="rpb-link rpb-card--link">Accessibility testing</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is your team working with content, design or code? Embed accessibility testing early to reduce long term technical debt.
-                      </p>
-                  </div>
-              </li>          
-              
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/introduction/training-and-development.html" class="rpb-link rpb-card--link">Training and Development</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Do you want to provide a better digital experience for everyone? Get the skills needed to achieve Web Accessibility best practices.
-                      </p>
-                  </div>
-              </li>              
-              
-              
-     
-  
-
+              <ul class="rpb-list__sub-list">
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://wave.webaim.org">WAVE web accessibility evaluation tool</a></li> 
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://www.deque.com/axe/">axe DevTools</a></li>
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://www.ibm.com/able/toolkit/tools/">IBM Equal Access Accessibility Checker</a></li>    
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce/related">ARC Toolkit</a></li>      
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://squizlabs.github.io/HTML_CodeSniffer/">HTML Codesniffer (bookmarklet)</a></li>    
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://ryersondmp.github.io/sa11y/">
+                  Sa11y the accessibility quality assurance assistant (bookmarklet)</a></li>  
               </ul>
+              <p></p>
+
+              <h2 class="rpb-h3">Color Contrast Checkers</h2>
+
+              <ul class="rpb-list__sub-list">
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://webaim.org/resources/contrastchecker/">Contrast Checker (WebAIM)</a></li> 
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://color.adobe.com/create/color-contrast-analyzer">Contrast Checker (Adobe)</a></li>
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://webaim.org/resources/linkcontrastchecker/">Link Contrast Checker (WebAIM)</a></li>
+              </ul>
+
+              <h2 class="rpb-h3">Using Checklists</h2>
+
+              <p>Checklists are also beneficial as part of the testing process, by translating WCAG criteria into an understandable language.</p>
+              <p>They may also be role-specific, focusing on editors, designers, or developers.</p>
+              <p>Although they are not a substitute for understanding WCAG guidelines, they are still invaluable. Use some of the following to help test for common accessibility problems:</p>
+
+              <ul class="rpb-list__sub-list">
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://accessibility.18f.gov/checklist/">18F Accessibility Guide - Checklist</a></li> 
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility (W3C)</a></li>
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://webaim.org/standards/wcag/checklist">WCAG 2 Checklist (WebAIM)</a></li>
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://www.a11yproject.com/checklist/">Checklist - The A11Y Project</a></li> 
+                <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link rpb__link--external" href="https://codepen.io/weboverhauls/full/zYvopYE">WCAG 2.1 Checklist with Filter and Links (Codepen)</a></li>
+              </ul>
+
+              <h2 class="rpb-h3">Keyboard Only Testing</h2>
+
+              <p>Many people cannot or do not use a mouse, and instead navigate with a keyboard. For the reason alone developers must ensure that all content on a page is operable with a keyboard.</p>
+              <p>Use the Tab key to check that all functionality receives visible focus and responds to common key presses (Enter and Space).</p>
+              <p>Default browser focus styling may be inadequate for some designs, or may be removed by CSS resets.  Customs widgets may not be accessible by keyboard users without additional coding. Testing with a keyboard throughout development will identify these issues.</p>
+
+           
+      
+            
+            <div class="rpb-callout rpb-callout__note">
+
+              <h2 class="rpb-callout__title">References</h2>
+
+              <h3 class="rpb-callout__sub-title">Resources</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/test-evaluate/tools/selecting/">Selecting Web Accessibility Evaluation Tools (W3C)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>   
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.youtube.com/watch?v=IZp8eUAu450">Video: "Easy Checks" A First Review of Web Accessibility (YouTube)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>        
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility">Do's and dont's on designing for accessibility<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                
+              </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/eval/report-tool/">Accessibility report generator (W3C)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+            </div>
+
+
+
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/introduction/index.html">Introduction</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/introduction/digital-accessibility.html">Digital Accessibility</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/introduction/accessibility-principles.html">Accessibility principles</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/introduction/accessibility-testing.html">Accessibility testing</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/introduction/training-and-development.html">Training and Development</a>
+                  </li>
+
+                </ul>
+
+              </nav>
             </div>
 
           </div>
@@ -568,8 +635,8 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-10-11">
-                  11 October 2021
+                <time datetime="2021-09-27">
+                  27 September 2021
                 </time>
               </p>
 
@@ -680,6 +747,7 @@
   
   <script src="../../js/vendor/jquery-3.5.1.min.js"></script>
   <script src="../../js/scripts.js?cb=1607455229852"></script>
+
 </body>
 
 </html>
