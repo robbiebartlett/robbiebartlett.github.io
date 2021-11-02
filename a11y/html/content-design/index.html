@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+  <title>Content | Rob Bartlett - a11y</title>
+
+  
+  
+  <meta name="theme-color" content="#225180">
+  
+  <meta name="msapplication-navbutton-color" content="#225180">
+  
+  <meta name="apple-mobile-web-sidebar-status-bar-style" content="#225180">
+
+  
+  <link rel="shortcut icon" href="../../images/rpb/favicon.ico">
+
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="../../images/rpb/touch-icon-57.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../images/rpb/touch-icon-76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../images/rpb/touch-icon-120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../images/rpb/touch-icon-152.png">
+
+    
+    <meta name="msapplication-square70x70logo" content="../images/rpb/tile-icon-small.png">
+    <meta name="msapplication-square150x150logo" content="../images/rpb/tile-icon-medium.png">
+    <meta name="msapplication-square310x310logo" content="../images/rpb/tile-icon-large.png">
+    <meta name="msapplication-wide310x150logo" content="../images/rpb/tile-icon-wide.png">
+    <meta name="msapplication-tilecolor" content="#225180">
+
+    
+  <link href="http://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite&amp;display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="../../css/main.css?cb=1607455229852">
+
+</head>
+
+<body>
+
+  
+  <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
+    <a class="skip-link" href="#main-content">Skip to the main content</a>
+  </nav>
+
+
+
+
+
+  
+  <header role="banner" class="rpb-header">
+    <div class="rpb-container">
+        <div class="rpb-grid">
+
+
+            <div class="rpb-grid__cell rpb-grid--one-whole">
+              <div class="rpb-header__logotype">
+                <a href="/dist/html/index.html" class="rpb-header__site-logo">
+                  Rob Bartlett - a11y
+                </a>
+             </div>
+
+              <section class="rpb-navigation__toggle--wrapper">
+                    <button aria-expanded="false" class="rpb-navigation__toggle">Menu</button>
+              </section>
+               
+            </div>
+
+        </div>
+    </div>
+  </header>
+
+
+
+
+
+  
+  <nav role="navigation" class="rpb-navigation" aria-label="main menu">
+    <ul class="rpb-navigation__list rpb-navigation__level-one">
+
+      
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/dist/html/introduction/index.html">Introduction</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show the submenu for "Accessibility Introduction"</span>
+          </button>
+        </div>
+         <button aria-expanded="false" class="rpb-navigation__mobile-toggle"><span class="rpb-h3 rpb-navigation__mobile-title">Introduction</span></button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item rpb-navigation__mobile-link">       
+            <a class="rpb-navigation__list-link" href="/dist/html/introduction/index.html">
+              <span class="rpb-navigation__list-title">Welcome</span>
+            </a>
+          </li> 
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-navigation__list-link" href="/dist/html/introduction/digital-accessibility.html">
+              <span class="rpb-navigation__list-title">
+                Digital Accessibility
+              </span>
+            </a>
+          </li>              
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-navigation__list-link" href="/dist/html/introduction/accessibility-principles.html">
+              <span class="rpb-navigation__list-title">Accessibility principles</span>
+            </a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-navigation__list-link" href="/dist/html/introduction/accessibility-testing.html">
+              <span class="rpb-navigation__list-title">Accessibility testing</span>
+            </a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-navigation__list-link" href="/dist/html/introduction/training-and-development.html">
+              <span class="rpb-navigation__list-title">Training and Development</span>
+            </a>
+          </li>
+        </ul>
+
+      </li>
+
+      
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/dist/html/product/index.html">
+          Product
+        </a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+            <button class="rpb-navigation-sr-expand__btn">
+                <span class="sr-only">Show submenu for "Product"</span>
+            </button>
+        </div>
+
+         <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+        <span class="rpb-h3">Product</span>
+      </button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item rpb-navigation__mobile-link">
+            <a class="rpb-navigation__list-link" href="/dist/html/product/index.html">
+                <span class="rpb-navigation__list-title">Get started</span>
+            </a>
+            </li>  
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/product/accessibility-basics.html">
+                <span class="rpb-navigation__list-title">Accessibility basics</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/product/diverse-users.html">
+                <span class="rpb-navigation__list-title">Diverse users</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/product/project-workflow.html">
+                <span class="rpb-navigation__list-title">Project workflow</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/product/final-review.html">
+                <span class="rpb-navigation__list-title">Final review</span>
+              </a>
+            </li>                
+        </ul>
+
+      </li>
+
+      
+      <li class="rpb-navigation__list-item" aria-current="page">
+
+          <a class="rpb-link rpb-navigation-link" href="/dist/html/content-design/index.html">Content design</a>
+
+          <div class="rpb-navigation-sr-expand__wrapper">
+              <button class="rpb-navigation-sr-expand__btn">
+                  <span class="sr-only">Show submenu for "Website Content"</span>
+              </button>
+          </div>
+           <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+        <span class="rpb-h3">Content design</span>
+      </button>
+            <ul class="rpb-navigation__level-two">
+              <li class="rpb-navigation__list-item rpb-navigation__mobile-link">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/index.html">
+                  <span class="rpb-navigation__list-title">Get started</span>
+                </a>
+              </li>             
+              <li class="rpb-navigation__list-item">
+                 <a class="rpb-navigation__list-link" href="/dist/html/content-design/plain-language.html">
+                  <span class="rpb-navigation__list-title">Plain language</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/easy-read.html">
+                  <span class="rpb-navigation__list-title">Easy Read</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/headings.html">
+                   <span class="rpb-navigation__list-title">Headings</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/documents.html">
+                  <span class="rpb-navigation__list-title">Documents</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/scannable-content.html">
+                  <span class="rpb-navigation__list-title">Scannable content</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/images.html">
+                 <span class="rpb-navigation__list-title">Images</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/links.html">
+                  <span class="rpb-navigation__list-title">Links</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/information-architecture.html">
+                  <span class="rpb-navigation__list-title">Information architecture</span>
+                </a>
+              </li>              
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/social-media.html">
+                  <span class="rpb-navigation__list-title">Social media</span>
+                </a>
+              </li>              
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/content-design/video-and-multimedia.html">
+                  <span class="rpb-navigation__list-title">Video and Multimedia</span>
+                </a>
+              </li>
+          </ul>
+      </li>
+
+      
+      <li class="rpb-navigation__list-item">
+
+          <a class="rpb-link rpb-navigation-link" href="/dist/html/ux/index.html">User experience</a>
+
+          <div class="rpb-navigation-sr-expand__wrapper">
+              <button class="rpb-navigation-sr-expand__btn">
+                  <span class="sr-only">Show submenu for User experience</span>
+              </button>
+          </div>
+          <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+            <span class="rpb-h3">User experience</span>
+          </button>
+          <ul class="rpb-navigation__list rpb-navigation__level-two">
+              <li class="rpb-navigation__list-item rpb-navigation__mobile-link">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/index.html">
+                  <span class="rpb-navigation__list-title">Get started</span>
+                </a>
+              </li>  
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/inclusive-design.html">
+                  <span class="rpb-navigation__list-title">Inclusive design</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/assistive-technology.html">
+                  <span class="rpb-navigation__list-title">Assistive technology</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/humanise-accessibility.html">
+                  <span class="rpb-navigation__list-title">Humanise accessibility</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/tab-order.html">
+                  <span class="rpb-navigation__list-title">Tab order</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/focus.html">
+                  <span class="rpb-navigation__list-title">Focus</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/navigation-shortcuts.html">
+                  <span class="rpb-navigation__list-title">Navigation shortcuts</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/forms.html">
+                  <span class="rpb-navigation__list-title">Forms</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/images.html">
+                  <span class="rpb-navigation__list-title">Images</span>
+                </a>
+              </li>
+              <li class="rpb-navigation__list-item">
+                <a class="rpb-navigation__list-link" href="/dist/html/ux/touch-targets.html">
+                  <span class="rpb-navigation__list-title">Touch targets</span>
+                </a>
+              </li>
+          </ul>
+      </li>
+
+      
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/dist/html/visual-design/index.html">Visual design</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+            <button class="rpb-navigation-sr-expand__btn">
+                <span class="sr-only">Show submenu for Visual Design</span>
+            </button>
+        </div>
+          <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+            <span class="rpb-h3">Visual design</span>
+          </button>
+        <ul class="rpb-navigation__level-two">
+            <li class="rpb-navigation__list-item rpb-navigation__mobile-link">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/index.html">
+                <span class="rpb-navigation__list-title">Get started</span>
+              </a>
+            </li> 
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/colour-and-contrast.html">
+                <span class="rpb-navigation__list-title">Colour and Contrast</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/layout-and-hierarchy.html">
+                <span class="rpb-navigation__list-title">Layout and Hierarchy</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/typography.html">
+                <span class="rpb-navigation__list-title">Typography</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/graphics-and-images.html">
+                <span class="rpb-navigation__list-title">Graphics and Images</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/flashing-and-motion.html"> 
+                <span class="rpb-navigation__list-title">Flashing and Motion</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/data-visualisations.html">
+                <span class="rpb-navigation__list-title">Data visualisations</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/forms.html">
+                <span class="rpb-navigation__list-title">Forms</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/mobile.html">
+                <span class="rpb-navigation__list-title">Mobile</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/keyboard-access.html">
+                <span class="rpb-navigation__list-title">Keyboard access</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/visual-design/screen-reader.html">
+                <span class="rpb-navigation__list-title">Screen reader</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+
+      
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/dist/html/development/index.html">Development</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+            <button class="rpb-navigation-sr-expand__btn">
+                <span class="sr-only">Show submenu for Development</span>
+            </button>
+        </div>
+          <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+            <span class="rpb-h3">Development</span>
+          </button>
+        <ul class="rpb-navigation__level-two">
+            <li class="rpb-navigation__list-item rpb-navigation__mobile-link">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/index.html">
+                <span class="rpb-navigation__list-title">Get started</span>
+              </a>
+            </li>   
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/keyboard-access.html">
+                <span class="rpb-navigation__list-title">Keyboard access</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/screen-reader.html">
+                <span class="rpb-navigation__list-title">Screen reader</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/headings.html">
+                <span class="rpb-navigation__list-title">Headings</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/page-structure.html">
+                <span class="rpb-navigation__list-title">Page structure</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/css-dependence.html">
+                <span class="rpb-navigation__list-title">CSS dependence</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/images.html">
+                <span class="rpb-navigation__list-title">Images</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/links-and-buttons.html">
+                <span class="rpb-navigation__list-title">Links and Buttons</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/colour-and-contrast.html">
+                <span class="rpb-navigation__list-title">Colour and Contrast</span>
+              </a>
+            </li>
+            <li class="rpb-navigation__list-item">
+              <a class="rpb-navigation__list-link" href="/dist/html/development/automated-testing.html">
+                <span class="rpb-navigation__list-title">Automated testing</span>
+              </a>
+            </li>
+
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+
+
+
+
+  
+  <main role="main" aria-hidden="false" class="main-container">
+
+    
+    <div class="rpb-pane__breadcrumb">
+      <div class="rpb-container">
+        <div class="rpb-grid">
+          <nav class="rpb-breadcrumb" aria-label="breadcrumbs">
+            <p id="rpb-breadcrumb__label" class="sr-only">You are here:</p>
+            <ol class="rpb-breadcrumb__section" aria-labelledby="rpb-breadcrumb__label">
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/dist/html/index.html" class="rpb-breadcrumb__link">
+                  Home
+                </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item" aria-current="page">
+                Content
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container__content">
+      <div class="rpb-container">
+        <div class="rpb-grid">
+
+          
+          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+
+            <h1 class="rpb-h1">Get started</h1>
+
+            <h2 class="rpb-h3">Accessibility for Content designers</h2>
+
+            <p class="lead">Accessible content design ensures your information is easier for everyone to understand. When building government services, ensure they are accessible and welcoming to all users.</p>
+
+            
+            <div class="rpb-card--wrapper">
+              <ul class="rpb-card-list">
+              <li class="rpb-card">
+
+                  <div class="rpb-card--content">
+                      <h2 class="rpb-h4 rpb-card--title">
+                        <a href="/dist/html/content-design/plain-language.html" class="rpb-link rpb-card--link">Plain language</a>
+                      </h2>
+                      <p class="rpb-card--text">
+                        Can you swiftly understand the main points of the content?
+                      </p>
+                  </div>
+              </li>
+
+              <li class="rpb-card">
+                   <div class="rpb-card--content">
+                      <h2 class="rpb-h4 rpb-card--title">
+                        <a href="/dist/html/content-design/easy-read.html" class="rpb-link rpb-card--link">Easy Read</a>
+                      </h2>
+                      <p class="rpb-card--text">
+                        Is your information presented in a way that is easy to understand?
+                      </p>
+                  </div>
+              </li>              
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/headings.html" class="rpb-link rpb-card--link">Headings</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Can you understand a page's content structure associated with Headings?
+                    </p>
+                </div>
+              </li>  
+                                   
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/documents.html" class="rpb-link rpb-card--link">Documents</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Are your Portable Document Format (PDF) files and Word documents marked up correctly?
+                    </p>
+                </div>
+              </li>  
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/scannable-content.html" class="rpb-link rpb-card--link">Scannable content</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Can you scan the page without having to pause for key points?
+                    </p>
+                </div>
+              </li>                 
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/images.html" class="rpb-link rpb-card--link">Images</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Do your images have the right alternative 'alt' text to describe the information of the image?
+                    </p>
+                </div>
+              </li>                  
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/links.html" class="rpb-link rpb-card--link">Links</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Are all links concise, descriptive, and meaningful when read out of context?
+                    </p>
+                </div>
+              </li>               
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/information-architecture.html" class="rpb-link rpb-card--link">Information architecture</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Is your website organised in a way that everyone can easily navigate?
+                    </p>
+                </div>
+              </li>               
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/social-media.html" class="rpb-link rpb-card--link">Social media</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Can everyone access your social media posts? 
+                    </p>
+                </div>
+              </li>                              
+              
+              <li class="rpb-card">
+                <div class="rpb-card--content">
+                    <h2 class="rpb-h4 rpb-card--title">
+                      <a href="/dist/html/content-design/video-and-multimedia.html" class="rpb-link rpb-card--link">Video and Multimedia</a>
+                    </h2>
+                    <p class="rpb-card--text">
+                      Can everybody access your multimedia content?
+                    </p>
+                </div>
+              </li>             
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      
+      <div class="rpb-container">
+        <div class="rpb-grid">
+
+          <div class="rpb-grid__cell">
+            <div class="rpb-utilities">
+
+              <p class="rpb-utilities__last-modified">
+                Last modified:&nbsp;
+                <time datetime="2021-10-29">
+                  29 October 2021
+                </time>
+              </p>
+
+
+              <div class="rpb-utilities__elements">
+
+                
+                <button id="BackToTop" tabindex="0" href="javascript:void(0)" class="back-to-top">
+                  <span class="sr-only">Return to the top of the page</span>
+                  <span class="rpb-utilities__btn--label" aria-hidden="true">Back to top</span>
+                </button>
+
+                <button id="rpb-print-button" class="rpb-link rpb-print__button">
+                  <span class="sr-only">Print the page content</span>
+                  <span class="rpb-utilities__btn--label">Print</span>
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+   
+  <footer role="contentinfo" class="rpb-footer">
+        <div class="rpb-container">
+
+            <div class="rpb-grid">
+
+                <div class="rpb-grid__cell rpb-grid--one-half">
+
+                  <div class="row">
+                   
+                    <ul class="rpb-footer__list rpb-footer__contact">
+                      <li class="rpb-footer__list-item">
+
+                        <a role="link" href="https://www.linkedin.com/in/robbie-bartlett/" class="rpb-linkedin" aria-label="Follow me on linkedin">
+                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__linkedin">
+                            <use href="../../images/sprites/sprite.svg#icons--linkedin"></use>
+                          </svg>
+                        </a>
+
+
+                      </li>
+                           <li class="rpb-footer__list-item">
+                            <a role="link" href="https://github.com/robbiebartlett" class="rpb-github" aria-label="Follow me on Github">
+                              <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__github">
+                                <use href="../../images/sprites/sprite.svg#icons--github"></use>
+                              </svg>
+                            </a>
+                      </li>
+                      <li class="rpb-footer__list-item">
+                        <a href="tel:02102774083" class="rpb-phone" aria-label="Call me on my Phone">
+                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__phone">
+                            <use href="../../images/sprites/sprite.svg#icons--phone"></use>
+                          </svg>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <div class="rpb-grid__cell rpb-grid--one-half">
+                  <div class="rpb-grid__cell">
+                    <ul class="rpb-footer__list">
+                      <li class="rpb-footer__list-item">
+                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#about">About</a>
+                      </li>
+                     
+                      <li class="rpb-footer__list-item">
+                        <a class="rpb-footer__link" href="/dist/html/sitemap.html">Sitemap</a>
+                      </li>
+                      <li class="rpb-footer__list-item">
+                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="rpb-grid">
+                <div class="rpb-grid__cell">
+
+                    <div class="rpb-footer__copyright">
+                      <p class="rpb-footer__small-text">© Rob Bartlett <span id="year"></span></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+  </footer>
+
+
+
+
+  
+  <script src="../../js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="../../js/scripts.js?cb=1607455229852"></script>
+</body>
+
+</html>
