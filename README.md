@@ -2,4 +2,4 @@
 
 UX/UI Portfolio based on a cross of HTML, CSS and Js.
 
-Feel free to delve under the hood
+Feel free to delve under the hood and utilise the accessibility guide.
