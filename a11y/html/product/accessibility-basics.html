@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Product | Rob Bartlett - a11y</title>
+  <title>Accessibility basics | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -474,11 +475,16 @@
             <ol class="rpb-breadcrumb__section" aria-labelledby="rpb-breadcrumb__label">
               <li class="rpb-breadcrumb__list-item">
                 <a href="/a11y/html/index.html" class="rpb-breadcrumb__link">
-              Home
-            </a>
+                  Home
+                </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/product/index.html" class="rpb-breadcrumb__link">
+                  Product management
+                </a>
               </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Product 
+                Accessibility basics
               </li>
             </ol>
           </nav>
@@ -486,71 +492,103 @@
       </div>
     </div>
 
-
     <div class="main-container__content">
-
       <div class="rpb-container">
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Accessibility basics</h1>
 
-            <h2 class="rpb-h3">Accessibility for Product owners</h2>
+            <p class="lead">Are you aware of the basics of accessibility and what your team does to make information accessible?</p>
 
-            <p class="lead">Product owners play a vital role in embedding accessibility requirements throughout each project. To be truly accessible, test all products with real people (including disabled people).</p>
-        
-              
-              <div class="rpb-card--wrapper">
-                <ul class="rpb-card-list">
-                <li class="rpb-card">
-  
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/product/accessibility-basics.html" class="rpb-link rpb-card--link">Accessibility basics</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are you aware of the basics of accessibility and what your team does to make information accessible?
-                      </p>
-                  </div>
+            <h2 class="rpb-h3">Why it’s important:</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Being aware of the responsibilities of each team member keeps the team accountable to the <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines</a>.</li>
+                <li class="rpb-list__section--item">Embedding accessibility into your product will ensure all users will be able to access your information.</li>
+              </ul>
+            </div> 
+
+              <h2 class="rpb-h3">Next steps</h2>
+              <div class="rpb-list">
+                <ol class="rpb-list__section rpb-list--number">
+                  <li class="rpb-list__section--item">Check that all team members know where to find the accessibility guidelines for their role and follow them from the beginning of a project.</li>
+                  <li class="rpb-list__section--item">Become familiar with the high-level accessibility roles for each member of your team: 
+                    <ul class="rpb-list__sub-list">
+                      <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link" href="/a11y/html/content-design/index.html">Content design</a>: Ensure content is written in plain language and headings, images, and links are accurately labelled.</li>
+                      <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link" href="/a11y/html/ux/index.html">UX design</a>: Ensure that overall experience is built and designed in an accessible nature. Conduct usability testing with all people, inclusive of people reliant on accessibility features.</li>
+                      <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link" href="/a11y/html/visual-design/index.html">Visual design</a>: Ensure that all designs are accessible, pages are laid out in a logical order and content meets colour contrast requirements.</li>
+                      <li class="rpb-list__section--item rpb-list__section--square"><a class="rpb-link" href="/a11y/html/development/index.html">Development</a>: Ensure front end code is written accessibly and manual and automated testing is conducted.</li>
+                    </ul>
+                  </li>
+                  <li class="rpb-list__section--item">Take a <a class="rpb-link" href="/a11y/html/introduction/training-and-development.html">short course</a> to gain a basic knowledge of accessibility.</li>
+                  <li class="rpb-list__section--item">Learn how to <a class="rpb-link" href="/a11y/html/visual-design/keyboard-access.html">navigate a webpage using your keyboard</a> only. Also learn how to <a class="rpb-link" href="/a11y/html/visual-design/screen-reader.html">use a Screen Reader</a> so you can check new features when required.</li>
+                </ol>
+             </div>     
+
+            
+            <div class="rpb-callout rpb-callout__note">
+
+              <h2 class="rpb-callout__title">References</h2>
+
+              <h3 class="rpb-callout__sub-title">Resources</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://youtu.be/20SHvU2PKsM">Video - Introduction to Web Accessibility and W3C Standards<span class="sr-only">(this link opens an external website)</span></a>
                 </li>
-  
-                <li class="rpb-card">
-                    <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/product/diverse-users.html" class="rpb-link rpb-card--link">Diverse users</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Have you considered how everyone will use your product?
-                      </p>
-                  </div>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">
+                    Dos and dont's on designing for accessibility (GOV.UK)<span class="sr-only">(this link opens an external website)</span></a>
                 </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/product/project-workflow.html" class="rpb-link rpb-card--link">Project workflow</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are you embedding accessibility into your workflow rather than retrofitting at the end?
-                      </p>
-                  </div>
+              </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility<span class="sr-only">(this link opens an external website)</span></a>
                 </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/product/final-review.html" class="rpb-link rpb-card--link">Final review</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Have you had an official review from the Accessibility Team?
-                      </p>
-                  </div>
-                </li>
-  
+              </ul>
+
+            </div>
+
+
+
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/product/accessibility-basics.html">Product</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/product/accessibility-basics.html">Accessibility basics</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/product/diverse-users.html">Diverse users</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/product/project-workflow.html">Project workflow</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/product/final-review.html">Final review</a>
+                  </li>
+
                 </ul>
-              </div>
+
+              </nav>
+            </div>
 
           </div>
 
@@ -567,8 +605,8 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-09-28">
-                  28 September 2021
+                <time datetime="2021-09-16">
+                  16 September 2021
                 </time>
               </p>
 
