@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Visual design | Rob Bartlett - a11y</title>
+  <title>Screen reader | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -82,7 +83,7 @@
 
 
 
-
+  
   
   <nav role="navigation" class="rpb-navigation" aria-label="main menu">
     <ul class="rpb-navigation__list rpb-navigation__level-one">
@@ -461,7 +462,7 @@
 
 
 
-  
+
   
   <main role="main" aria-hidden="false" class="main-container">
 
@@ -477,8 +478,13 @@
               Home
             </a>
               </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/visual-design/index.html" class="rpb-breadcrumb__link">
+              Visual design
+            </a>
+              </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Visual design
+                Screen reader
               </li>
             </ol>
           </nav>
@@ -491,250 +497,235 @@
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Screen reader</h1>
 
-            <h2 class="rpb-h3">Accessibility for Visual designers</h2>
+            <p class="lead">Can you use a screen reader to access the page content?</p>
 
-            <p class="lead">Accessible visual design ensures as many people as possible will have access to our work. A clean and clear visual presentation helps make sense of information and functionality.</p>
-
-            
-            <div class="rpb-card--wrapper">
-              <ul class="rpb-card-list">
-              <li class="rpb-card">
-
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/colour-and-contrast.html" class="rpb-link rpb-card--link">Colour and Contrast</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is there enough contrast between text, interactive elements and their background colours?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                   <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/layout-and-hierarchy.html" class="rpb-link rpb-card--link">Layout and Hierarchy</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand the meaning of the page and complete your task?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/typography.html" class="rpb-link rpb-card--link">Typography</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you read and comprehend textual information on the page?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/graphics-and-images.html" class="rpb-link rpb-card--link">Graphics and Images</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand content associated with graphics, icons, and images?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/flashing-and-motion.html" class="rpb-link rpb-card--link">Flashing and Motion</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is there any content starting or changing unexpectedly?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/data-visualisations.html" class="rpb-link rpb-card--link">Data visualisations</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand the trend of the graph and grasp the relationship between parts of the data?
-                      </p>
-                  </div>
-              </li>     
-              
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/forms.html" class="rpb-link rpb-card--link">Forms</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are our forms as simple as possible and only ask what’s needed to complete the task? 
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/mobile.html" class="rpb-link rpb-card--link">Mobile</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand key information and perform critical tasks on a mobile device?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/keyboard-access.html" class="rpb-link rpb-card--link">Keyboard access</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you reach all interactive content using the tab key?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/screen-reader.html" class="rpb-link rpb-card--link">Screen reader</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you use a screen reader to access the page content?
-                      </p>
-                  </div>
-              </li>
-
+            <h2 class="rpb-h3">Why it’s important:</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Evelyn is visually impaired and uses a screen reader to navigate the web.</li>
               </ul>
             </div>
 
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item">Confirm a screen reader can select controls and announcement of information is correct. <a class="rpb-link rpb__link--external" href="https://www.nvaccess.org/download">Download the NVDA screen reader (NV Access)</a> or request through your IT service provider.</li>
+                <li class="rpb-list__section--item">Announcement of information should be in the appropriate order and context. For example labels before form fields, headers before content.</li>
+                <li class="rpb-list__section--item">Check that HTML documents include a language attribute (html lang="en"). This will assist the screen reader to use the correct accent and pronunciation.</li>
+                <li class="rpb-list__section--item">If forms are present, make sure the screen reader reads labels and instructions.</li>
+                <li class="rpb-list__section--item">Some screen readers don't announce the asterisk character. Include 'required' in all labels or apply the <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2">aria-required="true"</a> attribute.</li>
+                <li class="rpb-list__section--item">Check contextualized page titles are in use, each web page needs its own title. If the page is part of a multi-step process such as a sign-up form or checkout flow, include the step number such as Step 1 of 3.</li>
+                <li class="rpb-list__section--item">Make sure all links are descriptive. For example, the link text 'Read More' provides no context about where the user will go if they click it.'Read more about our services' describes what’s on the other side of the link.</li>
+              </ol>
+            </div>
+
+            
+            <div class="rpb-callout rpb-callout__note">
+              <h2 class="rpb-callout__title">References</h2>
+
+              <h3 class="rpb-callout__sub-title">Resources</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://designmodo.com/screen-reader-accessible-design/">12 Screen reader facts for Accessible Web Design<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://webaim.org/techniques/screenreader/">Designing for Screen Reader Compatibility<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.youtube.com/watch?v=8Rn5pXCdZWU">Video: Web Accessibility Perspectives - Text to Speech<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+                <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+                <ul class="rpb-list__section rpb-list__section--square">
+                  <li class="rpb-callout__link">
+                    <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships">1.3.1 Info and Relationships<span class="sr-only">(this link opens an external website)</span></a> 
+                  </li>                  
+                </ul>
+
+            </div>
           </div>
 
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+    
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/visual-design/index.html">Visual design</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/colour-and-contrast.html">Colour and Contrast</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/layout-and-hierarchy.html">Layout and Hierarchy</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/typography.html">Typography</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/graphics-and-images.html">Graphics and Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/flashing-and-motion.html">Flashing and Motion</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/data-visualisations.html">Data visualisations</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/forms.html">Forms</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/mobile.html">Mobile</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/keyboard-access.html">Keyboard access</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/screen-reader.html">Screen reader</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+            </div>
+
+          </div>
+      
         </div>
       </div>
 
 
-      
-      <div class="rpb-container">
+       
+       <div class="rpb-container">
         <div class="rpb-grid">
 
-          <div class="rpb-grid__cell">
-            <div class="rpb-utilities">
+         <div class="rpb-grid__cell">
+           <div class="rpb-utilities">
 
-              <p class="rpb-utilities__last-modified">
-                Last modified:&nbsp;
-                <time datetime="2021-09-28">
-                  28 September 2021
-                </time>
+            <p class="rpb-utilities__last-modified">
+              Last modified:&nbsp;
+               <time datetime="2020-12-03 ">
+                 8 March 2021
+               </time>
               </p>
+           
 
+            <div class="rpb-utilities__elements">
 
-              <div class="rpb-utilities__elements">
-
-                
-                <button id="BackToTop" tabindex="0" href="javascript:void(0)" class="back-to-top">
-                  <span class="sr-only">Return to the top of the page</span>
-                  <span class="rpb-utilities__btn--label" aria-hidden="true">Back to top</span>
-                </button>
-
-                <button id="rpb-print-button" class="rpb-link rpb-print__button">
-                  <span class="sr-only">Print the page content</span>
-                  <span class="rpb-utilities__btn--label">Print</span>
-                </button>
-
-              </div>
-
+              
+              <button id="BackToTop " tabindex="0" href="javascript:void(0) " class="back-to-top">
+                <span class="sr-only">Return to the top of the page</span>
+                <span class="rpb-utilities__btn--label" aria-hidden="true ">Back to top</span>
+              </button>
+              
+              <button id="rpb-print-button " class="rpb-link rpb-print__button">
+                <span class="sr-only">Print the page content</span>
+                <span class="rpb-utilities__btn--label">Print</span>
+              </button>
+          
             </div>
+
+           </div>
           </div>
-        </div>
+        </div>  
       </div>
 
     </div>
 
   </main>
-
+  
 
 
 
 
    
   <footer role="contentinfo" class="rpb-footer">
-        <div class="rpb-container">
+    <div class="rpb-container">
 
-            <div class="rpb-grid">
+        <div class="rpb-grid">
 
-                <div class="rpb-grid__cell rpb-grid--one-half">
+            <div class="rpb-grid__cell rpb-grid--one-half">
 
-                  <div class="row">
-                   
-                    <ul class="rpb-footer__list rpb-footer__contact">
-                      <li class="rpb-footer__list-item">
+              <div class="row">
+               
+                <ul class="rpb-footer__list rpb-footer__contact">
+                  <li class="rpb-footer__list-item">
 
-                        <a role="link" href="https://www.linkedin.com/in/robbie-bartlett/" class="rpb-linkedin" aria-label="Follow me on linkedin">
-                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__linkedin">
-                            <use href="../../images/sprites/sprite.svg#icons--linkedin"></use>
+                    <a role="link" href="https://www.linkedin.com/in/robbie-bartlett/" class="rpb-linkedin" aria-label="Follow me on linkedin">
+                      <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__linkedin">
+                        <use href="../../images/sprites/sprite.svg#icons--linkedin"></use>
+                      </svg>
+                    </a>
+
+
+                  </li>
+                       <li class="rpb-footer__list-item">
+                        <a role="link" href="https://github.com/robbiebartlett" class="rpb-github" aria-label="Follow me on Github">
+                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__github">
+                            <use href="../../images/sprites/sprite.svg#icons--github"></use>
                           </svg>
                         </a>
-
-
-                      </li>
-                           <li class="rpb-footer__list-item">
-                            <a role="link" href="https://github.com/robbiebartlett" class="rpb-github" aria-label="Follow me on Github">
-                              <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__github">
-                                <use href="../../images/sprites/sprite.svg#icons--github"></use>
-                              </svg>
-                            </a>
-                      </li>
-                      <li class="rpb-footer__list-item">
-                        <a href="tel:02102774083" class="rpb-phone" aria-label="Call me on my Phone">
-                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__phone">
-                            <use href="../../images/sprites/sprite.svg#icons--phone"></use>
-                          </svg>
-                        </a>  
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <div class="rpb-grid__cell rpb-grid--one-half">
-                  <div class="rpb-grid__cell">
-                    <ul class="rpb-footer__list">
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#about">About</a>
-                      </li>
-                     
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="/a11y/html/sitemap.html">Sitemap</a>
-                      </li>
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#contact">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                  </li>
+                  <li class="rpb-footer__list-item">
+                    <a href="tel:02102774083" class="rpb-phone" aria-label="Call me on my Phone">
+                      <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__phone">
+                        <use href="../../images/sprites/sprite.svg#icons--phone"></use>
+                      </svg>
+                    </a>  
+                  </li>
+                </ul>
+              </div>
 
             </div>
 
-            <div class="rpb-grid">
-                <div class="rpb-grid__cell">
-
-                    <div class="rpb-footer__copyright">
-                      <p class="rpb-footer__small-text">© Rob Bartlett <span id="year"></span></p>
-                    </div>
-
-                </div>
+            <div class="rpb-grid__cell rpb-grid--one-half">
+              <div class="rpb-grid__cell">
+                <ul class="rpb-footer__list">
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#about">About</a>
+                  </li>
+                 
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="/a11y/html/sitemap.html">Sitemap</a>
+                  </li>
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
         </div>
+
+        <div class="rpb-grid">
+            <div class="rpb-grid__cell">
+
+                <div class="rpb-footer__copyright">
+                  <p class="rpb-footer__small-text">© Rob Bartlett <span id="year"></span></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
   </footer>
 
 
@@ -746,5 +737,4 @@
   <script src="../../js/scripts.js?cb=1607455229852"></script>
 
 </body>
-
 </html>

@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Visual design | Rob Bartlett - a11y</title>
+  <title>Colour and contrast | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -461,7 +462,7 @@
 
 
 
-  
+
   
   <main role="main" aria-hidden="false" class="main-container">
 
@@ -474,11 +475,16 @@
             <ol class="rpb-breadcrumb__section" aria-labelledby="rpb-breadcrumb__label">
               <li class="rpb-breadcrumb__list-item">
                 <a href="/a11y/html/index.html" class="rpb-breadcrumb__link">
-              Home
-            </a>
+            Home
+          </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/visual-design/index.html" class="rpb-breadcrumb__link">
+            Visual design
+          </a>
               </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Visual design
+                Colour and Contrast
               </li>
             </ol>
           </nav>
@@ -491,129 +497,130 @@
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Colour and contrast</h1>
 
-            <h2 class="rpb-h3">Accessibility for Visual designers</h2>
+            <p class="lead">Is there enough contrast between text, interactive elements and their background colours?</p>
 
-            <p class="lead">Accessible visual design ensures as many people as possible will have access to our work. A clean and clear visual presentation helps make sense of information and functionality.</p>
+            <h2 class="rpb-h3">Why it’s important</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Terehia has low vision and needs content to have enough contrast to decipher it.</li>
+                <li class="rpb-list__section--item">Jack has achromatopsia and cannot distinguish information conveyed by colour alone.</li>
+              </ul>
+            </div>
+
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item">The contrast between text and background needs to be greater than or equal to 4.5:1 for small text and 3:1 for large text.</li>
+                <li class="rpb-list__section--item">Graphics and user interface components (such as form input borders) need a contrast ratio of at least 3:1.</li>
+                <li class="rpb-list__section--item">Test colour combinations with an accessible <a class="rpb-link rpb__link--external" href="https://color.adobe.com/create/color-accessibility">Colour Palette Generator<span class="sr-only">(this link opens an external website)</span></a> or a <a class="rpb-link rpb__link--external" href="https://contrast-grid.eightshapes.com">Colour Contrast Grid<span class="sr-only">(this link opens an external website)</span></a>.</li>
+                <li class="rpb-list__section--item">Check the contrast between text and background colours with tools like <a class="rpb-link rpb__link--external" href="https://webaim.org/resources/contrastchecker/">WebAim's Colour Contrast Checker<span class="sr-only">(this link opens an external website)</span></a> or an <a class="rpb-link rpb__link--external" href="https://xd.adobelanding.com/en/xd-plugin-download/?name=6cbf275e">Adobe XD<span class="sr-only">(this link opens an external plugin)</span></a>, <a class="rpb-link rpb__link--external" href="https://www.figma.com/community/plugin/748533339900865323/Contrast">Figma</a> or <a class="rpb-link rpb__link--external" href="https://sketchapp.rocks/plugins/color-contrast-analyser/">Sketch plugin</a>.</li>
+                <li class="rpb-list__section--item">Exceptions:
+                  <ul class="rpb-list__sub-list">
+                    <li class="rpb-list__section--item rpb-list__section--square">Colour contrast requirements for logos or incidental Headings are not required.</li>
+                    <li class="rpb-list__section--item rpb-list__section--square">Text included in disabled buttons or a disabled control's state is not required to meet the minimum contrast ratio.</li>
+                    <li class="rpb-list__section--item rpb-list__section--square">Text that is part of a logo has no minimum contrast requirement.</li>
+                  </ul>
+                </li>
+                <li class="rpb-list__section--item">Temper the contrast between the text and background colour. Avoiding pure black text on white assists users with Irlen Syndrome, light sensitivity, dyslexia and autism.</li>
+                <li class="rpb-list__section--item">When using text over images, add a solid background behind the text or a dark overlay to the image.</li>
+                <li class="rpb-list__section--item">Non underlined links need a contrast ratio of 4.5:1 with the surrounding body text. The body text needs a contrast ratio of 3:1 with the background colour. Test the link contrast with tools like <a class="rpb-link rpb__link--external" href="https://webaim.org/resources/linkcontrastchecker">WebAim's Link Contrast Checker<span class="sr-only">(this link opens an external website)</span></a>.</li>
+                <li class="rpb-list__section--item">Colour alone should not convey meaning. Use icons, written content and other visual elements to reinforce clear content communication. </li>
+                <li class="rpb-list__section--item">To simulate the visual challenges people face use tools like <a class="rpb-link rpb__link--external" href="https://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis<span class="sr-only">(this link opens an external website)</span></a> or <a class="rpb-link rpb__link--external" href="https://addons.mozilla.org/en-US/firefox/addon/nocoffee/">NoCoffee Vision Simulator<span class="sr-only">(this link opens an external website)</span></a> to simulate.</li>
+              </ol>
+            </div>
 
             
-            <div class="rpb-card--wrapper">
-              <ul class="rpb-card-list">
-              <li class="rpb-card">
+            <div class="rpb-callout rpb-callout__note">
+              <h2 class="rpb-callout__title">References</h2>
 
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/colour-and-contrast.html" class="rpb-link rpb-card--link">Colour and Contrast</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is there enough contrast between text, interactive elements and their background colours?
-                      </p>
-                  </div>
-              </li>
+              <h3 class="rpb-callout__sub-title">Resources</h3>
 
-              <li class="rpb-card">
-                   <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/layout-and-hierarchy.html" class="rpb-link rpb-card--link">Layout and Hierarchy</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand the meaning of the page and complete your task?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/typography.html" class="rpb-link rpb-card--link">Typography</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you read and comprehend textual information on the page?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/graphics-and-images.html" class="rpb-link rpb-card--link">Graphics and Images</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand content associated with graphics, icons, and images?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/flashing-and-motion.html" class="rpb-link rpb-card--link">Flashing and Motion</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is there any content starting or changing unexpectedly?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/data-visualisations.html" class="rpb-link rpb-card--link">Data visualisations</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand the trend of the graph and grasp the relationship between parts of the data?
-                      </p>
-                  </div>
-              </li>     
-              
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/forms.html" class="rpb-link rpb-card--link">Forms</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are our forms as simple as possible and only ask what’s needed to complete the task? 
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/mobile.html" class="rpb-link rpb-card--link">Mobile</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you understand key information and perform critical tasks on a mobile device?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/keyboard-access.html" class="rpb-link rpb-card--link">Keyboard access</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you reach all interactive content using the tab key?
-                      </p>
-                  </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/visual-design/screen-reader.html" class="rpb-link rpb-card--link">Screen reader</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you use a screen reader to access the page content?
-                      </p>
-                  </div>
-              </li>
-
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://digitalaccess.ucsf.edu/guide/color">What is an accessible use of colour?<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.youtube.com/watch?v=LBmLspdAtxM">Video: How to check for accessible colours<span class="sr-only">(this link opens an external website)</span></a>
+                </li> 
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.smashingmagazine.com/2017/10/nailing-accessibility-design/">Stop Designing For Only 85% Of Users<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
               </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/TR/WCAG21/#use-of-color">1.4.1 Use of Color<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3 Contrast (Minimum)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/visual-design/index.html">Visual design</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/colour-and-contrast.html">Colour and Contrast</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/layout-and-hierarchy.html">Layout and Hierarchy</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/typography.html">Typography</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/graphics-and-images.html">Graphics and Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/flashing-and-motion.html">Flashing and Motion</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/data-visualisations.html">Data visualisations</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/forms.html">Forms</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/mobile.html">Mobile</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/keyboard-access.html">Keyboard access</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/visual-design/screen-reader.html">Screen reader</a>
+                  </li>
+
+                </ul>
+
+              </nav>
             </div>
 
           </div>
@@ -631,8 +638,8 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-09-28">
-                  28 September 2021
+                <time datetime="2020-12-03">
+                  3 December 2020
                 </time>
               </p>
 
@@ -667,75 +674,76 @@
 
    
   <footer role="contentinfo" class="rpb-footer">
-        <div class="rpb-container">
+    <div class="rpb-container">
 
-            <div class="rpb-grid">
+        <div class="rpb-grid">
 
-                <div class="rpb-grid__cell rpb-grid--one-half">
+            <div class="rpb-grid__cell rpb-grid--one-half">
 
-                  <div class="row">
-                   
-                    <ul class="rpb-footer__list rpb-footer__contact">
-                      <li class="rpb-footer__list-item">
+              <div class="row">
+               
+                <ul class="rpb-footer__list rpb-footer__contact">
+                  <li class="rpb-footer__list-item">
 
-                        <a role="link" href="https://www.linkedin.com/in/robbie-bartlett/" class="rpb-linkedin" aria-label="Follow me on linkedin">
-                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__linkedin">
-                            <use href="../../images/sprites/sprite.svg#icons--linkedin"></use>
+                    <a role="link" href="https://www.linkedin.com/in/robbie-bartlett/" class="rpb-linkedin" aria-label="Follow me on linkedin">
+                      <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__linkedin">
+                        <use href="../../images/sprites/sprite.svg#icons--linkedin"></use>
+                      </svg>
+                    </a>
+
+
+                  </li>
+                       <li class="rpb-footer__list-item">
+                        <a role="link" href="https://github.com/robbiebartlett" class="rpb-github" aria-label="Follow me on Github">
+                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__github">
+                            <use href="../../images/sprites/sprite.svg#icons--github"></use>
                           </svg>
                         </a>
-
-
-                      </li>
-                           <li class="rpb-footer__list-item">
-                            <a role="link" href="https://github.com/robbiebartlett" class="rpb-github" aria-label="Follow me on Github">
-                              <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__github">
-                                <use href="../../images/sprites/sprite.svg#icons--github"></use>
-                              </svg>
-                            </a>
-                      </li>
-                      <li class="rpb-footer__list-item">
-                        <a href="tel:02102774083" class="rpb-phone" aria-label="Call me on my Phone">
-                          <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__phone">
-                            <use href="../../images/sprites/sprite.svg#icons--phone"></use>
-                          </svg>
-                        </a>  
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <div class="rpb-grid__cell rpb-grid--one-half">
-                  <div class="rpb-grid__cell">
-                    <ul class="rpb-footer__list">
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#about">About</a>
-                      </li>
-                     
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="/a11y/html/sitemap.html">Sitemap</a>
-                      </li>
-                      <li class="rpb-footer__list-item">
-                        <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#contact">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                  </li>
+                  <li class="rpb-footer__list-item">
+                    <a href="tel:02102774083" class="rpb-phone" aria-label="Call me on my Phone">
+                      <svg aria-hidden="true" focusable="false" class="rpb-icon rpb-icon__phone">
+                        <use href="../../images/sprites/sprite.svg#icons--phone"></use>
+                      </svg>
+                    </a>  
+                  </li>
+                </ul>
+              </div>
 
             </div>
 
-            <div class="rpb-grid">
-                <div class="rpb-grid__cell">
-
-                    <div class="rpb-footer__copyright">
-                      <p class="rpb-footer__small-text">© Rob Bartlett <span id="year"></span></p>
-                    </div>
-
-                </div>
+            <div class="rpb-grid__cell rpb-grid--one-half">
+              <div class="rpb-grid__cell">
+                <ul class="rpb-footer__list">
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#about">About</a>
+                  </li>
+                 
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="/a11y/html/sitemap.html">Sitemap</a>
+                  </li>
+                  <li class="rpb-footer__list-item">
+                    <a class="rpb-footer__link" href="https://robbiebartlett.github.io/#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
         </div>
+
+        <div class="rpb-grid">
+            <div class="rpb-grid__cell">
+
+                <div class="rpb-footer__copyright">
+                  <p class="rpb-footer__small-text">© Rob Bartlett <span id="year"></span></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
   </footer>
+
 
 
 
