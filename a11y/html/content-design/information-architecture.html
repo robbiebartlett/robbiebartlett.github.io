@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Content | Rob Bartlett - a11y</title>
+  <title>Information architecture | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -477,8 +478,13 @@
                   Home
                 </a>
               </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/content-design/index.html" class="rpb-breadcrumb__link">
+                  Content design
+                </a>
+              </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Content
+                Information architecture
               </li>
             </ol>
           </nav>
@@ -491,136 +497,125 @@
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Information architecture</h1>
 
-            <h2 class="rpb-h3">Accessibility for Content designers</h2>
+            <p class="lead">Is your website organised in a way that everyone can easily navigate?</p>
 
-            <p class="lead">Accessible content design ensures your information is easier for everyone to understand. When building government services, ensure they are accessible and welcoming to all users.</p>
+            <h2 class="rpb-h3">Why it’s important</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Edward has low technical literacy. Edward needs a site’s layout to be clear.</li>
+                <li class="rpb-list__section--item">Siaosi has low vision and uses a screen reader to navigate the web.</li>
+                <li class="rpb-list__section--item">Kimberly has a newborn and her attention is often divided. Kimberly needs to be able to understand a site’s contents at a glance.</li>
+                <li class="rpb-list__section--item">Kelly is undergoing a crisis and needs to quickly find content pertinent to him.</li>
+              </ul>
+            </div>
+
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item">Write descriptive page titles that clearly convey each page's focus. Users who rely on assistive technologies may not be able to use visual cues to determine a page’s purpose.</li>
+                <li class="rpb-list__section--item">Headings must clearly describe the topic or the following section. Use section headings to organise the content.</li>
+                <li class="rpb-list__section--item">Users should be able to navigate a website in multiple ways. Some options may include providing a sitemap, table of contents, linking between pages and a site wide search.</li>
+                <li class="rpb-list__section--item">Indicate changes in language, for example when including a foreign word in English text. This will help assistive technology users and people with cognitive disabilities to understand your content.</li>
+                <li class="rpb-list__section--item">Keep users within the same menu layout when navigating from page to page. Avoid the use of "micro-sites" which have a different or alternate menu layout.</li>
+              </ol>
+            </div>
 
             
-            <div class="rpb-card--wrapper">
-              <ul class="rpb-card-list">
-              <li class="rpb-card">
+            <div class="rpb-callout rpb-callout__note">
 
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/content-design/plain-language.html" class="rpb-link rpb-card--link">Plain language</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can you swiftly understand the main points of the content?
-                      </p>
-                  </div>
-              </li>
+              <h2 class="rpb-callout__title">References</h2>
 
-              <li class="rpb-card">
-                   <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/content-design/easy-read.html" class="rpb-link rpb-card--link">Easy Read</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Is your information presented in a way that is easy to understand?
-                      </p>
-                  </div>
-              </li>              
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/headings.html" class="rpb-link rpb-card--link">Headings</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can you understand a page's content structure associated with Headings?
-                    </p>
-                </div>
-              </li>  
-                                   
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/documents.html" class="rpb-link rpb-card--link">Documents</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are your Portable Document Format (PDF) files and Word documents marked up correctly?
-                    </p>
-                </div>
-              </li>  
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/scannable-content.html" class="rpb-link rpb-card--link">Scannable content</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can you scan the page without having to pause for key points?
-                    </p>
-                </div>
-              </li>                 
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/images.html" class="rpb-link rpb-card--link">Images</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Do your images have the right alternative 'alt' text to describe the information of the image?
-                    </p>
-                </div>
-              </li>                  
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/links.html" class="rpb-link rpb-card--link">Links</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are all links concise, descriptive, and meaningful when read out of context?
-                    </p>
-                </div>
-              </li>               
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/information-architecture.html" class="rpb-link rpb-card--link">Information architecture</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Is your website organised in a way that everyone can easily navigate?
-                    </p>
-                </div>
-              </li>               
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/social-media.html" class="rpb-link rpb-card--link">Social media</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can everyone access your social media posts? 
-                    </p>
-                </div>
-              </li>                              
-              
-              <li class="rpb-card">
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/content-design/video-and-multimedia.html" class="rpb-link rpb-card--link">Video and Multimedia</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can everybody access your multimedia content?
-                    </p>
-                </div>
-              </li>             
+              <h3 class="rpb-callout__sub-title">Resources</h3>
 
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.usability.gov/what-and-why/information-architecture.html">Information Architecture Basics<span class="sr-only">(this link opens an external website)</span></a>
+                </li>      
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.webdesignerdepot.com/2015/02/the-ultimate-guide-to-information-architecture/">The Ultimate Guide to Information Architecture<span class="sr-only">(this link opens an external website)</span></a>
+                </li>            
               </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships">1.3.1 Non-text Content<span class="sr-only">(this link opens an external website)</span></a>
+                </li>                
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#bypass-blocks">2.4.1 Bypass Blocks<span class="sr-only">(this link opens an external website)</span></a>
+                </li>        
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues">3.3.2 Labels or Instructions<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/content-design/index.html">Content design</a>
+                </h2>
+
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/plain-language.html">Plain language</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/easy-read.html">Easy Read</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/headings.html">Headings</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/documents.html">Documents</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/scannable-content.html">Scannable content</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/images.html">Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/links.html">Links</a>
+                  </li>
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/information-architecture.html">Information architecture</a>
+                  </li>                  
+                  
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/social-media.html">Social media</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/content-design/video-and-multimedia.html">Video and Multimedia</a>
+                  </li>
+                </ul>
+
+              </nav>
             </div>
 
           </div>
 
         </div>
       </div>
-
 
       
       <div class="rpb-container">
@@ -631,8 +626,8 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-10-29">
-                  29 October 2021
+                <time datetime="2021-10-28">
+                  28 October 2021
                 </time>
               </p>
 
@@ -743,6 +738,8 @@
   
   <script src="../../js/vendor/jquery-3.5.1.min.js"></script>
   <script src="../../js/scripts.js?cb=1607455229852"></script>
+
+
 </body>
 
 </html>
