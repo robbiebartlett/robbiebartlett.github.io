@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+  <title>Buttons and links | Rob Bartlett - a11y</title>
+
+  
+  
+  <meta name="theme-color" content="#225180">
+  
+  <meta name="msapplication-navbutton-color" content="#225180">
+  
+  <meta name="apple-mobile-web-sidebar-status-bar-style" content="#225180">
+
+  
+  <link rel="shortcut icon" href="../../images/rpb/favicon.ico">
+
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="../../images/rpb/touch-icon-57.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../images/rpb/touch-icon-76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../images/rpb/touch-icon-120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../images/rpb/touch-icon-152.png">
+
+  
+  <meta name="msapplication-square70x70logo" content="../../images/rpb/tile-icon-small.png">
+  <meta name="msapplication-square150x150logo" content="../../images/rpb/tile-icon-medium.png">
+  <meta name="msapplication-square310x310logo" content="../../images/rpb/tile-icon-large.png">
+  <meta name="msapplication-wide310x150logo" content="../../images/rpb/tile-icon-wide.png">
+  <meta name="msapplication-tilecolor" content="#225180">
+
+  
+  <link rel="stylesheet" href="../../css/main.css?cb=1607455229852">
+
+</head>
+
+<body>
+
+  
+  <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
+    <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
+  </nav>
+
+
+
+
+
+  
+  <header role="banner" class="rpb-header">
+    <div class="rpb-container rpb-header__divider">
+      <div class="rpb-grid">
+
+        <div class="rpb-grid__cell rpb-grid--six-tenths">
+          <div class="rpb-header__logotype">
+            <a href="/a11y/html/index.html" class="rpb-header__site-logo">
+              <span class="sr-only">Rob Bartlett - accessibility guide</span>
+              <svg role="img" class="rpb-icon rpb-icon__rpb-logo" aria-labelledby="rpb-logo" aria-hidden="true" focusable="false">
+                <title id="rpb-logo">Rob Bartlett</title>
+                <use href="../../images/sprites/sprite.svg#rpb--logo"></use>
+              </svg>
+            </a>
+            <span class="rpb-header__product-name" aria-hidden="true">
+              Rob Bartlett - a11y
+            </span>
+          </div>
+        </div>
+
+        <div class="rpb-grid__cell rpb-grid--four-tenths">
+          <div class="rpb-header__actions">
+
+            
+            <div class="rpb-search__header">
+              <form class="rpb-search" role="search" action="/" method="get" aria-label="search website">
+                <label for="rpb-accessibility-query" class="sr-only">Search</label>
+                <input type="text" class="rpb-search__input" id="rpb-accessibility-query" placeholder="Search" name="query">
+                <button class="rpb-search__button"><span class="sr-only">Submit search</span></button>
+              </form>
+            </div>
+
+            
+            <section class="rpb-navigation__toggle--wrapper">
+               <button aria-expanded="false" class="rpb-navigation__toggle">Menu</button>
+            </section>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  
+  <nav role="navigation" class="rpb-navigation" aria-label="main menu">
+    <ul class="rpb-navigation__list rpb-navigation__level-one">
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/introduction/index.html" aria-label="accessibility introduction">introduction</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show the submenu for "Accessibility introduction"</span>
+          </button>
+        </div>
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">Accessibility introduction Menu</span>
+        </button>
+        <ul class="rpb-navigation__level-two">
+
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/perceivable.html">Perceivable</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/operable.html">Operable</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/understandable.html">Understandable</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/auditory-disabilities.html">Auditory Disabilities</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/cognitive-neurological-disabilities.html">Cognitive and Neurological Disabilities</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/physical-disabilities.html">Physical Disabilities</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/speech-disabilities.html">Speech Disabilities</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/introduction/visual-disabilities.html">Visual Disabilities</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/product/index.html">
+        Product
+      </a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show submenu for "Product"</span>
+          </button>
+        </div>
+
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">Product Menu</span>
+        </button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/product/introduction.html">Accessibility introduction</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/product/diverse-users.html">Diverse users</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/product/project-workflow.html">Project workflow</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/product/final-review.html">Final review</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/content/index.html">Content</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show submenu for "Website Content"</span>
+          </button>
+        </div>
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">Website Content Menu</span>
+        </button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/plain-language.html">Plain language</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/reference-materials.html">Reference materials</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/headings.html">Headings</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/scannable-content.html">Scannable content</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/images.html">Images</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/links-and-buttons.html">Links & Buttons</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/information-architecture.html">Information Architecture</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/content/video-and-multimedia.html">Video and Multimedia</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/ux/index.html">User Experience</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show submenu for "User Experience"</span>
+          </button>
+        </div>
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">User Experience Menu</span>
+        </button>
+        <ul class="rpb-navigation__list rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/inclusive-design.html">Inclusive Design</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/assistive-technology.html">Assistive technology</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/humanise-accessibility.html">Humanise accessibility</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/tab-order.html">Tab order</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/focus.html">Focus</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/navigation-shortcuts.html">Navigation shortcuts</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/forms.html">Forms</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/images.html">Images</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/touch-targets.html">Touch Targets</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/ux/personas.html">Personas</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/visual-design/index.html">Visual design</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show submenu for "Visual Design"</span>
+          </button>
+        </div>
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">Visual Design Menu</span>
+        </button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/colour-and-contrast.html">Colour and Contrast</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/layout-and-hierarchy.html">Layout and Hierarchy</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/typography.html">Typography</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/graphics-and-images.html">Graphics and Images</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/data-visualisations.html">Data Visualisations</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/forms.html">Forms</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/mobile.html">Mobile</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/keyboard-access.html">Keyboard Access</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/visual-design/screen-reader.html">Screen reader</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="rpb-navigation__list-item">
+
+        <a class="rpb-link rpb-navigation-link" href="/a11y/html/development/index.html" aria-current="page">Development</a>
+
+        <div class="rpb-navigation-sr-expand__wrapper">
+          <button class="rpb-navigation-sr-expand__btn">
+            <span class="sr-only">Show submenu for "Development"</span>
+          </button>
+        </div>
+        <button aria-expanded="false" class="rpb-navigation__mobile-toggle">
+          <span class="sr-only">Development Menu</span>
+        </button>
+        <ul class="rpb-navigation__level-two">
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/keyboard-access.html">Keyboard access</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/screen-reader.html">Screen reader</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/headings.html">Headings</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/page-structure.html">Page structure</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/images.html">Images</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/buttons.html">Buttons</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/colour-and-contrast.html">Colour and Contrast</a>
+          </li>
+          <li class="rpb-navigation__list-item">
+            <a class="rpb-link rpb-navigation__level-two-link" href="/a11y/html/development/automated-testing.html">Automated testing</a>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+
+
+
+
+  
+  <main role="main" id="main-content" aria-hidden="false" class="main-container">
+
+
+    <div class="rpb-pane__breadcrumb">
+      <div class="rpb-container">
+        <div class="rpb-grid">
+          <nav class="rpb-breadcrumb" aria-label="breadcrumbs">
+            <p id="rpb-breadcrumb__label" class="sr-only">You are here:</p>
+            <ol class="rpb-breadcrumb__section" aria-labelledby="rpb-breadcrumb__label">
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/index.html" class="rpb-breadcrumb__link">
+                  Home
+                </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/development/index.html" class="rpb-breadcrumb__link">
+                  Development
+                </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item">
+                Buttons
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container__content">
+      <div class="rpb-container">
+        <div class="rpb-grid">
+
+
+          <div class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
+
+            <h1 class="rpb-h1">Buttons and links</h1>
+
+            <p class="lead"></p>
+
+            <h2 class="rpb-h3">Why it’s important</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Janet is visually impaired and uses a screen reader. She needs to be aware if the button or link will take her away from the current page.</li>
+                <li class="rpb-list__section--item"></li>
+                <li class="rpb-list__section--item"></li>
+              </ul>
+            </div>
+
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item"></li>
+                <li class="rpb-list__section--item"></li>
+                <li class="rpb-list__section--item"></li>
+                <li class="rpb-list__section--item"></li>
+              </ol>
+            </div>
+
+
+
+            <div class="rpb-callout rpb-callout__note">
+
+              <h2 class="rpb-callout__title">References</h2>
+
+              <h3 class="rpb-callout__sub-title">Resources</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href=""><span class="sr-only">(this link opens an external website)</span></a>
+                </li>                
+             
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href=""><span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href=""><span class="sr-only">(this link opens an external website)</span></a>
+                </li>                                
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <div class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav id="page-nav" class="rpb-sidenav" aria-label="Secondary">
+
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/keyboard-access.html">Keyboard access</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/screen-reader.html">Screen reader</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/headings.html">Headings</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/page-structure.html">Page structure</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/images.html">Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/buttons.html">Buttons</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/colour-and-contrast.html">Colour and Contrast</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/automated-testing.html">Automated testing</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="rpb-container">
+        <div class="rpb-grid">
+
+          <div class="rpb-grid__cell">
+            <div class="rpb-utilities">
+
+              <p class="rpb-utilities__last-modified">
+                Last modified:&nbsp;
+                <time datetime="2021-05-05">
+                  5 May 2021
+                </time>
+              </p>
+
+
+              <div class="rpb-utilities__elements">
+
+
+                <button id="BackToTop" tabindex="0" href="javascript:void(0)" class="back-to-top">
+                  <span class="sr-only">Return to the top of the page</span>
+                  <span class="rpb-utilities__btn--label" aria-hidden="true">Back to top</span>
+                </button>
+
+                <button id="rpb-print-button" class="rpb-link rpb-print__button">
+                  <span class="sr-only">Print the page content</span>
+                  <span class="rpb-utilities__btn--label">Print</span>
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  
+  <footer role="contentinfo" class="rpb-footer">
+    <div class="rpb-container">
+
+      <div class="rpb-grid">
+
+        <div class="rpb-grid__cell rpb-grid--one-half">
+
+          <div class="rpb-footer__logotype">
+            <a href="https://www.govt.nz/" class="rpb-footer__logotype--nz-govt-logo">
+              <span class="sr-only">New Zealand Government</span>
+              <svg class="rpb-icon rpb-icon__nz-govt-logo" role="img" aria-labelledby="NZ_Government" aria-hidden="true" focusable="false">
+                <title id="NZ_Government">New Zealand Government</title>
+                <use href="../../images/sprites/sprite.svg#nz-govt--logo"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="rpb-footer__small-text">Crown copyright <span id="year"></span></p>
+
+        </div>
+
+        <div class="rpb-grid__cell rpb-grid--one-half">
+          <div class="rpb-grid__cell">
+            <ul class="rpb-footer__list">
+              <li class="rpb-footer__list-item">
+                <a class="rpb-footer__link" href="https://rpb.govt.nz/about-rpb-and-our-work/tools/copyright-statement.html">Privacy</a>
+              </li>
+                   <li class="rpb-footer__list-item">
+                <a class="rpb-footer__link" href="https://rpb.govt.nz/about-rpb-and-our-work/tools/accessibility-tools.html">Accessibility</a>
+              </li>
+              <li class="rpb-footer__list-item">
+                <a class="rpb-footer__link" href="/a11y/html/sitemap.html">Sitemap</a>
+              </li>
+     <li class="rpb-footer__list-item">
+                <a class="rpb-footer__link" href="mailto:A11y_Team@rpb.govt.nz">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rpb-grid">
+        <div class="rpb-grid__cell">
+
+          <div class="rpb-footer__copyright">
+            <p class="rpb-footer__small-text">Contains public sector information licensed under the Open Government Licence v3.0.</p>
+
+
+            <a href="https://creativecommons.org/licenses/by/4.0/" class="rpb-footer__copyright--logo">
+              <span class="sr-only">Creative Commons 4.0 International Licence</span>
+              <svg width="24px" height="24px" class="rpb-icon__creative-commons" aria-hidden="true" focusable="false">
+                <use href="../../images/sprites/sprite.svg#icons--creative-commons"></use>
+              </svg>
+              &nbsp;
+              <svg width="24px" height="24px" class="rpb-icon__creative-commons-attribution" aria-hidden="true" focusable="false">
+                <use href="../../images/sprites/sprite.svg#icons--creative-commons-attribution"></use>
+              </svg>
+            </a>
+
+            <p class="rpb-footer__small-text">Unless indicated otherwise, all content is licensed for re-use under a
+
+              <a class="rpb-footer__link rpb-footer__link--external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Licence
+      <span class="sr-only">(this link opens an external website)</span></a>&nbsp;.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  
+  <script src="../../js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="../../js/scripts.js?cb=1607455229852"></script>
+
+</body>
+
+</html>

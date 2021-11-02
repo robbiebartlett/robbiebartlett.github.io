@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>Development | Rob Bartlett - a11y</title>
+  <title>Colour and Contrast | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -461,8 +462,9 @@
 
 
 
+
   
-  <main role="main" id="main-content" aria-hidden="false" class="main-container">
+  <main role="main" aria-hidden="false" class="main-container">
 
     
     <div class="rpb-pane__breadcrumb">
@@ -476,8 +478,13 @@
                   Home
                 </a>
               </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/development/index.html" class="rpb-breadcrumb__link">
+                  Development
+                </a>
+              </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                Development
+                Colour and Contrast
               </li>
             </ol>
           </nav>
@@ -491,118 +498,118 @@
         <div class="rpb-grid">
 
           
-          <div class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Colour and Contrast</h1>
 
-            <h2 class="rpb-h3">Accessibility for Front-end Developers</h2>
+            <p class="lead">Is there enough contrast between foreground and background colour?</p>
 
-            <p class="lead">Accessible Front-end development will ensure people can access, understand and navigate online content. Plan for accessibility and conduct accessibility testing throughout the development processes.</p>
-
-            
-            <div class="rpb-card--wrapper">
-              <ul class="rpb-card-list">
-              <li class="rpb-card">
-
-                <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/keyboard-access.html" class="rpb-link rpb-card--link">Keyboard access</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can you reach all interactive elements using the tab key?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                  <div class="rpb-card--content">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/screen-reader.html" class="rpb-link rpb-card--link">Screen reader</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can you use a screen reader to access the page content?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/headings.html" class="rpb-link rpb-card--link">Headings</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are you using the correct structure for headings on your page?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/page-structure.html" class="rpb-link rpb-card--link">Page structure</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are you using semantic elements and roles?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/css-dependence.html" class="rpb-link rpb-card--link">CSS dependence</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Can users understand and access content independant of CSS?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/images.html" class="rpb-link rpb-card--link">Images</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Do your images have good alt text?
-                    </p>
-                </div>
-              </li>     
-            
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/links-and-buttons.html" class="rpb-link rpb-card--link">Links and Buttons</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are you using links or buttons for navigation and actions?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/colour-and-contrast.html" class="rpb-link rpb-card--link">Colour and Contrast</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Is there enough contrast between foreground and background colour?
-                    </p>
-                </div>
-              </li>
-
-              <li class="rpb-card">
-                <div class="rpb-card--content-left">
-                    <h2 class="rpb-h4 rpb-card--title">
-                      <a href="/a11y/html/development/automated-testing.html" class="rpb-link rpb-card--link">Automated testing</a>
-                    </h2>
-                    <p class="rpb-card--text">
-                      Are your accessibility testing tools providing accurate results?
-                    </p>
-                </div>
-              </li>
-
+            <h2 class="rpb-h3">Why it’s important</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Renee has low vision and needs content to have enough contrast to read it.</li>
+                <li class="rpb-list__section--item">Rawiri is red-green colourblind. Rawiri can’t make sense of information conveyed with colour alone.</li>
               </ul>
+            </div>
+
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item">Use a  <a class="rpb-link rpb__link--external" href="https://webaim.org/resources/contrastchecker/">colour contrast<span class="sr-only">(this link opens an external website)</span></a> tool and test that the contrast between the text and background is greater than or equal to 4.5:1.</li>
+                <li class="rpb-list__section--item">Use an automated tool with <a class="rpb-link rpb__link--external" href="https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/">Mozilla<span class="sr-only">(this link opens an external website)</span></a> or <a class="rpb-link rpb__link--external" href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">Chrome<span class="sr-only">(this link opens an external website)</span></a> to quickly scan for colour contrast problems.</li>
+                <li class="rpb-list__section--item">When using colour gradients use a colour picker to compare the lightest part of the text with the lightest part of the background.  Then compare the darkest part of the text with the darkest part of the background.</li>
+              </ol>
+            </div>
+
+
+            
+            <div class="rpb-callout rpb-callout__note">
+
+              <h2 class="rpb-callout__title">References</h2>
+
+              <h3 class="rpb-callout__sub-title">Resources</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.youtube.com/watch?v=Hui87z2Vx8o">Video: Colours with Good Contrast (YouTube)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>                
+             
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://css-tricks.com/understanding-web-accessibility-color-contrast-guidelines-and-ratios/">Understanding Web Accessibility Colour Contrast Guidelines and Ratios<span class="sr-only">(this link opens an external website)</span></a>
+                </li>                
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://accessibility.blog.gov.uk/2016/06/17/colour-contrast-why-does-it-matter/">Colour contrast - why does it matter? (GOV.UK)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+              </ul>
+
+              <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/TR/WCAG21/#use-of-color">1.4.1 Use of Color<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3 Contrast (Minimum)<span class="sr-only">(this link opens an external website)</span></a>
+                </li>
+                <li class="rpb-callout__link">
+                  <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast<span class="sr-only">(this link opens an external website)</span></a>
+                </li>                         
+              </ul>
+
+            </div>
+
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/development/index.html">Development</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/keyboard-access.html">Keyboard access</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/screen-reader.html">Screen reader</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/headings.html">Headings</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/page-structure.html">Page structure</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/css-dependence.html">CSS dependence</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/images.html">Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/links-and-buttons.html">Links and Buttons</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/colour-and-contrast.html">Colour and Contrast</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/development/automated-testing.html">Automated testing</a>
+                  </li>
+
+                </ul>
+
+              </nav>
             </div>
 
           </div>
@@ -611,7 +618,7 @@
       </div>
 
 
-      
+
       <div class="rpb-container">
         <div class="rpb-grid">
 
@@ -620,15 +627,15 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-09-28">
-                  28 September 2021
+                <time datetime="2021-13-05">
+                  13 May 2021
                 </time>
               </p>
 
 
               <div class="rpb-utilities__elements">
 
-                
+
                 <button id="BackToTop" tabindex="0" href="javascript:void(0)" class="back-to-top">
                   <span class="sr-only">Return to the top of the page</span>
                   <span class="rpb-utilities__btn--label" aria-hidden="true">Back to top</span>
@@ -725,6 +732,7 @@
 
         </div>
   </footer>
+
 
 
 
