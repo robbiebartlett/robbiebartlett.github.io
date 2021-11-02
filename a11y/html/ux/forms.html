@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title>User experience | Rob Bartlett - a11y</title>
+  <title>Forms | Rob Bartlett - a11y</title>
 
   
   
@@ -50,6 +50,7 @@
   
   <nav id="skiplinks" aria-label="Skip Link" tabindex="-1">
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <a class="skip-link skip-link__desktop" href="#page-nav">Skip to menu for this section</a>
   </nav>
 
 
@@ -474,11 +475,16 @@
             <ol class="rpb-breadcrumb__section" aria-labelledby="rpb-breadcrumb__label">
               <li class="rpb-breadcrumb__list-item">
                 <a href="/a11y/html/index.html" class="rpb-breadcrumb__link">
-                  Home
-                </a>
+                Home
+              </a>
+              </li>
+              <li class="rpb-breadcrumb__list-item">
+                <a href="/a11y/html/ux/index.html" class="rpb-breadcrumb__link">
+                User experience
+              </a>
               </li>
               <li class="rpb-breadcrumb__list-item" aria-current="page">
-                User experience
+                Forms
               </li>
             </ol>
           </nav>
@@ -487,124 +493,130 @@
     </div>
 
     <div class="main-container__content">
-      
       <div class="rpb-container">
         <div class="rpb-grid">
 
           
-          <div id="main-content" class="rpb-grid__cell rpb-grid--one-whole">
+          <div id="main-content" class="rpb-grid__cell rpb-grid--two-thirds rpb-order-2">
 
-            <h1 class="rpb-h1">Get started</h1>
+            <h1 class="rpb-h1">Forms</h1>
 
-            <h2 class="rpb-h3">Accessibility for User Experience (UX) designers</h2>
+            <p class="lead">Can all users understand and fill out forms?</p>
 
-            <p class="lead">Are you identifying areas that may interfere with any users ability to use your product? UX research embeds empathy and installs an inclusive design mentality for product development.</p>
+            <h2 class="rpb-h3">Why it’s important</h2>
+            <div class="rpb-list">
+              <ul class="rpb-list__section rpb-list__section--square">
+                <li class="rpb-list__section--item">Joseph uses a screen magnifier and when validation messages are shown off to the side he can easily miss them.</li>
+                <li class="rpb-list__section--item">Marama is starting to show signs of dementia, she has trouble with short term memory loss. She needs context clues and instructions to stay visible on the screen or she loses her place.</li>
+              </ul>
+            </div>
 
-              
-              <div class="rpb-card--wrapper">
-                <ul class="rpb-card-list">
-                <li class="rpb-card">
-  
-                  <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/inclusive-design.html" class="rpb-link rpb-card--link">Inclusive design</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are accessibility requirements recognized as a set of design principles to create a better product for all users?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                    <div class="rpb-card--content">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/assistive-technology.html" class="rpb-link rpb-card--link">Assistive technology</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can assistive technology users access your online content or services?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/humanise-accessibility.html" class="rpb-link rpb-card--link">Humanise accessibility</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can everyone with different abilities access, understand and navigate all web content?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/tab-order.html" class="rpb-link rpb-card--link">Tab order</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Do your wire-frames or design mock-ups show a logical tab order? 
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/focus.html" class="rpb-link rpb-card--link">Focus</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are your interactive elements designed for logical focus behaviour?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/navigation-shortcuts.html" class="rpb-link rpb-card--link">Navigation shortcuts</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are navigation shortcuts included for screen reader and keyboard users?
-                      </p>
-                  </div>
-                </li>     
-              
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/forms.html" class="rpb-link rpb-card--link">Forms</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Can all users understand and fill out forms?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/images.html" class="rpb-link rpb-card--link">Images</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are your mock-up images meaningful or decorative?
-                      </p>
-                  </div>
-                </li>
-  
-                <li class="rpb-card">
-                  <div class="rpb-card--content-left">
-                      <h2 class="rpb-h4 rpb-card--title">
-                        <a href="/a11y/html/ux/touch-targets.html" class="rpb-link rpb-card--link">Touch targets</a>
-                      </h2>
-                      <p class="rpb-card--text">
-                        Are your touch targets large enough and easy to reach?
-                      </p>
-                  </div>
-                </li>
-  
+            <h2 class="rpb-h3">Next steps</h2>
+            <div class="rpb-list">
+              <ol class="rpb-list__section rpb-list--number">
+                <li class="rpb-list__section--item">Check all inputs have descriptive labels that remain visible. These should remain visible once completed.</li>
+                <li class="rpb-list__section rpb-list--number">Use HTML form elements as much as possible. Test any custom interactions for use with screen readers and keyboard only.</li>
+                <li class="rpb-list__section rpb-list--number">Use a small tube or a narrow window with your fist to view the page. Scan only vertically to identify if any content is hidden from screen reader users.</li>
+                <li class="rpb-list__section rpb-list--number">Keep the number of responses on a single page to a minimum. Provide context clues throughout for people who may lose their place.</li>
+                <li class="rpb-list__section rpb-list--number">Check placeholders are not used in the form fields as the text disappears once the form field is in focus. Users may not remember what information belongs in that field, or be able to fix mistakes. Any hints and/or labels placed outside the form field should always be visible to the user.</li>
+              </ol>
+            </div>
+
+
+            
+            <div class="rpb-callout rpb-callout__note">
+
+              <h2 class="rpb-callout__title">References</h2>
+
+                <h3 class="rpb-callout__sub-title">Resources</h3>
+
+                  <ul class="rpb-list__section rpb-list__section--square">
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.deque.com/blog/anatomy-of-accessible-forms-best-practices/">The Anatomy of Accessible Forms: Best Practices<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://uxdesign.cc/8-ways-to-make-forms-more-user-friendly-50f3f22c708c">Making forms more user-friendly<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.washington.edu/accessibility/checklist/forms/">Creating Accessible Forms<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                  </ul>
+
+                  <h3 class="rpb-callout__sub-title">World Content Accessibility Guidelines</h3>
+
+                  <ul class="rpb-list__section rpb-list__section--square">
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#non-text-content">1.1.1 Non-text Content<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships">1.3.1 Info and Relationships<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#on-focus">3.2.1 On Focus<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#labels-or-instructions">3.3.1 Labels or Instructions<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                    <li class="rpb-callout__link">
+                      <a class="rpb-link rpb__link--external" href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#name-role-value">4.1.2 Name, Role, Value<span class="sr-only">(this link opens an external website)</span></a>
+                    </li>
+                  </ul>
+
+            </div>
+
+
+
+          </div>
+
+          
+          <div id="page-nav" class="rpb-grid__cell rpb-grid--one-third rpb-order-1">
+
+            <div class="rpb-pane__sidenav">
+              <nav class="rpb-sidenav" aria-label="Secondary">
+                <h2 class="rpb-sidenav__header">
+                  <a class="rpb-link rpb-h3" href="/a11y/html/ux/index.html">User experience</a>
+                </h2>
+                <ul class="rpb-sidenav__section">
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/inclusive-design.html">Inclusive design</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/assistive-technology.html">Assistive technology</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/humanise-accessibility.html">Humanise accessibility</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/tab-order.html">Tab order</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/focus.html">Focus</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/navigation-shortcuts.html">Navigation shortcuts</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item" aria-current="page">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/forms.html">Forms</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/images.html">Images</a>
+                  </li>
+
+                  <li class="rpb-sidenav__section--item">
+                    <a class="rpb-sidenav__link rpb-link" href="/a11y/html/ux/touch-targets.html">Touch targets</a>
+                  </li>
                 </ul>
-              </div>
+
+              </nav>
+            </div>
 
           </div>
 
@@ -621,15 +633,15 @@
 
               <p class="rpb-utilities__last-modified">
                 Last modified:&nbsp;
-                <time datetime="2021-09-28">
-                  28 September 2021
+                <time datetime="2021-03-19">
+                  23 April 2021
                 </time>
               </p>
 
 
               <div class="rpb-utilities__elements">
 
-                
+
                 <button id="BackToTop" tabindex="0" href="javascript:void(0)" class="back-to-top">
                   <span class="sr-only">Return to the top of the page</span>
                   <span class="rpb-utilities__btn--label" aria-hidden="true">Back to top</span>
