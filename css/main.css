@@ -4489,9 +4489,6 @@ table th {
   background-position-y: 50%;
     background-size: 50%;
 }
-.rpb-timeline-dates .rpb-timeline-slide.ui.active:after {
-    background-color: #0f296a;
-}
 .rpb-timeline-dates .active:after {
     background-color: #ffc442;
     border-color: #212121;
